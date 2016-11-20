@@ -1,0 +1,21 @@
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\bin\Debug\QLSV.exe.config
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\bin\Debug\QLSV.exe
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\bin\Debug\QLSV.pdb
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\bin\Debug\Bunifu_UI_v1.51.dll
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\obj\Debug\QLSV.Properties.Resources.resources
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\obj\Debug\QLSV.exe
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\obj\Debug\QLSV.pdb
+C:\Users\MyPC\AppData\Local\Temporary Projects\QLSV\obj\Debug\QLSV.MainForm.resources
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\bin\Debug\QLSV.exe.config
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\bin\Debug\QLSV.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\bin\Debug\Bunifu_UI_v1.51.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\LollipopFolderInPut.resources
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.lltexthint.resources
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.MainForm.resources
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.Properties.Resources.resources
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.exe
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.pdb

@@ -1,0 +1,7 @@
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Data\bin\Debug\QLSV.Data.dll.config
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Data\bin\Debug\QLSV.Data.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Data\bin\Debug\QLSV.Data.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Data\obj\Debug\QLSV.Data.Properties.Resources.resources
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Data\obj\Debug\QLSV.Data.csproj.GenerateResource.Cache
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Data\obj\Debug\QLSV.Data.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Data\obj\Debug\QLSV.Data.pdb

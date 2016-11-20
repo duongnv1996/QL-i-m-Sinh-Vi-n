@@ -1,0 +1,7 @@
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.xml
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\Microsoft.QualityTools.Testing.Fakes.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\f.csprojResolveAssemblyReference.cache
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.pdb
