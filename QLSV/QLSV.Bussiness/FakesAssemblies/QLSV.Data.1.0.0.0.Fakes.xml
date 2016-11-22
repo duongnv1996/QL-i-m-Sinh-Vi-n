@@ -4,5 +4,230 @@
         <name>QLSV.Data.1.0.0.0.Fakes</name>
     </assembly>
     <members>
+        <member name="T:QLSV.Data.Fakes.ShimSQLDataProvider">
+            <summary>Shim type of QLSV.Data.SQLDataProvider</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSQLDataProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSQLDataProvider.#ctor(QLSV.Data.SQLDataProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSQLDataProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSQLDataProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSQLDataProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSQLDataProvider.Constructor">
+            <summary>Sets the shim of SQLDataProvider.SQLDataProvider()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSQLDataProvider.getConnection">
+            <summary>Sets the shim of SQLDataProvider.getConnection()</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.ShimSQLDataProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.ShimUser">
+            <summary>Shim type of QLSV.Data.User</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimUser.#ctor(QLSV.Data.User)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.Constructor">
+            <summary>Sets the shim of User.User()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.DiaChiGet">
+            <summary>Sets the shim of User.get_DiaChi()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.DiaChiSetString">
+            <summary>Sets the shim of User.set_DiaChi(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.HoTenGet">
+            <summary>Sets the shim of User.get_HoTen()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.HoTenSetString">
+            <summary>Sets the shim of User.set_HoTen(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.LopGet">
+            <summary>Sets the shim of User.get_Lop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.LopSetString">
+            <summary>Sets the shim of User.set_Lop(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.NgaySinhGet">
+            <summary>Sets the shim of User.get_NgaySinh()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.NgaySinhSetString">
+            <summary>Sets the shim of User.set_NgaySinh(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.PasswordGet">
+            <summary>Sets the shim of User.get_Password()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.PasswordSetString">
+            <summary>Sets the shim of User.set_Password(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.TenDangNhapGet">
+            <summary>Sets the shim of User.get_TenDangNhap()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.TenDangNhapSetString">
+            <summary>Sets the shim of User.set_TenDangNhap(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.TenKhoaGet">
+            <summary>Sets the shim of User.get_TenKhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.TenKhoaSetString">
+            <summary>Sets the shim of User.set_TenKhoa(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.UserIDataReaderSqlDataReader">
+            <summary>Sets the shim of User.UserIDataReader(SqlDataReader dr)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.ShimUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.DiaChiGet">
+            <summary>Sets the shim of User.get_DiaChi()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.DiaChiSetString">
+            <summary>Sets the shim of User.set_DiaChi(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.HoTenGet">
+            <summary>Sets the shim of User.get_HoTen()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.HoTenSetString">
+            <summary>Sets the shim of User.set_HoTen(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.LopGet">
+            <summary>Sets the shim of User.get_Lop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.LopSetString">
+            <summary>Sets the shim of User.set_Lop(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.NgaySinhGet">
+            <summary>Sets the shim of User.get_NgaySinh()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.NgaySinhSetString">
+            <summary>Sets the shim of User.set_NgaySinh(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.PasswordGet">
+            <summary>Sets the shim of User.get_Password()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.PasswordSetString">
+            <summary>Sets the shim of User.set_Password(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.TenDangNhapGet">
+            <summary>Sets the shim of User.get_TenDangNhap()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.TenDangNhapSetString">
+            <summary>Sets the shim of User.set_TenDangNhap(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.TenKhoaGet">
+            <summary>Sets the shim of User.get_TenKhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.TenKhoaSetString">
+            <summary>Sets the shim of User.set_TenKhoa(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.UserIDataReaderSqlDataReader">
+            <summary>Sets the shim of User.UserIDataReader(SqlDataReader dr)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.ShimUserController">
+            <summary>Shim type of QLSV.Data.UserController</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimUserController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimUserController.#ctor(QLSV.Data.UserController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimUserController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimUserController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUserController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUserController.Constructor">
+            <summary>Sets the shim of UserController.UserController()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUserController.getUserStringString">
+            <summary>Sets the shim of UserController.getUser(String tenDangNhap, String matkhau)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.ShimUserController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUserController.AllInstances.getUserStringString">
+            <summary>Sets the shim of UserController.getUser(String tenDangNhap, String matkhau)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.StubSQLDataProvider">
+            <summary>Stub type of QLSV.Data.SQLDataProvider</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSQLDataProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSQLDataProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubSQLDataProvider</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubSQLDataProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubSQLDataProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubSQLDataProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.StubUser">
+            <summary>Stub type of QLSV.Data.User</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubUser.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubUser.InitializeStub">
+            <summary>Initializes a new instance of type StubUser</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubUser.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubUser.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubUser.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.StubUserController">
+            <summary>Stub type of QLSV.Data.UserController</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubUserController.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubUserController.InitializeStub">
+            <summary>Initializes a new instance of type StubUserController</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubUserController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubUserController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubUserController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
     </members>
 </doc>

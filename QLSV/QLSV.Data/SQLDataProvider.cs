@@ -8,9 +8,9 @@ using System.Data.SqlClient;
 
 namespace QLSV.Data
 {
-    class SQLDataProvider
+    public class SQLDataProvider
     {
-        String strConnection = "Data Source=.\\MAYTINH-JRUTQDS;Initial Catalog=SinhVien;User ID=sa;Password=123456";
+        String strConnection = "Data Source=MAYTINH-JRUTQDS;Initial Catalog=SinhVien;User ID=sa;Password=123456";
        static SqlConnection conn;
         public SQLDataProvider() {
             if(conn ==null)

@@ -5,14 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+using QLSV.Data;
+
 namespace QLSV.Bussiness
 {
-    class MyService
+   public class MyService
     {
-        //public static User dangNhap(String tenDangNhap, String matKhau) {
-        //    User result;
-        //    return result;
+        public  User dangNhap(String tenDangNhap, String matKhau) {
+            User result;
+            UserController userController = new UserController();
+            result = userController.getUser(tenDangNhap, matKhau);
+            return result;
 
-        //}
+        }
     }
 }

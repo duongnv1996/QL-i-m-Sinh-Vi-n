@@ -19,3 +19,22 @@ D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.Propert
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.exe
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\obj\Debug\QLSV.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\bin\Debug\QLSV.Bussiness.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\bin\Debug\QLSV.Data.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\bin\Debug\QLSV.Bussiness.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV\bin\Debug\QLSV.Data.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.exe.config
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.exe
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\Bunifu_UI_v1.51.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.Bussiness.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.Data.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.Bussiness.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.Data.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\LollipopFolderInPut.resources
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.lltexthint.resources
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.MainForm.resources
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.Properties.Resources.resources
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache

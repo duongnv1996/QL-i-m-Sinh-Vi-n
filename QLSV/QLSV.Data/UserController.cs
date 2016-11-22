@@ -8,14 +8,15 @@ using System.Data.Sql;
 
 namespace QLSV.Data
 {
-    class UserController : SQLDataProvider
+    public class UserController : SQLDataProvider
     {
         public User getUser(String tenDangNhap, String matkhau) {
             User result = null;
-            String query = " Select * from sinhvien where msv= " + tenDangNhap;
+            String query = " Select * from sinhvien where masv= '" + tenDangNhap+"'";
             SqlCommand cmd = new SqlCommand(query, getConnection());
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read()) {
+                result = new User();
                 result.UserIDataReader(reader);
             }
             return result;

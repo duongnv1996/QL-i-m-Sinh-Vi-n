@@ -7,7 +7,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 namespace QLSV.Data
 {
-    class User
+    public class User
     {
         private String hoTen;
 
@@ -59,7 +59,7 @@ namespace QLSV.Data
             Lop = dr["malop"] is DBNull ? String.Empty : dr["malop"].ToString();
             TenKhoa = dr["tenkhoa"] is DBNull ? String.Empty : dr["tenkhoa"].ToString();
             DiaChi = dr["diachi"] is DBNull ? String.Empty : dr["diachi"].ToString();
-            TenDangNhap = dr["msv"] is DBNull ? String.Empty : dr["msv"].ToString();
+            TenDangNhap = dr["masv"] is DBNull ? String.Empty : dr["masv"].ToString();
             NgaySinh = dr["ngaysinh"] is DBNull ? String.Empty : dr["ngaysinh"].ToString();
         }
         
