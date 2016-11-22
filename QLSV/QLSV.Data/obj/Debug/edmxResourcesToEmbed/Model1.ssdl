@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SinhVienModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SinhVienModelStoreContainer">
+    <EntitySet Name="account" EntityType="SinhVienModel.Store.account" store:Type="Tables" store:Schema="dbo" store:Name="account">
+      <DefiningQuery>SELECT 
+      [account].[masv] AS [masv], 
+      [account].[password] AS [password], 
+      [account].[quyen] AS [quyen]
+      FROM [dbo].[account] AS [account]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="bangdiem" EntityType="SinhVienModel.Store.bangdiem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="khoa" EntityType="SinhVienModel.Store.khoa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="lop" EntityType="SinhVienModel.Store.lop" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="monhoc" EntityType="SinhVienModel.Store.monhoc" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sinhvien" EntityType="SinhVienModel.Store.sinhvien" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="SinhVienModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tongket" EntityType="SinhVienModel.Store.tongket" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_account_sinhvien" Association="SinhVienModel.Store.FK_account_sinhvien">
+      <End Role="sinhvien" EntitySet="sinhvien" />
+      <End Role="account" EntitySet="account" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bangdiem_monhoc" Association="SinhVienModel.Store.FK_bangdiem_monhoc">
+      <End Role="monhoc" EntitySet="monhoc" />
+      <End Role="bangdiem" EntitySet="bangdiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bangdiem_sinhvien" Association="SinhVienModel.Store.FK_bangdiem_sinhvien">
+      <End Role="sinhvien" EntitySet="sinhvien" />
+      <End Role="bangdiem" EntitySet="bangdiem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lop_khoa" Association="SinhVienModel.Store.FK_lop_khoa">
+      <End Role="khoa" EntitySet="khoa" />
+      <End Role="lop" EntitySet="lop" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sinhvien_lop" Association="SinhVienModel.Store.FK_sinhvien_lop">
+      <End Role="lop" EntitySet="lop" />
+      <End Role="sinhvien" EntitySet="sinhvien" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tongket_sinhvien" Association="SinhVienModel.Store.FK_tongket_sinhvien">
+      <End Role="sinhvien" EntitySet="sinhvien" />
+      <End Role="tongket" EntitySet="tongket" />
+    </AssociationSet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SinhVien.dbo.account' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="account">
+    <Key>
+      <PropertyRef Name="masv" />
+    </Key>
+    <Property Name="masv" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="quyen" Type="bit" />
+  </EntityType>
+  <EntityType Name="bangdiem">
+    <Key>
+      <PropertyRef Name="masv" />
+      <PropertyRef Name="mamonhoc" />
+    </Key>
+    <Property Name="masv" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="mamonhoc" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="diemtp" Type="real" />
+    <Property Name="diemthilan1" Type="real" />
+    <Property Name="diemthilan2" Type="real" />
+    <Property Name="tkmonlan1he10" Type="real" />
+    <Property Name="tkmonlan1he4" Type="real" />
+    <Property Name="tkmonlan2he10" Type="real" />
+    <Property Name="tkmonlan2he4" Type="real" />
+    <Property Name="tkmonhe10" Type="real" />
+    <Property Name="tkmonhe4" Type="real" />
+    <Property Name="tkmonhechu" Type="varchar" MaxLength="2" />
+    <Property Name="sotietnghi" Type="int" />
+    <Property Name="trangthai" Type="text" />
+  </EntityType>
+  <EntityType Name="khoa">
+    <Key>
+      <PropertyRef Name="makhoa" />
+    </Key>
+    <Property Name="makhoa" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="tenkhoa" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="lop">
+    <Key>
+      <PropertyRef Name="malop" />
+    </Key>
+    <Property Name="malop" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="tenlop" Type="varchar" MaxLength="50" />
+    <Property Name="makhoa" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="monhoc">
+    <Key>
+      <PropertyRef Name="mamonhoc" />
+    </Key>
+    <Property Name="mamonhoc" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="tenmonhoc" Type="varchar" MaxLength="50" />
+    <Property Name="tongsotiet" Type="int" />
+    <Property Name="sotinchi" Type="int" />
+    <Property Name="hocky" Type="int" />
+  </EntityType>
+  <EntityType Name="sinhvien">
+    <Key>
+      <PropertyRef Name="masv" />
+    </Key>
+    <Property Name="masv" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="hoten" Type="varchar" MaxLength="50" />
+    <Property Name="malop" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ngaysinh" Type="varchar" MaxLength="30" />
+    <Property Name="diachi" Type="varchar" MaxLength="50" />
+    <Property Name="gioitinh" Type="varchar" MaxLength="10" />
+    <Property Name="tenkhoa" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tongket">
+    <Key>
+      <PropertyRef Name="masv" />
+    </Key>
+    <Property Name="masv" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="diemtkhe10" Type="real" />
+    <Property Name="diemtkhe4" Type="real" />
+    <Property Name="sotcdat" Type="int" />
+    <Property Name="diemtlky1" Type="real" />
+    <Property Name="diemtlky2" Type="real" />
+    <Property Name="diemtlky3" Type="real" />
+    <Property Name="diemtlky4" Type="real" />
+    <Property Name="diemtlky5" Type="real" />
+    <Property Name="diemtlky6" Type="real" />
+    <Property Name="diemtlky7" Type="real" />
+    <Property Name="diemtlky8" Type="real" />
+    <Property Name="diemtlky9" Type="real" />
+  </EntityType>
+  <Association Name="FK_account_sinhvien">
+    <End Role="sinhvien" Type="SinhVienModel.Store.sinhvien" Multiplicity="1" />
+    <End Role="account" Type="SinhVienModel.Store.account" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="sinhvien">
+        <PropertyRef Name="masv" />
+      </Principal>
+      <Dependent Role="account">
+        <PropertyRef Name="masv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bangdiem_monhoc">
+    <End Role="monhoc" Type="SinhVienModel.Store.monhoc" Multiplicity="1" />
+    <End Role="bangdiem" Type="SinhVienModel.Store.bangdiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="monhoc">
+        <PropertyRef Name="mamonhoc" />
+      </Principal>
+      <Dependent Role="bangdiem">
+        <PropertyRef Name="mamonhoc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bangdiem_sinhvien">
+    <End Role="sinhvien" Type="SinhVienModel.Store.sinhvien" Multiplicity="1" />
+    <End Role="bangdiem" Type="SinhVienModel.Store.bangdiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sinhvien">
+        <PropertyRef Name="masv" />
+      </Principal>
+      <Dependent Role="bangdiem">
+        <PropertyRef Name="masv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lop_khoa">
+    <End Role="khoa" Type="SinhVienModel.Store.khoa" Multiplicity="1" />
+    <End Role="lop" Type="SinhVienModel.Store.lop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khoa">
+        <PropertyRef Name="makhoa" />
+      </Principal>
+      <Dependent Role="lop">
+        <PropertyRef Name="makhoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sinhvien_lop">
+    <End Role="lop" Type="SinhVienModel.Store.lop" Multiplicity="1" />
+    <End Role="sinhvien" Type="SinhVienModel.Store.sinhvien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lop">
+        <PropertyRef Name="malop" />
+      </Principal>
+      <Dependent Role="sinhvien">
+        <PropertyRef Name="malop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tongket_sinhvien">
+    <End Role="sinhvien" Type="SinhVienModel.Store.sinhvien" Multiplicity="1" />
+    <End Role="tongket" Type="SinhVienModel.Store.tongket" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="sinhvien">
+        <PropertyRef Name="masv" />
+      </Principal>
+      <Dependent Role="tongket">
+        <PropertyRef Name="masv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

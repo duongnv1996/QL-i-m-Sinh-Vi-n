@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SinhVienModelStoreContainer" CdmEntityContainer="SinhVienEntities">
+    <EntitySetMapping Name="accounts">
+      <EntityTypeMapping TypeName="SinhVienModel.account">
+        <MappingFragment StoreEntitySet="account">
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="quyen" ColumnName="quyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bangdiems">
+      <EntityTypeMapping TypeName="SinhVienModel.bangdiem">
+        <MappingFragment StoreEntitySet="bangdiem">
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="mamonhoc" ColumnName="mamonhoc" />
+          <ScalarProperty Name="diemtp" ColumnName="diemtp" />
+          <ScalarProperty Name="diemthilan1" ColumnName="diemthilan1" />
+          <ScalarProperty Name="diemthilan2" ColumnName="diemthilan2" />
+          <ScalarProperty Name="tkmonlan1he10" ColumnName="tkmonlan1he10" />
+          <ScalarProperty Name="tkmonlan1he4" ColumnName="tkmonlan1he4" />
+          <ScalarProperty Name="tkmonlan2he10" ColumnName="tkmonlan2he10" />
+          <ScalarProperty Name="tkmonlan2he4" ColumnName="tkmonlan2he4" />
+          <ScalarProperty Name="tkmonhe10" ColumnName="tkmonhe10" />
+          <ScalarProperty Name="tkmonhe4" ColumnName="tkmonhe4" />
+          <ScalarProperty Name="tkmonhechu" ColumnName="tkmonhechu" />
+          <ScalarProperty Name="sotietnghi" ColumnName="sotietnghi" />
+          <ScalarProperty Name="trangthai" ColumnName="trangthai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khoas">
+      <EntityTypeMapping TypeName="SinhVienModel.khoa">
+        <MappingFragment StoreEntitySet="khoa">
+          <ScalarProperty Name="makhoa" ColumnName="makhoa" />
+          <ScalarProperty Name="tenkhoa" ColumnName="tenkhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lops">
+      <EntityTypeMapping TypeName="SinhVienModel.lop">
+        <MappingFragment StoreEntitySet="lop">
+          <ScalarProperty Name="malop" ColumnName="malop" />
+          <ScalarProperty Name="tenlop" ColumnName="tenlop" />
+          <ScalarProperty Name="makhoa" ColumnName="makhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="monhocs">
+      <EntityTypeMapping TypeName="SinhVienModel.monhoc">
+        <MappingFragment StoreEntitySet="monhoc">
+          <ScalarProperty Name="mamonhoc" ColumnName="mamonhoc" />
+          <ScalarProperty Name="tenmonhoc" ColumnName="tenmonhoc" />
+          <ScalarProperty Name="tongsotiet" ColumnName="tongsotiet" />
+          <ScalarProperty Name="sotinchi" ColumnName="sotinchi" />
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sinhviens">
+      <EntityTypeMapping TypeName="SinhVienModel.sinhvien">
+        <MappingFragment StoreEntitySet="sinhvien">
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="hoten" ColumnName="hoten" />
+          <ScalarProperty Name="malop" ColumnName="malop" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="tenkhoa" ColumnName="tenkhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SinhVienModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tongkets">
+      <EntityTypeMapping TypeName="SinhVienModel.tongket">
+        <MappingFragment StoreEntitySet="tongket">
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="diemtkhe10" ColumnName="diemtkhe10" />
+          <ScalarProperty Name="diemtkhe4" ColumnName="diemtkhe4" />
+          <ScalarProperty Name="sotcdat" ColumnName="sotcdat" />
+          <ScalarProperty Name="diemtlky1" ColumnName="diemtlky1" />
+          <ScalarProperty Name="diemtlky2" ColumnName="diemtlky2" />
+          <ScalarProperty Name="diemtlky3" ColumnName="diemtlky3" />
+          <ScalarProperty Name="diemtlky4" ColumnName="diemtlky4" />
+          <ScalarProperty Name="diemtlky5" ColumnName="diemtlky5" />
+          <ScalarProperty Name="diemtlky6" ColumnName="diemtlky6" />
+          <ScalarProperty Name="diemtlky7" ColumnName="diemtlky7" />
+          <ScalarProperty Name="diemtlky8" ColumnName="diemtlky8" />
+          <ScalarProperty Name="diemtlky9" ColumnName="diemtlky9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="SinhVienModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="SinhVienModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="SinhVienModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="SinhVienModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SinhVienModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="SinhVienModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SinhVienModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="SinhVienModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="SinhVienModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bang.Designer.cs">
+      <DependentUpon>Bang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\LollipopButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     <Compile Include="UIManagers\DrawHelper.cs" />
     <Compile Include="UIManagers\FontManager.cs" />
     <Compile Include="Util.cs" />
+    <EmbeddedResource Include="Bang.resx">
+      <DependentUpon>Bang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\LollipopFolderInPut.resx">
       <DependentUpon>LollipopFolderInPut.cs</DependentUpon>
     </EmbeddedResource>

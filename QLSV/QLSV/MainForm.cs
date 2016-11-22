@@ -18,14 +18,16 @@ namespace QLSV
         const int SIZE_AVT_MEDIUM = 80;
         const int SIZE_WITDH_COLLAPSE = 54;
         const int SIZE_WITDH_EXPANDE = 300;
+        KhoaSerivice khoaSV ;
+        bang bangKhoa;
         public MainForm() {
             InitializeComponent();
 
         }
 
         private void MainForm_Load(object sender, EventArgs e) {
-
-
+          
+            bangKhoa = new bang();
         }
 
 
@@ -49,7 +51,9 @@ namespace QLSV
             avt.Height = SIZE_AVT_MEDIUM;
             PanelNav.Width = SIZE_WITDH_EXPANDE;
             PanelNav.Visible = false;
-            animatorNav.Show(PanelNav);                               
+            animatorNav.Show(PanelNav);
+            bangKhoa.Width = panelMain.Width;
+            bangKhoa.Height = panelMain.Height;                 
         }
         private void collapseNav() {
             avt.Width = SIZE_AVT_MINI;
@@ -58,7 +62,8 @@ namespace QLSV
             PanelNav.Visible = false;
             PanelNav.Width = SIZE_WITDH_COLLAPSE;
             animator.Show(PanelNav);
-
+            bangKhoa.Width = panelMain.Width;
+            bangKhoa.Height = panelMain.Height;
         }
 
         private void ll1_Enter(object sender, EventArgs e) {
@@ -87,14 +92,15 @@ namespace QLSV
         }
 
         private void btn_dangnhap_Click(object sender, EventArgs e) {
-
+            khoaSV = new KhoaSerivice(); ;
             MyService service = new MyService();
             User user = service.dangNhap(ll1.Text, lltxtmk.Text);
             if (user != null) {
-                lbChucVu.Text = "Sinh Viên";
-                lbKhoa.Text = user.TenKhoa;
+                lbLop.Text =user.Lop+" - "+ user.TenKhoa;
+                lbNgaySinh.Text = user.NgaySinh;
                 lbTen.Text = user.HoTen;
             }
+
             //collapseToolbar();
             animationVisiableNav();
            
@@ -108,6 +114,14 @@ namespace QLSV
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e) {
+           khoaSV = new KhoaSerivice();
+
+           bangKhoa.hienList(khoaSV.getDsKhoa());
+            bangKhoa.Width = panelMain.Width;
+            bangKhoa.Height = panelMain.Height;
+            bangKhoa.Anchor =  AnchorStyles.Left ;
+        
+            this.panelMain.Controls.Add(bangKhoa);
 
         }
 
@@ -116,12 +130,16 @@ namespace QLSV
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e) {
-            if (PanelNav.Width == SIZE_WITDH_COLLAPSE) {
-                animationVisiableNav();
-            } else {
-                collapseNav();
+            //if (PanelNav.Width == SIZE_WITDH_COLLAPSE) {
+            //    animationVisiableNav();
+            //} else {
+            //    collapseNav();
 
-            }
+            //}
+        }
+
+        private void btnLop_Click(object sender, EventArgs e) {
+          
         }
 
     }

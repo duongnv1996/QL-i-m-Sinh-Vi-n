@@ -4,6 +4,36 @@
         <name>QLSV.Data.1.0.0.0.Fakes</name>
     </assembly>
     <members>
+        <member name="T:QLSV.Data.Fakes.ShimKhoaController">
+            <summary>Shim type of QLSV.Data.KhoaController</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimKhoaController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimKhoaController.#ctor(QLSV.Data.KhoaController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimKhoaController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimKhoaController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimKhoaController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimKhoaController.Constructor">
+            <summary>Sets the shim of KhoaController.KhoaController()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimKhoaController.getListKhoa">
+            <summary>Sets the shim of KhoaController.getListKhoa()</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.ShimKhoaController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimKhoaController.AllInstances.getListKhoa">
+            <summary>Sets the shim of KhoaController.getListKhoa()</summary>
+        </member>
         <member name="T:QLSV.Data.Fakes.ShimSQLDataProvider">
             <summary>Shim type of QLSV.Data.SQLDataProvider</summary>
         </member>
@@ -30,6 +60,180 @@
         </member>
         <member name="T:QLSV.Data.Fakes.ShimSQLDataProvider.AllInstances">
             <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.ShimSinhVienEntities">
+            <summary>Shim type of QLSV.Data.SinhVienEntities</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSinhVienEntities.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSinhVienEntities.#ctor(QLSV.Data.SinhVienEntities)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSinhVienEntities.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSinhVienEntities.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSinhVienEntities.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.ShimSinhVienEntities.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.Constructor">
+            <summary>Sets the shim of SinhVienEntities.SinhVienEntities()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of SinhVienEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.accountsGet">
+            <summary>Sets the shim of SinhVienEntities.get_accounts()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.accountsSetDbSetOfaccount">
+            <summary>Sets the shim of SinhVienEntities.set_accounts(DbSet`1&lt;account&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.bangdiemsGet">
+            <summary>Sets the shim of SinhVienEntities.get_bangdiems()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.bangdiemsSetDbSetOfbangdiem">
+            <summary>Sets the shim of SinhVienEntities.set_bangdiems(DbSet`1&lt;bangdiem&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.khoasGet">
+            <summary>Sets the shim of SinhVienEntities.get_khoas()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.khoasSetDbSetOfkhoa">
+            <summary>Sets the shim of SinhVienEntities.set_khoas(DbSet`1&lt;khoa&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.lopsGet">
+            <summary>Sets the shim of SinhVienEntities.get_lops()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.lopsSetDbSetOflop">
+            <summary>Sets the shim of SinhVienEntities.set_lops(DbSet`1&lt;lop&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.monhocsGet">
+            <summary>Sets the shim of SinhVienEntities.get_monhocs()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.monhocsSetDbSetOfmonhoc">
+            <summary>Sets the shim of SinhVienEntities.set_monhocs(DbSet`1&lt;monhoc&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sinhviensGet">
+            <summary>Sets the shim of SinhVienEntities.get_sinhviens()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sinhviensSetDbSetOfsinhvien">
+            <summary>Sets the shim of SinhVienEntities.set_sinhviens(DbSet`1&lt;sinhvien&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sp_alterdiagramStringNullableOfInt32NullableOfInt32ByteArray">
+            <summary>Sets the shim of SinhVienEntities.sp_alterdiagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, Nullable`1&lt;Int32&gt; version, Byte[] definition)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sp_creatediagramStringNullableOfInt32NullableOfInt32ByteArray">
+            <summary>Sets the shim of SinhVienEntities.sp_creatediagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, Nullable`1&lt;Int32&gt; version, Byte[] definition)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sp_dropdiagramStringNullableOfInt32">
+            <summary>Sets the shim of SinhVienEntities.sp_dropdiagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sp_helpdiagramdefinitionStringNullableOfInt32">
+            <summary>Sets the shim of SinhVienEntities.sp_helpdiagramdefinition(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sp_helpdiagramsStringNullableOfInt32">
+            <summary>Sets the shim of SinhVienEntities.sp_helpdiagrams(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sp_renamediagramStringNullableOfInt32String">
+            <summary>Sets the shim of SinhVienEntities.sp_renamediagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, String new_diagramname)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sp_upgraddiagrams">
+            <summary>Sets the shim of SinhVienEntities.sp_upgraddiagrams()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sysdiagramsGet">
+            <summary>Sets the shim of SinhVienEntities.get_sysdiagrams()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.sysdiagramsSetDbSetOfsysdiagram">
+            <summary>Sets the shim of SinhVienEntities.set_sysdiagrams(DbSet`1&lt;sysdiagram&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.tongketsGet">
+            <summary>Sets the shim of SinhVienEntities.get_tongkets()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.tongketsSetDbSetOftongket">
+            <summary>Sets the shim of SinhVienEntities.set_tongkets(DbSet`1&lt;tongket&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of SinhVienEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.accountsGet">
+            <summary>Sets the shim of SinhVienEntities.get_accounts()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.accountsSetDbSetOfaccount">
+            <summary>Sets the shim of SinhVienEntities.set_accounts(DbSet`1&lt;account&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.bangdiemsGet">
+            <summary>Sets the shim of SinhVienEntities.get_bangdiems()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.bangdiemsSetDbSetOfbangdiem">
+            <summary>Sets the shim of SinhVienEntities.set_bangdiems(DbSet`1&lt;bangdiem&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.khoasGet">
+            <summary>Sets the shim of SinhVienEntities.get_khoas()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.khoasSetDbSetOfkhoa">
+            <summary>Sets the shim of SinhVienEntities.set_khoas(DbSet`1&lt;khoa&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.lopsGet">
+            <summary>Sets the shim of SinhVienEntities.get_lops()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.lopsSetDbSetOflop">
+            <summary>Sets the shim of SinhVienEntities.set_lops(DbSet`1&lt;lop&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.monhocsGet">
+            <summary>Sets the shim of SinhVienEntities.get_monhocs()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.monhocsSetDbSetOfmonhoc">
+            <summary>Sets the shim of SinhVienEntities.set_monhocs(DbSet`1&lt;monhoc&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sinhviensGet">
+            <summary>Sets the shim of SinhVienEntities.get_sinhviens()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sinhviensSetDbSetOfsinhvien">
+            <summary>Sets the shim of SinhVienEntities.set_sinhviens(DbSet`1&lt;sinhvien&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sp_alterdiagramStringNullableOfInt32NullableOfInt32ByteArray">
+            <summary>Sets the shim of SinhVienEntities.sp_alterdiagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, Nullable`1&lt;Int32&gt; version, Byte[] definition)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sp_creatediagramStringNullableOfInt32NullableOfInt32ByteArray">
+            <summary>Sets the shim of SinhVienEntities.sp_creatediagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, Nullable`1&lt;Int32&gt; version, Byte[] definition)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sp_dropdiagramStringNullableOfInt32">
+            <summary>Sets the shim of SinhVienEntities.sp_dropdiagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sp_helpdiagramdefinitionStringNullableOfInt32">
+            <summary>Sets the shim of SinhVienEntities.sp_helpdiagramdefinition(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sp_helpdiagramsStringNullableOfInt32">
+            <summary>Sets the shim of SinhVienEntities.sp_helpdiagrams(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sp_renamediagramStringNullableOfInt32String">
+            <summary>Sets the shim of SinhVienEntities.sp_renamediagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, String new_diagramname)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sp_upgraddiagrams">
+            <summary>Sets the shim of SinhVienEntities.sp_upgraddiagrams()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sysdiagramsGet">
+            <summary>Sets the shim of SinhVienEntities.get_sysdiagrams()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.sysdiagramsSetDbSetOfsysdiagram">
+            <summary>Sets the shim of SinhVienEntities.set_sysdiagrams(DbSet`1&lt;sysdiagram&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.tongketsGet">
+            <summary>Sets the shim of SinhVienEntities.get_tongkets()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhVienEntities.AllInstances.tongketsSetDbSetOftongket">
+            <summary>Sets the shim of SinhVienEntities.set_tongkets(DbSet`1&lt;tongket&gt; value)</summary>
         </member>
         <member name="T:QLSV.Data.Fakes.ShimUser">
             <summary>Shim type of QLSV.Data.User</summary>
@@ -82,6 +286,12 @@
         <member name="P:QLSV.Data.Fakes.ShimUser.PasswordSetString">
             <summary>Sets the shim of User.set_Password(String value)</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.QuyenGet">
+            <summary>Sets the shim of User.get_Quyen()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.QuyenSetBoolean">
+            <summary>Sets the shim of User.set_Quyen(Boolean value)</summary>
+        </member>
         <member name="P:QLSV.Data.Fakes.ShimUser.TenDangNhapGet">
             <summary>Sets the shim of User.get_TenDangNhap()</summary>
         </member>
@@ -130,6 +340,12 @@
         <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.PasswordSetString">
             <summary>Sets the shim of User.set_Password(String value)</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.QuyenGet">
+            <summary>Sets the shim of User.get_Quyen()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.QuyenSetBoolean">
+            <summary>Sets the shim of User.set_Quyen(Boolean value)</summary>
+        </member>
         <member name="P:QLSV.Data.Fakes.ShimUser.AllInstances.TenDangNhapGet">
             <summary>Sets the shim of User.get_TenDangNhap()</summary>
         </member>
@@ -175,6 +391,1098 @@
         <member name="P:QLSV.Data.Fakes.ShimUserController.AllInstances.getUserStringString">
             <summary>Sets the shim of UserController.getUser(String tenDangNhap, String matkhau)</summary>
         </member>
+        <member name="T:QLSV.Data.Fakes.Shimaccount">
+            <summary>Shim type of QLSV.Data.account</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimaccount.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimaccount.#ctor(QLSV.Data.account)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimaccount.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimaccount.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.Constructor">
+            <summary>Sets the shim of account.account()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.masvGet">
+            <summary>Sets the shim of account.get_masv()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.masvSetString">
+            <summary>Sets the shim of account.set_masv(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.passwordGet">
+            <summary>Sets the shim of account.get_password()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.passwordSetString">
+            <summary>Sets the shim of account.set_password(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.quyenGet">
+            <summary>Sets the shim of account.get_quyen()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.quyenSetNullableOfBoolean">
+            <summary>Sets the shim of account.set_quyen(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.sinhvienGet">
+            <summary>Sets the shim of account.get_sinhvien()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.sinhvienSetsinhvien">
+            <summary>Sets the shim of account.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimaccount.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.AllInstances.masvGet">
+            <summary>Sets the shim of account.get_masv()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.AllInstances.masvSetString">
+            <summary>Sets the shim of account.set_masv(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.AllInstances.passwordGet">
+            <summary>Sets the shim of account.get_password()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.AllInstances.passwordSetString">
+            <summary>Sets the shim of account.set_password(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.AllInstances.quyenGet">
+            <summary>Sets the shim of account.get_quyen()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.AllInstances.quyenSetNullableOfBoolean">
+            <summary>Sets the shim of account.set_quyen(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.AllInstances.sinhvienGet">
+            <summary>Sets the shim of account.get_sinhvien()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimaccount.AllInstances.sinhvienSetsinhvien">
+            <summary>Sets the shim of account.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimbangdiem">
+            <summary>Shim type of QLSV.Data.bangdiem</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimbangdiem.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimbangdiem.#ctor(QLSV.Data.bangdiem)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimbangdiem.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimbangdiem.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.Constructor">
+            <summary>Sets the shim of bangdiem.bangdiem()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.diemthilan1Get">
+            <summary>Sets the shim of bangdiem.get_diemthilan1()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.diemthilan1SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_diemthilan1(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.diemthilan2Get">
+            <summary>Sets the shim of bangdiem.get_diemthilan2()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.diemthilan2SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_diemthilan2(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.diemtpGet">
+            <summary>Sets the shim of bangdiem.get_diemtp()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.diemtpSetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_diemtp(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.mamonhocGet">
+            <summary>Sets the shim of bangdiem.get_mamonhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.mamonhocSetString">
+            <summary>Sets the shim of bangdiem.set_mamonhoc(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.masvGet">
+            <summary>Sets the shim of bangdiem.get_masv()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.masvSetString">
+            <summary>Sets the shim of bangdiem.set_masv(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.monhocGet">
+            <summary>Sets the shim of bangdiem.get_monhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.monhocSetmonhoc">
+            <summary>Sets the shim of bangdiem.set_monhoc(monhoc value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.sinhvienGet">
+            <summary>Sets the shim of bangdiem.get_sinhvien()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.sinhvienSetsinhvien">
+            <summary>Sets the shim of bangdiem.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.sotietnghiGet">
+            <summary>Sets the shim of bangdiem.get_sotietnghi()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.sotietnghiSetNullableOfInt32">
+            <summary>Sets the shim of bangdiem.set_sotietnghi(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonhe10Get">
+            <summary>Sets the shim of bangdiem.get_tkmonhe10()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonhe10SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonhe10(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonhe4Get">
+            <summary>Sets the shim of bangdiem.get_tkmonhe4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonhe4SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonhe4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonhechuGet">
+            <summary>Sets the shim of bangdiem.get_tkmonhechu()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonhechuSetString">
+            <summary>Sets the shim of bangdiem.set_tkmonhechu(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonlan1he10Get">
+            <summary>Sets the shim of bangdiem.get_tkmonlan1he10()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonlan1he10SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonlan1he10(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonlan1he4Get">
+            <summary>Sets the shim of bangdiem.get_tkmonlan1he4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonlan1he4SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonlan1he4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonlan2he10Get">
+            <summary>Sets the shim of bangdiem.get_tkmonlan2he10()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonlan2he10SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonlan2he10(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonlan2he4Get">
+            <summary>Sets the shim of bangdiem.get_tkmonlan2he4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.tkmonlan2he4SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonlan2he4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.trangthaiGet">
+            <summary>Sets the shim of bangdiem.get_trangthai()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.trangthaiSetString">
+            <summary>Sets the shim of bangdiem.set_trangthai(String value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimbangdiem.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.diemthilan1Get">
+            <summary>Sets the shim of bangdiem.get_diemthilan1()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.diemthilan1SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_diemthilan1(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.diemthilan2Get">
+            <summary>Sets the shim of bangdiem.get_diemthilan2()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.diemthilan2SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_diemthilan2(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.diemtpGet">
+            <summary>Sets the shim of bangdiem.get_diemtp()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.diemtpSetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_diemtp(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.mamonhocGet">
+            <summary>Sets the shim of bangdiem.get_mamonhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.mamonhocSetString">
+            <summary>Sets the shim of bangdiem.set_mamonhoc(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.masvGet">
+            <summary>Sets the shim of bangdiem.get_masv()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.masvSetString">
+            <summary>Sets the shim of bangdiem.set_masv(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.monhocGet">
+            <summary>Sets the shim of bangdiem.get_monhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.monhocSetmonhoc">
+            <summary>Sets the shim of bangdiem.set_monhoc(monhoc value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.sinhvienGet">
+            <summary>Sets the shim of bangdiem.get_sinhvien()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.sinhvienSetsinhvien">
+            <summary>Sets the shim of bangdiem.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.sotietnghiGet">
+            <summary>Sets the shim of bangdiem.get_sotietnghi()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.sotietnghiSetNullableOfInt32">
+            <summary>Sets the shim of bangdiem.set_sotietnghi(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonhe10Get">
+            <summary>Sets the shim of bangdiem.get_tkmonhe10()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonhe10SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonhe10(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonhe4Get">
+            <summary>Sets the shim of bangdiem.get_tkmonhe4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonhe4SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonhe4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonhechuGet">
+            <summary>Sets the shim of bangdiem.get_tkmonhechu()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonhechuSetString">
+            <summary>Sets the shim of bangdiem.set_tkmonhechu(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonlan1he10Get">
+            <summary>Sets the shim of bangdiem.get_tkmonlan1he10()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonlan1he10SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonlan1he10(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonlan1he4Get">
+            <summary>Sets the shim of bangdiem.get_tkmonlan1he4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonlan1he4SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonlan1he4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonlan2he10Get">
+            <summary>Sets the shim of bangdiem.get_tkmonlan2he10()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonlan2he10SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonlan2he10(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonlan2he4Get">
+            <summary>Sets the shim of bangdiem.get_tkmonlan2he4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.tkmonlan2he4SetNullableOfSingle">
+            <summary>Sets the shim of bangdiem.set_tkmonlan2he4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.trangthaiGet">
+            <summary>Sets the shim of bangdiem.get_trangthai()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimbangdiem.AllInstances.trangthaiSetString">
+            <summary>Sets the shim of bangdiem.set_trangthai(String value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimkhoa">
+            <summary>Shim type of QLSV.Data.khoa</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimkhoa.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimkhoa.#ctor(QLSV.Data.khoa)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimkhoa.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimkhoa.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.Constructor">
+            <summary>Sets the shim of khoa.khoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.khoaIDataReaderSqlDataReader">
+            <summary>Sets the shim of khoa.khoaIDataReader(SqlDataReader dr)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.makhoaGet">
+            <summary>Sets the shim of khoa.get_makhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.makhoaSetString">
+            <summary>Sets the shim of khoa.set_makhoa(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.tenkhoaGet">
+            <summary>Sets the shim of khoa.get_tenkhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.tenkhoaSetString">
+            <summary>Sets the shim of khoa.set_tenkhoa(String value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimkhoa.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.AllInstances.khoaIDataReaderSqlDataReader">
+            <summary>Sets the shim of khoa.khoaIDataReader(SqlDataReader dr)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.AllInstances.makhoaGet">
+            <summary>Sets the shim of khoa.get_makhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.AllInstances.makhoaSetString">
+            <summary>Sets the shim of khoa.set_makhoa(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.AllInstances.tenkhoaGet">
+            <summary>Sets the shim of khoa.get_tenkhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimkhoa.AllInstances.tenkhoaSetString">
+            <summary>Sets the shim of khoa.set_tenkhoa(String value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimlop">
+            <summary>Shim type of QLSV.Data.lop</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimlop.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimlop.#ctor(QLSV.Data.lop)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimlop.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimlop.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.Constructor">
+            <summary>Sets the shim of lop.lop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.khoaGet">
+            <summary>Sets the shim of lop.get_khoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.khoaSetkhoa">
+            <summary>Sets the shim of lop.set_khoa(khoa value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.makhoaGet">
+            <summary>Sets the shim of lop.get_makhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.makhoaSetString">
+            <summary>Sets the shim of lop.set_makhoa(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.malopGet">
+            <summary>Sets the shim of lop.get_malop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.malopSetString">
+            <summary>Sets the shim of lop.set_malop(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.tenlopGet">
+            <summary>Sets the shim of lop.get_tenlop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.tenlopSetString">
+            <summary>Sets the shim of lop.set_tenlop(String value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimlop.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.khoaGet">
+            <summary>Sets the shim of lop.get_khoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.khoaSetkhoa">
+            <summary>Sets the shim of lop.set_khoa(khoa value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.makhoaGet">
+            <summary>Sets the shim of lop.get_makhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.makhoaSetString">
+            <summary>Sets the shim of lop.set_makhoa(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.malopGet">
+            <summary>Sets the shim of lop.get_malop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.malopSetString">
+            <summary>Sets the shim of lop.set_malop(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.tenlopGet">
+            <summary>Sets the shim of lop.get_tenlop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.tenlopSetString">
+            <summary>Sets the shim of lop.set_tenlop(String value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimmonhoc">
+            <summary>Shim type of QLSV.Data.monhoc</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimmonhoc.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimmonhoc.#ctor(QLSV.Data.monhoc)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimmonhoc.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimmonhoc.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.Constructor">
+            <summary>Sets the shim of monhoc.monhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.bangdiemsGet">
+            <summary>Sets the shim of monhoc.get_bangdiems()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.bangdiemsSetICollectionOfbangdiem">
+            <summary>Sets the shim of monhoc.set_bangdiems(ICollection`1&lt;bangdiem&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.hockyGet">
+            <summary>Sets the shim of monhoc.get_hocky()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.hockySetNullableOfInt32">
+            <summary>Sets the shim of monhoc.set_hocky(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.mamonhocGet">
+            <summary>Sets the shim of monhoc.get_mamonhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.mamonhocSetString">
+            <summary>Sets the shim of monhoc.set_mamonhoc(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.sotinchiGet">
+            <summary>Sets the shim of monhoc.get_sotinchi()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.sotinchiSetNullableOfInt32">
+            <summary>Sets the shim of monhoc.set_sotinchi(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.tenmonhocGet">
+            <summary>Sets the shim of monhoc.get_tenmonhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.tenmonhocSetString">
+            <summary>Sets the shim of monhoc.set_tenmonhoc(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.tongsotietGet">
+            <summary>Sets the shim of monhoc.get_tongsotiet()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.tongsotietSetNullableOfInt32">
+            <summary>Sets the shim of monhoc.set_tongsotiet(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimmonhoc.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.bangdiemsGet">
+            <summary>Sets the shim of monhoc.get_bangdiems()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.bangdiemsSetICollectionOfbangdiem">
+            <summary>Sets the shim of monhoc.set_bangdiems(ICollection`1&lt;bangdiem&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.hockyGet">
+            <summary>Sets the shim of monhoc.get_hocky()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.hockySetNullableOfInt32">
+            <summary>Sets the shim of monhoc.set_hocky(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.mamonhocGet">
+            <summary>Sets the shim of monhoc.get_mamonhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.mamonhocSetString">
+            <summary>Sets the shim of monhoc.set_mamonhoc(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.sotinchiGet">
+            <summary>Sets the shim of monhoc.get_sotinchi()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.sotinchiSetNullableOfInt32">
+            <summary>Sets the shim of monhoc.set_sotinchi(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.tenmonhocGet">
+            <summary>Sets the shim of monhoc.get_tenmonhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.tenmonhocSetString">
+            <summary>Sets the shim of monhoc.set_tenmonhoc(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.tongsotietGet">
+            <summary>Sets the shim of monhoc.get_tongsotiet()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimmonhoc.AllInstances.tongsotietSetNullableOfInt32">
+            <summary>Sets the shim of monhoc.set_tongsotiet(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimsinhvien">
+            <summary>Shim type of QLSV.Data.sinhvien</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsinhvien.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsinhvien.#ctor(QLSV.Data.sinhvien)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsinhvien.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsinhvien.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.Constructor">
+            <summary>Sets the shim of sinhvien.sinhvien()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.accountGet">
+            <summary>Sets the shim of sinhvien.get_account()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.accountSetaccount">
+            <summary>Sets the shim of sinhvien.set_account(account value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.bangdiemsGet">
+            <summary>Sets the shim of sinhvien.get_bangdiems()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.bangdiemsSetICollectionOfbangdiem">
+            <summary>Sets the shim of sinhvien.set_bangdiems(ICollection`1&lt;bangdiem&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.diachiGet">
+            <summary>Sets the shim of sinhvien.get_diachi()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.diachiSetString">
+            <summary>Sets the shim of sinhvien.set_diachi(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.gioitinhGet">
+            <summary>Sets the shim of sinhvien.get_gioitinh()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.gioitinhSetString">
+            <summary>Sets the shim of sinhvien.set_gioitinh(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.hotenGet">
+            <summary>Sets the shim of sinhvien.get_hoten()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.hotenSetString">
+            <summary>Sets the shim of sinhvien.set_hoten(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.lopGet">
+            <summary>Sets the shim of sinhvien.get_lop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.lopSetlop">
+            <summary>Sets the shim of sinhvien.set_lop(lop value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.malopGet">
+            <summary>Sets the shim of sinhvien.get_malop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.malopSetString">
+            <summary>Sets the shim of sinhvien.set_malop(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.masvGet">
+            <summary>Sets the shim of sinhvien.get_masv()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.masvSetString">
+            <summary>Sets the shim of sinhvien.set_masv(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.ngaysinhGet">
+            <summary>Sets the shim of sinhvien.get_ngaysinh()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.ngaysinhSetString">
+            <summary>Sets the shim of sinhvien.set_ngaysinh(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.tenkhoaGet">
+            <summary>Sets the shim of sinhvien.get_tenkhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.tenkhoaSetString">
+            <summary>Sets the shim of sinhvien.set_tenkhoa(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.tongketGet">
+            <summary>Sets the shim of sinhvien.get_tongket()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.tongketSettongket">
+            <summary>Sets the shim of sinhvien.set_tongket(tongket value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimsinhvien.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.accountGet">
+            <summary>Sets the shim of sinhvien.get_account()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.accountSetaccount">
+            <summary>Sets the shim of sinhvien.set_account(account value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.bangdiemsGet">
+            <summary>Sets the shim of sinhvien.get_bangdiems()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.bangdiemsSetICollectionOfbangdiem">
+            <summary>Sets the shim of sinhvien.set_bangdiems(ICollection`1&lt;bangdiem&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.diachiGet">
+            <summary>Sets the shim of sinhvien.get_diachi()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.diachiSetString">
+            <summary>Sets the shim of sinhvien.set_diachi(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.gioitinhGet">
+            <summary>Sets the shim of sinhvien.get_gioitinh()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.gioitinhSetString">
+            <summary>Sets the shim of sinhvien.set_gioitinh(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.hotenGet">
+            <summary>Sets the shim of sinhvien.get_hoten()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.hotenSetString">
+            <summary>Sets the shim of sinhvien.set_hoten(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.lopGet">
+            <summary>Sets the shim of sinhvien.get_lop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.lopSetlop">
+            <summary>Sets the shim of sinhvien.set_lop(lop value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.malopGet">
+            <summary>Sets the shim of sinhvien.get_malop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.malopSetString">
+            <summary>Sets the shim of sinhvien.set_malop(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.masvGet">
+            <summary>Sets the shim of sinhvien.get_masv()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.masvSetString">
+            <summary>Sets the shim of sinhvien.set_masv(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.ngaysinhGet">
+            <summary>Sets the shim of sinhvien.get_ngaysinh()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.ngaysinhSetString">
+            <summary>Sets the shim of sinhvien.set_ngaysinh(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.tenkhoaGet">
+            <summary>Sets the shim of sinhvien.get_tenkhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.tenkhoaSetString">
+            <summary>Sets the shim of sinhvien.set_tenkhoa(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.tongketGet">
+            <summary>Sets the shim of sinhvien.get_tongket()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsinhvien.AllInstances.tongketSettongket">
+            <summary>Sets the shim of sinhvien.set_tongket(tongket value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result">
+            <summary>Shim type of QLSV.Data.sp_helpdiagramdefinition_Result</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.#ctor(QLSV.Data.sp_helpdiagramdefinition_Result)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.Constructor">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.sp_helpdiagramdefinition_Result()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.definitionGet">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.get_definition()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.definitionSetByteArray">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.set_definition(Byte[] value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.versionGet">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.get_version()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.versionSetNullableOfInt32">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.set_version(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.AllInstances.definitionGet">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.get_definition()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.AllInstances.definitionSetByteArray">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.set_definition(Byte[] value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.AllInstances.versionGet">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.get_version()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagramdefinition_Result.AllInstances.versionSetNullableOfInt32">
+            <summary>Sets the shim of sp_helpdiagramdefinition_Result.set_version(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result">
+            <summary>Shim type of QLSV.Data.sp_helpdiagrams_Result</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.#ctor(QLSV.Data.sp_helpdiagrams_Result)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.Constructor">
+            <summary>Sets the shim of sp_helpdiagrams_Result.sp_helpdiagrams_Result()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.DatabaseGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_Database()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.DatabaseSetString">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_Database(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.IDGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_ID()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.IDSetInt32">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_ID(Int32 value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.NameGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_Name()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.NameSetString">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_Name(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.OwnerGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_Owner()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.OwnerIDGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_OwnerID()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.OwnerIDSetInt32">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_OwnerID(Int32 value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.OwnerSetString">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_Owner(String value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.DatabaseGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_Database()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.DatabaseSetString">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_Database(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.IDGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_ID()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.IDSetInt32">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_ID(Int32 value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.NameGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_Name()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.NameSetString">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_Name(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.OwnerGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_Owner()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.OwnerIDGet">
+            <summary>Sets the shim of sp_helpdiagrams_Result.get_OwnerID()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.OwnerIDSetInt32">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_OwnerID(Int32 value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsp_helpdiagrams_Result.AllInstances.OwnerSetString">
+            <summary>Sets the shim of sp_helpdiagrams_Result.set_Owner(String value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimsysdiagram">
+            <summary>Shim type of QLSV.Data.sysdiagram</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsysdiagram.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsysdiagram.#ctor(QLSV.Data.sysdiagram)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsysdiagram.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimsysdiagram.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.Constructor">
+            <summary>Sets the shim of sysdiagram.sysdiagram()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.definitionGet">
+            <summary>Sets the shim of sysdiagram.get_definition()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.definitionSetByteArray">
+            <summary>Sets the shim of sysdiagram.set_definition(Byte[] value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.diagram_idGet">
+            <summary>Sets the shim of sysdiagram.get_diagram_id()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.diagram_idSetInt32">
+            <summary>Sets the shim of sysdiagram.set_diagram_id(Int32 value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.nameGet">
+            <summary>Sets the shim of sysdiagram.get_name()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.nameSetString">
+            <summary>Sets the shim of sysdiagram.set_name(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.principal_idGet">
+            <summary>Sets the shim of sysdiagram.get_principal_id()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.principal_idSetInt32">
+            <summary>Sets the shim of sysdiagram.set_principal_id(Int32 value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.versionGet">
+            <summary>Sets the shim of sysdiagram.get_version()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.versionSetNullableOfInt32">
+            <summary>Sets the shim of sysdiagram.set_version(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimsysdiagram.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.definitionGet">
+            <summary>Sets the shim of sysdiagram.get_definition()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.definitionSetByteArray">
+            <summary>Sets the shim of sysdiagram.set_definition(Byte[] value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.diagram_idGet">
+            <summary>Sets the shim of sysdiagram.get_diagram_id()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.diagram_idSetInt32">
+            <summary>Sets the shim of sysdiagram.set_diagram_id(Int32 value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.nameGet">
+            <summary>Sets the shim of sysdiagram.get_name()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.nameSetString">
+            <summary>Sets the shim of sysdiagram.set_name(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.principal_idGet">
+            <summary>Sets the shim of sysdiagram.get_principal_id()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.principal_idSetInt32">
+            <summary>Sets the shim of sysdiagram.set_principal_id(Int32 value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.versionGet">
+            <summary>Sets the shim of sysdiagram.get_version()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimsysdiagram.AllInstances.versionSetNullableOfInt32">
+            <summary>Sets the shim of sysdiagram.set_version(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimtongket">
+            <summary>Shim type of QLSV.Data.tongket</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimtongket.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimtongket.#ctor(QLSV.Data.tongket)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimtongket.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Shimtongket.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.Constructor">
+            <summary>Sets the shim of tongket.tongket()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtkhe10Get">
+            <summary>Sets the shim of tongket.get_diemtkhe10()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtkhe10SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtkhe10(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtkhe4Get">
+            <summary>Sets the shim of tongket.get_diemtkhe4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtkhe4SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtkhe4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky1Get">
+            <summary>Sets the shim of tongket.get_diemtlky1()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky1SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky1(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky2Get">
+            <summary>Sets the shim of tongket.get_diemtlky2()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky2SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky2(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky3Get">
+            <summary>Sets the shim of tongket.get_diemtlky3()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky3SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky3(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky4Get">
+            <summary>Sets the shim of tongket.get_diemtlky4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky4SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky5Get">
+            <summary>Sets the shim of tongket.get_diemtlky5()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky5SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky5(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky6Get">
+            <summary>Sets the shim of tongket.get_diemtlky6()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky6SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky6(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky7Get">
+            <summary>Sets the shim of tongket.get_diemtlky7()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky7SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky7(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky8Get">
+            <summary>Sets the shim of tongket.get_diemtlky8()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky8SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky8(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky9Get">
+            <summary>Sets the shim of tongket.get_diemtlky9()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.diemtlky9SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky9(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.masvGet">
+            <summary>Sets the shim of tongket.get_masv()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.masvSetString">
+            <summary>Sets the shim of tongket.set_masv(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.sinhvienGet">
+            <summary>Sets the shim of tongket.get_sinhvien()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.sinhvienSetsinhvien">
+            <summary>Sets the shim of tongket.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.sotcdatGet">
+            <summary>Sets the shim of tongket.get_sotcdat()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.sotcdatSetNullableOfInt32">
+            <summary>Sets the shim of tongket.set_sotcdat(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Shimtongket.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtkhe10Get">
+            <summary>Sets the shim of tongket.get_diemtkhe10()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtkhe10SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtkhe10(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtkhe4Get">
+            <summary>Sets the shim of tongket.get_diemtkhe4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtkhe4SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtkhe4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky1Get">
+            <summary>Sets the shim of tongket.get_diemtlky1()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky1SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky1(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky2Get">
+            <summary>Sets the shim of tongket.get_diemtlky2()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky2SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky2(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky3Get">
+            <summary>Sets the shim of tongket.get_diemtlky3()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky3SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky3(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky4Get">
+            <summary>Sets the shim of tongket.get_diemtlky4()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky4SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky4(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky5Get">
+            <summary>Sets the shim of tongket.get_diemtlky5()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky5SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky5(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky6Get">
+            <summary>Sets the shim of tongket.get_diemtlky6()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky6SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky6(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky7Get">
+            <summary>Sets the shim of tongket.get_diemtlky7()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky7SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky7(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky8Get">
+            <summary>Sets the shim of tongket.get_diemtlky8()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky8SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky8(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky9Get">
+            <summary>Sets the shim of tongket.get_diemtlky9()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.diemtlky9SetNullableOfSingle">
+            <summary>Sets the shim of tongket.set_diemtlky9(Nullable`1&lt;Single&gt; value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.masvGet">
+            <summary>Sets the shim of tongket.get_masv()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.masvSetString">
+            <summary>Sets the shim of tongket.set_masv(String value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.sinhvienGet">
+            <summary>Sets the shim of tongket.get_sinhvien()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.sinhvienSetsinhvien">
+            <summary>Sets the shim of tongket.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.sotcdatGet">
+            <summary>Sets the shim of tongket.get_sotcdat()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimtongket.AllInstances.sotcdatSetNullableOfInt32">
+            <summary>Sets the shim of tongket.set_sotcdat(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.StubKhoaController">
+            <summary>Stub type of QLSV.Data.KhoaController</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubKhoaController.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubKhoaController.InitializeStub">
+            <summary>Initializes a new instance of type StubKhoaController</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubKhoaController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubKhoaController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubKhoaController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
         <member name="T:QLSV.Data.Fakes.StubSQLDataProvider">
             <summary>Stub type of QLSV.Data.SQLDataProvider</summary>
         </member>
@@ -191,6 +1499,114 @@
             <summary>Gets or sets the instance behavior.</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.StubSQLDataProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.StubSinhVienEntities">
+            <summary>Stub type of QLSV.Data.SinhVienEntities</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.InitializeStub">
+            <summary>Initializes a new instance of type StubSinhVienEntities</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of SinhVienEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of SinhVienEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.Sp_alterdiagramStringNullableOfInt32NullableOfInt32ByteArray">
+            <summary>Sets the stub of SinhVienEntities.sp_alterdiagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, Nullable`1&lt;Int32&gt; version, Byte[] definition)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.Sp_creatediagramStringNullableOfInt32NullableOfInt32ByteArray">
+            <summary>Sets the stub of SinhVienEntities.sp_creatediagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, Nullable`1&lt;Int32&gt; version, Byte[] definition)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.Sp_dropdiagramStringNullableOfInt32">
+            <summary>Sets the stub of SinhVienEntities.sp_dropdiagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.Sp_helpdiagramdefinitionStringNullableOfInt32">
+            <summary>Sets the stub of SinhVienEntities.sp_helpdiagramdefinition(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.Sp_helpdiagramsStringNullableOfInt32">
+            <summary>Sets the stub of SinhVienEntities.sp_helpdiagrams(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.Sp_renamediagramStringNullableOfInt32String">
+            <summary>Sets the stub of SinhVienEntities.sp_renamediagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, String new_diagramname)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.Sp_upgraddiagrams">
+            <summary>Sets the stub of SinhVienEntities.sp_upgraddiagrams()</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.StubSinhVienEntities.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.sp_alterdiagram(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Byte[])">
+            <summary>Sets the stub of SinhVienEntities.sp_alterdiagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, Nullable`1&lt;Int32&gt; version, Byte[] definition)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.sp_creatediagram(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Byte[])">
+            <summary>Sets the stub of SinhVienEntities.sp_creatediagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, Nullable`1&lt;Int32&gt; version, Byte[] definition)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.sp_dropdiagram(System.String,System.Nullable{System.Int32})">
+            <summary>Sets the stub of SinhVienEntities.sp_dropdiagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.sp_helpdiagramdefinition(System.String,System.Nullable{System.Int32})">
+            <summary>Sets the stub of SinhVienEntities.sp_helpdiagramdefinition(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.sp_helpdiagrams(System.String,System.Nullable{System.Int32})">
+            <summary>Sets the stub of SinhVienEntities.sp_helpdiagrams(String diagramname, Nullable`1&lt;Int32&gt; owner_id)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.sp_renamediagram(System.String,System.Nullable{System.Int32},System.String)">
+            <summary>Sets the stub of SinhVienEntities.sp_renamediagram(String diagramname, Nullable`1&lt;Int32&gt; owner_id, String new_diagramname)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.StubSinhVienEntities.sp_upgraddiagrams">
+            <summary>Sets the stub of SinhVienEntities.sp_upgraddiagrams()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubSinhVienEntities.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubSinhVienEntities.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.StubSinhVienEntities.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:QLSV.Data.Fakes.StubUser">
@@ -228,6 +1644,306 @@
         </member>
         <member name="P:QLSV.Data.Fakes.StubUserController.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubaccount">
+            <summary>Stub type of QLSV.Data.account</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubaccount.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubaccount.AttachBackingFieldTosinhvien">
+            <summary>Attaches delegates to emulate Stubaccount.sinhvien as a property with a backing field.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubaccount.InitializeStub">
+            <summary>Initializes a new instance of type Stubaccount</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubaccount.SinhvienGet">
+            <summary>Sets the stub of account.get_sinhvien()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubaccount.SinhvienSetsinhvien">
+            <summary>Sets the stub of account.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubaccount.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubaccount.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubaccount.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubaccount.sinhvien">
+            <summary>Sets the stub of account.get_sinhvien()</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubbangdiem">
+            <summary>Stub type of QLSV.Data.bangdiem</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubbangdiem.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubbangdiem.AttachBackingFieldTomonhoc">
+            <summary>Attaches delegates to emulate Stubbangdiem.monhoc as a property with a backing field.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubbangdiem.AttachBackingFieldTosinhvien">
+            <summary>Attaches delegates to emulate Stubbangdiem.sinhvien as a property with a backing field.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubbangdiem.InitializeStub">
+            <summary>Initializes a new instance of type Stubbangdiem</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubbangdiem.MonhocGet">
+            <summary>Sets the stub of bangdiem.get_monhoc()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubbangdiem.MonhocSetmonhoc">
+            <summary>Sets the stub of bangdiem.set_monhoc(monhoc value)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubbangdiem.SinhvienGet">
+            <summary>Sets the stub of bangdiem.get_sinhvien()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubbangdiem.SinhvienSetsinhvien">
+            <summary>Sets the stub of bangdiem.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubbangdiem.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubbangdiem.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubbangdiem.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubbangdiem.monhoc">
+            <summary>Sets the stub of bangdiem.get_monhoc()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubbangdiem.sinhvien">
+            <summary>Sets the stub of bangdiem.get_sinhvien()</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubkhoa">
+            <summary>Stub type of QLSV.Data.khoa</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubkhoa.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubkhoa.InitializeStub">
+            <summary>Initializes a new instance of type Stubkhoa</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubkhoa.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubkhoa.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubkhoa.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stublop">
+            <summary>Stub type of QLSV.Data.lop</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stublop.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stublop.AttachBackingFieldTokhoa">
+            <summary>Attaches delegates to emulate Stublop.khoa as a property with a backing field.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stublop.InitializeStub">
+            <summary>Initializes a new instance of type Stublop</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stublop.KhoaGet">
+            <summary>Sets the stub of lop.get_khoa()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stublop.KhoaSetkhoa">
+            <summary>Sets the stub of lop.set_khoa(khoa value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stublop.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stublop.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stublop.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stublop.khoa">
+            <summary>Sets the stub of lop.get_khoa()</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubmonhoc">
+            <summary>Stub type of QLSV.Data.monhoc</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubmonhoc.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubmonhoc.AttachBackingFieldTobangdiems">
+            <summary>Attaches delegates to emulate Stubmonhoc.bangdiems as a property with a backing field.</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubmonhoc.BangdiemsGet">
+            <summary>Sets the stub of monhoc.get_bangdiems()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubmonhoc.BangdiemsSetICollectionOfbangdiem">
+            <summary>Sets the stub of monhoc.set_bangdiems(ICollection`1&lt;bangdiem&gt; value)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubmonhoc.InitializeStub">
+            <summary>Initializes a new instance of type Stubmonhoc</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubmonhoc.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubmonhoc.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubmonhoc.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubmonhoc.bangdiems">
+            <summary>Sets the stub of monhoc.get_bangdiems()</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubsinhvien">
+            <summary>Stub type of QLSV.Data.sinhvien</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsinhvien.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubsinhvien.AccountGet">
+            <summary>Sets the stub of sinhvien.get_account()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubsinhvien.AccountSetaccount">
+            <summary>Sets the stub of sinhvien.set_account(account value)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsinhvien.AttachBackingFieldToaccount">
+            <summary>Attaches delegates to emulate Stubsinhvien.account as a property with a backing field.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsinhvien.AttachBackingFieldTobangdiems">
+            <summary>Attaches delegates to emulate Stubsinhvien.bangdiems as a property with a backing field.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsinhvien.AttachBackingFieldTolop">
+            <summary>Attaches delegates to emulate Stubsinhvien.lop as a property with a backing field.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsinhvien.AttachBackingFieldTotongket">
+            <summary>Attaches delegates to emulate Stubsinhvien.tongket as a property with a backing field.</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubsinhvien.BangdiemsGet">
+            <summary>Sets the stub of sinhvien.get_bangdiems()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubsinhvien.BangdiemsSetICollectionOfbangdiem">
+            <summary>Sets the stub of sinhvien.set_bangdiems(ICollection`1&lt;bangdiem&gt; value)</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsinhvien.InitializeStub">
+            <summary>Initializes a new instance of type Stubsinhvien</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubsinhvien.LopGet">
+            <summary>Sets the stub of sinhvien.get_lop()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubsinhvien.LopSetlop">
+            <summary>Sets the stub of sinhvien.set_lop(lop value)</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubsinhvien.TongketGet">
+            <summary>Sets the stub of sinhvien.get_tongket()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubsinhvien.TongketSettongket">
+            <summary>Sets the stub of sinhvien.set_tongket(tongket value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsinhvien.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsinhvien.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsinhvien.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsinhvien.account">
+            <summary>Sets the stub of sinhvien.get_account()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsinhvien.bangdiems">
+            <summary>Sets the stub of sinhvien.get_bangdiems()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsinhvien.lop">
+            <summary>Sets the stub of sinhvien.get_lop()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsinhvien.tongket">
+            <summary>Sets the stub of sinhvien.get_tongket()</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubsp_helpdiagramdefinition_Result">
+            <summary>Stub type of QLSV.Data.sp_helpdiagramdefinition_Result</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsp_helpdiagramdefinition_Result.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsp_helpdiagramdefinition_Result.InitializeStub">
+            <summary>Initializes a new instance of type Stubsp_helpdiagramdefinition_Result</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsp_helpdiagramdefinition_Result.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsp_helpdiagramdefinition_Result.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsp_helpdiagramdefinition_Result.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubsp_helpdiagrams_Result">
+            <summary>Stub type of QLSV.Data.sp_helpdiagrams_Result</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsp_helpdiagrams_Result.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsp_helpdiagrams_Result.InitializeStub">
+            <summary>Initializes a new instance of type Stubsp_helpdiagrams_Result</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsp_helpdiagrams_Result.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsp_helpdiagrams_Result.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsp_helpdiagrams_Result.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubsysdiagram">
+            <summary>Stub type of QLSV.Data.sysdiagram</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsysdiagram.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubsysdiagram.InitializeStub">
+            <summary>Initializes a new instance of type Stubsysdiagram</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsysdiagram.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsysdiagram.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubsysdiagram.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:QLSV.Data.Fakes.Stubtongket">
+            <summary>Stub type of QLSV.Data.tongket</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubtongket.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubtongket.AttachBackingFieldTosinhvien">
+            <summary>Attaches delegates to emulate Stubtongket.sinhvien as a property with a backing field.</summary>
+        </member>
+        <member name="M:QLSV.Data.Fakes.Stubtongket.InitializeStub">
+            <summary>Initializes a new instance of type Stubtongket</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubtongket.SinhvienGet">
+            <summary>Sets the stub of tongket.get_sinhvien()</summary>
+        </member>
+        <member name="F:QLSV.Data.Fakes.Stubtongket.SinhvienSetsinhvien">
+            <summary>Sets the stub of tongket.set_sinhvien(sinhvien value)</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubtongket.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubtongket.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubtongket.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Stubtongket.sinhvien">
+            <summary>Sets the stub of tongket.get_sinhvien()</summary>
         </member>
     </members>
 </doc>

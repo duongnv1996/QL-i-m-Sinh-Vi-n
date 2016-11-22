@@ -10,7 +10,8 @@ namespace QLSV.Data
 {
     public class SQLDataProvider
     {
-        String strConnection = "Data Source=DESKTOP-5G4NPFD\\SQLEXPRESS;Initial Catalog=SinhVien;User ID=sa;Password=718295";
+        // ket noi Duong  : Data Source=MAYTINH-JRUTQDS;Initial Catalog=SinhVien;Persist Security Info=True;User ID=sa;Password=123456
+        String strConnection = "Data Source=MAYTINH-JRUTQDS;Initial Catalog=SinhVien;Persist Security Info=True;User ID=sa;Password=123456";
        static SqlConnection conn;
         public SQLDataProvider() {
             if(conn ==null)

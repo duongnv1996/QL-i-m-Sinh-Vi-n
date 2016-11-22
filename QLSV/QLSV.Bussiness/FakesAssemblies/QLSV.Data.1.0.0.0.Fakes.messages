@@ -1,4 +1,4 @@
-D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\Fakes\QLSV.Data.fakes : warning : Cannot generate stub for QLSV.Data.Properties.Resources: type is not visible to exported or assembly(QLSV.Data.1.0.0.0.Fakes).
-D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\Fakes\QLSV.Data.fakes : warning : Cannot generate stub for QLSV.Data.Properties.Settings: type is sealed.
-D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\Fakes\QLSV.Data.fakes : warning : Cannot generate shim for QLSV.Data.Properties.Resources: type is not visible to exported or assembly(QLSV.Data.1.0.0.0.Fakes).
-D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\Fakes\QLSV.Data.fakes : warning : Cannot generate shim for QLSV.Data.Properties.Settings: type is not visible to exported or assembly(QLSV.Data.1.0.0.0.Fakes).
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\Fakes\QLSV.Data.fakes : warning : Cannot generate stub for QLSV.Data.Properties.Resources: type is not visible to exported or assembly(QLSV.Data.1.0.0.0.Fakes).
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\Fakes\QLSV.Data.fakes : warning : Cannot generate stub for QLSV.Data.Properties.Settings: type is sealed.
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\Fakes\QLSV.Data.fakes : warning : Cannot generate shim for QLSV.Data.Properties.Resources: type is not visible to exported or assembly(QLSV.Data.1.0.0.0.Fakes).
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\Fakes\QLSV.Data.fakes : warning : Cannot generate shim for QLSV.Data.Properties.Settings: type is not visible to exported or assembly(QLSV.Data.1.0.0.0.Fakes).

@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>d1e37f92-9a57-4a33-aacf-db2134505fd5</ProjectGuid>
+    <ProjectGuid>70618969-db33-4f86-b881-7e28cf43191d</ProjectGuid>
     <!-- update GUID here -->
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -50,8 +50,23 @@
       <Aliases>mqttf</Aliases>
     </Reference>
     <Reference Include="QLSV.Data">
-      <HintPath>E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\QLSV.Data.dll</HintPath>
+      <HintPath>C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\QLSV.Data.dll</HintPath>
       <Aliases>qlsvd</Aliases>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\EntityFramework.dll</HintPath>
+      <Aliases>ef</Aliases>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Entity.dll</HintPath>
+      <Aliases>sde</Aliases>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+      <Aliases>global</Aliases>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Data">
@@ -59,8 +74,8 @@
       <Aliases>global</Aliases>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll</HintPath>
       <Aliases>global</Aliases>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
