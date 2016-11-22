@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>92d1d7d7-4da5-4236-91cb-da4c4910bc22</ProjectGuid>
+    <ProjectGuid>d1e37f92-9a57-4a33-aacf-db2134505fd5</ProjectGuid>
     <!-- update GUID here -->
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -50,7 +50,7 @@
       <Aliases>mqttf</Aliases>
     </Reference>
     <Reference Include="QLSV.Data">
-      <HintPath>D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\QLSV.Data.dll</HintPath>
+      <HintPath>E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\QLSV.Data.dll</HintPath>
       <Aliases>qlsvd</Aliases>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>

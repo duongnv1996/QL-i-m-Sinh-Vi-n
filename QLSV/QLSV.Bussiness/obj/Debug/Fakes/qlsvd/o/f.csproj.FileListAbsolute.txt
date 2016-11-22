@@ -16,3 +16,12 @@ D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\q
 D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\f.csprojResolveAssemblyReference.cache
 D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.dll
 D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.pdb
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.xml
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.dll
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.pdb
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.dll
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.pdb
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\f.csprojResolveAssemblyReference.cache
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.dll
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.pdb
