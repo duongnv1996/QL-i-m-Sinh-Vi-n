@@ -27,3 +27,32 @@ D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fa
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.dll
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.pdb
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.csprojResolveAssemblyReference.cache
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Bussiness.dll.config
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Bussiness.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Bussiness.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Data.1.0.0.0.Fakes.fakesconfig
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Data.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Data.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.csprojFakesResolveAssemblyReference.cache
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\fakes.args
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\Microsoft.QualityTools.Testing.Fakes.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.1.0.0.0.Fakes.xml
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\f.ah
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\f.ch
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\f.cs
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\f.csproj
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\f.fakes
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\f.fakesconfig
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\f.csproj.FileListAbsolute.txt
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\f.csprojResolveAssemblyReference.cache
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.pdb
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.csprojResolveAssemblyReference.cache
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.Properties.Resources.resources
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.csproj.GenerateResource.Cache
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.dll
+D:\LanguageProgram\cSharp\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.pdb
