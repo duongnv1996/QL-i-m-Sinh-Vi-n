@@ -16,4 +16,14 @@ D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fa
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\f.csprojResolveAssemblyReference.cache
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.dll
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\o\QLSV.Data.1.0.0.0.Fakes.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Bussiness.dll.config
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Bussiness.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Bussiness.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Data.1.0.0.0.Fakes.fakesconfig
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Data.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\bin\Debug\QLSV.Data.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\Fakes\qlsvd\b\QLSV.Data.pdb
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.dll
+D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.pdb
 D:\LanguageProgram\lap trinh C[C++]\source code\QLSV\QLSV.Bussiness\obj\Debug\QLSV.Bussiness.csprojResolveAssemblyReference.cache

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLSV.Bussiness;
+using QLSV.Data;
 
 namespace QLSV
 {
@@ -85,6 +87,14 @@ namespace QLSV
         }
 
         private void btn_dangnhap_Click(object sender, EventArgs e) {
+
+            MyService service = new MyService();
+            User user = service.dangNhap(ll1.Text, lltxtmk.Text);
+            if (user != null) {
+                lbChucVu.Text = "Sinh Viên";
+                lbKhoa.Text = user.TenKhoa;
+                lbTen.Text = user.HoTen;
+            }
             //collapseToolbar();
             animationVisiableNav();
            

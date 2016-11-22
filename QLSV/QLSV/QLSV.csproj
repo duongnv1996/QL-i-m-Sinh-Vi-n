@@ -188,6 +188,16 @@
   <ItemGroup>
     <None Include="resources\Image1.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLSV.Bussiness\QLSV.Bussiness.csproj">
+      <Project>{a2525497-5680-4df6-bc78-f35a639694eb}</Project>
+      <Name>QLSV.Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLSV.Data\QLSV.Data.csproj">
+      <Project>{35ba2c6d-3662-41e4-b2be-1ccfc7a7365b}</Project>
+      <Name>QLSV.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
