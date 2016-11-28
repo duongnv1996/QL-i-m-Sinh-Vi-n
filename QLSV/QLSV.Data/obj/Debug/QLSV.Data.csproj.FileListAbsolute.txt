@@ -22,3 +22,13 @@ C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\obj\Debug\QLSV.Data.pdb
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\EntityFramework.dll
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\EntityFramework.xml
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\obj\Debug\QLSV.Data.csprojResolveAssemblyReference.cache
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\QLSV.Data.dll.config
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\QLSV.Data.dll
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\QLSV.Data.pdb
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\EntityFramework.dll
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\bin\Debug\EntityFramework.xml
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\obj\Debug\QLSV.Data.csprojResolveAssemblyReference.cache
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\obj\Debug\QLSV.Data.Properties.Resources.resources
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\obj\Debug\QLSV.Data.csproj.GenerateResource.Cache
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\obj\Debug\QLSV.Data.dll
+E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV.Data\obj\Debug\QLSV.Data.pdb

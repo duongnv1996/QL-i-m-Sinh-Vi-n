@@ -49,6 +49,7 @@
   <PropertyGroup>
     <StartupObject>QLSV.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.51">
       <HintPath>C:\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu_UI_1.5\Bunifu_UI_v1.51.dll</HintPath>

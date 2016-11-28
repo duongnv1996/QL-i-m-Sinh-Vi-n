@@ -6,30 +6,50 @@
 //    Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
+using System.Data.Sql;
+using System.Data.SqlClient;
 namespace QLSV.Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class bangdiem
+    public class bangdiem
     {
+        public bangdiem()
+        {
+
+        }
         public string masv { get; set; }
         public string mamonhoc { get; set; }
-        public Nullable<float> diemtp { get; set; }
-        public Nullable<float> diemthilan1 { get; set; }
-        public Nullable<float> diemthilan2 { get; set; }
-        public Nullable<float> tkmonlan1he10 { get; set; }
-        public Nullable<float> tkmonlan1he4 { get; set; }
-        public Nullable<float> tkmonlan2he10 { get; set; }
-        public Nullable<float> tkmonlan2he4 { get; set; }
-        public Nullable<float> tkmonhe10 { get; set; }
-        public Nullable<float> tkmonhe4 { get; set; }
+        public string diemtp { get; set; }
+        public string diemthilan1 { get; set; }
+        public string diemthilan2 { get; set; }
+        public string tkmonlan1he10 { get; set; }
+        public string tkmonlan1he4 { get; set; }
+        public string tkmonlan2he10 { get; set; }
+        public string tkmonlan2he4 { get; set; }
+        public string tkmonhe10 { get; set; }
+        public string tkmonhe4 { get; set; }
         public string tkmonhechu { get; set; }
-        public Nullable<int> sotietnghi { get; set; }
+        public string sotietnghi { get; set; }
         public string trangthai { get; set; }
-    
-        public virtual monhoc monhoc { get; set; }
-        public virtual sinhvien sinhvien { get; set; }
+
+        public void bangdiemIDataReader(SqlDataReader dr)
+        {
+            masv = dr["masv"] is DBNull ? String.Empty : dr["masv"].ToString();
+            mamonhoc = dr["mamonhoc"] is DBNull ? String.Empty : dr["mamonhoc"].ToString();
+            diemtp = dr["diemtp"] is DBNull ? String.Empty : dr["diemtp"].ToString();
+            diemthilan1 = dr["diemthilan1"] is DBNull ? String.Empty : dr["diemthilan1"].ToString();
+            diemthilan2 = dr["diemthilan2"] is DBNull ? String.Empty : dr["diemthilan2"].ToString();
+            tkmonlan1he10 = dr["tkmonlan1he10"] is DBNull ? String.Empty : dr["tkmonlan1he10"].ToString();
+            tkmonlan1he4 = dr["tkmonlan1he4"] is DBNull ? String.Empty : dr["tkmonlan1he4"].ToString();
+            tkmonlan2he10 = dr["tkmonlan2he10"] is DBNull ? String.Empty : dr["tkmonlan2he10"].ToString();
+            tkmonlan2he4 = dr["tkmonlan2he4"] is DBNull ? String.Empty : dr["tkmonlan2he4"].ToString();
+            tkmonhe10 = dr["tkmonhe10"] is DBNull ? String.Empty : dr["tkmonhe10"].ToString();
+            tkmonhe4 = dr["tkmonhe4"] is DBNull ? String.Empty : dr["tkmonhe4"].ToString();
+            tkmonhechu = dr["tkmonhechu"] is DBNull ? String.Empty : dr["tkmonhechu"].ToString();
+            sotietnghi = dr["sotietnghi"] is DBNull ? String.Empty : dr["sotietnghi"].ToString();
+            trangthai = dr["trangthai"] is DBNull ? String.Empty : dr["trangthai"].ToString();
+        }
     }
 }

@@ -20,8 +20,9 @@ namespace QLSV.Data
                 result = new User();
                 result.UserIDataReader(reader);
             }
+            reader.Close();
             return result;
-
+         
         }
 
 

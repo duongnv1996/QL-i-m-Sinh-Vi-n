@@ -8,29 +8,27 @@ using System.Data.Sql;
 
 namespace QLSV.Data
 {
-    public class KhoaController : SQLDataProvider
+    public class BangDiemController : SQLDataProvider
     {
-        public List<khoa> getListKhoa()
+        public List<bangdiem> getListBangdiem()
         {
-            List<khoa> list = new List<khoa>();
-            String query = "Select * from khoa";
+            List<bangdiem> list = new List<bangdiem>();
+            String query = "Select * from bangdiem";
             try
             {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    khoa k = new khoa();
-                    k.khoaIDataReader(reader);
-                    list.Add(k);
+                    bangdiem b = new bangdiem();
+                    b.bangdiemIDataReader(reader);
+                    list.Add(b);
                 }
                 reader.Close();
-
-
             }
             catch (Exception e)
             {
-                System.Console.WriteLine(e.Message);
+
             }
             return list;
         }

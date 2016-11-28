@@ -3,34 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace QLSV.Data
 {
-    public class KhoaController : SQLDataProvider
+    public class LopController : SQLDataProvider
     {
-        public List<khoa> getListKhoa()
+        public List<lop> getListLop()
         {
-            List<khoa> list = new List<khoa>();
-            String query = "Select * from khoa";
+            List<lop> list = new List<lop>();
+            String query = "Select * from lop";
             try
             {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    khoa k = new khoa();
-                    k.khoaIDataReader(reader);
-                    list.Add(k);
+                    lop l = new lop();
+                    l.lopIDataReader(reader);
+                    list.Add(l);
                 }
                 reader.Close();
-
-
             }
             catch (Exception e)
             {
-                System.Console.WriteLine(e.Message);
             }
             return list;
         }

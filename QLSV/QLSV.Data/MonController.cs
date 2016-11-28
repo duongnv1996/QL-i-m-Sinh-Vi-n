@@ -8,29 +8,27 @@ using System.Data.Sql;
 
 namespace QLSV.Data
 {
-    public class KhoaController : SQLDataProvider
+    public class MonController : SQLDataProvider
     {
-        public List<khoa> getListKhoa()
+        public List<monhoc> getListMon()
         {
-            List<khoa> list = new List<khoa>();
-            String query = "Select * from khoa";
+            List<monhoc> list = new List<monhoc>();
+            String query = "Select * from monhoc";
             try
             {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    khoa k = new khoa();
-                    k.khoaIDataReader(reader);
-                    list.Add(k);
+                    monhoc m = new monhoc();
+                    m.monIDataReader(reader);
+                    list.Add(m);
                 }
                 reader.Close();
-
-
             }
             catch (Exception e)
             {
-                System.Console.WriteLine(e.Message);
+
             }
             return list;
         }

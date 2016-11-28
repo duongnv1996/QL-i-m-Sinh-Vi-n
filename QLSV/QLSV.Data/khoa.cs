@@ -12,20 +12,21 @@ namespace QLSV.Data
 {
     using System;
     using System.Collections.Generic;
-    
-    public  class khoa
+
+    public class khoa
     {
         public khoa()
         {
-           
+
         }
-    
+
         public string makhoa { get; set; }
         public string tenkhoa { get; set; }
 
-      
-        public void khoaIDataReader(SqlDataReader dr) {
-            
+
+        public void khoaIDataReader(SqlDataReader dr)
+        {
+
             makhoa = dr["makhoa"] is DBNull ? String.Empty : dr["makhoa"].ToString();
             tenkhoa = dr["tenkhoa"] is DBNull ? String.Empty : dr["tenkhoa"].ToString();
 

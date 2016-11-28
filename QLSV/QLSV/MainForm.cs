@@ -18,47 +18,58 @@ namespace QLSV
         const int SIZE_AVT_MEDIUM = 80;
         const int SIZE_WITDH_COLLAPSE = 54;
         const int SIZE_WITDH_EXPANDE = 300;
-        KhoaSerivice khoaSV ;
+
+        KhoaSerivice khoaSV;
+        LopSerivice lopSV;
+        MonSerivices monSV;
+        SinhvienSerivices sinhvienSV;
+        BangdiemSerivices bangdiemSV;
+
         bang bangKhoa;
-        public MainForm() {
+
+        List<khoa> listKhoa = new List<khoa>();
+        List<lop> listLop = new List<lop>();
+        List<monhoc> listMon = new List<monhoc>();
+        List<sinhvien> listSinhvien = new List<sinhvien>();
+        List<bangdiem> listBangdiem = new List<bangdiem>();
+
+        public MainForm()
+        {
             InitializeComponent();
 
         }
 
-        private void MainForm_Load(object sender, EventArgs e) {
-          
+        private void MainForm_Load(object sender, EventArgs e)
+        {
             bangKhoa = new bang();
         }
 
-
-
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e) {
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
 
-
-        private void hideLogin() {
-
-           
-            
+        private void hideLogin()
+        {
             animatorLogin.Show(panelMenu);
             panelMenu.Visible = false;
         }
 
-        private void animationVisiableNav() {
+        private void animationVisiableNav()
+        {
             avt.Width = SIZE_AVT_MEDIUM;
             avt.Height = SIZE_AVT_MEDIUM;
             PanelNav.Width = SIZE_WITDH_EXPANDE;
             PanelNav.Visible = false;
             animatorNav.Show(PanelNav);
             bangKhoa.Width = panelMain.Width;
-            bangKhoa.Height = panelMain.Height;                 
+            bangKhoa.Height = panelMain.Height;
         }
-        private void collapseNav() {
+
+        private void collapseNav()
+        {
             avt.Width = SIZE_AVT_MINI;
             avt.Height = SIZE_AVT_MINI;
-
             PanelNav.Visible = false;
             PanelNav.Width = SIZE_WITDH_COLLAPSE;
             animator.Show(PanelNav);
@@ -66,70 +77,82 @@ namespace QLSV
             bangKhoa.Height = panelMain.Height;
         }
 
-        private void ll1_Enter(object sender, EventArgs e) {
+        private void ll1_Enter(object sender, EventArgs e)
+        {
             ll1.Text = "";
-
-
         }
 
-        private void lltxtmk_Enter(object sender, EventArgs e) {
+        private void lltxtmk_Enter(object sender, EventArgs e)
+        {
             lltxtmk.Text = "";
             lltxtmk.UseSystemPasswordChar = true;
         }
 
-        private void lltxtmk_Leave_1(object sender, EventArgs e) {
-            if (lltxtmk.Text.Equals("")) {
+        private void lltxtmk_Leave_1(object sender, EventArgs e)
+        {
+            if (lltxtmk.Text.Equals(""))
+            {
                 lltxtmk.Text = "Mật khẩu";
                 lltxtmk.UseSystemPasswordChar = false;
-
             }
         }
 
-        private void ll1_Leave(object sender, EventArgs e) {
-            if (ll1.Text.Equals("")) {
+        private void ll1_Leave(object sender, EventArgs e)
+        {
+            if (ll1.Text.Equals(""))
+            {
                 ll1.Text = "Tên đăng nhập";
             }
         }
 
-        private void btn_dangnhap_Click(object sender, EventArgs e) {
+        private void btn_dangnhap_Click(object sender, EventArgs e)
+        {
             khoaSV = new KhoaSerivice(); ;
             MyService service = new MyService();
             User user = service.dangNhap(ll1.Text, lltxtmk.Text);
-            if (user != null) {
-                lbLop.Text =user.Lop+" - "+ user.TenKhoa;
+            if (user != null)
+            {
+                lbLop.Text = user.Lop + " - " + user.TenKhoa;
                 lbNgaySinh.Text = user.NgaySinh;
                 lbTen.Text = user.HoTen;
             }
-
+            else
+            {
+                MessageBox.Show("Sai mat khau hoac tai khoan");
+                return;
+            }
             //collapseToolbar();
             animationVisiableNav();
-           
             hideLogin();
-         
             panelMain.Visible = true;
+            this.panelMain.Controls.Add(bangKhoa);
+        
         }
 
-        private void PanelNav_Paint(object sender, PaintEventArgs e) {
+        private void PanelNav_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e) {
-           khoaSV = new KhoaSerivice();
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            if (khoaSV == null) khoaSV = new KhoaSerivice();
 
-           bangKhoa.hienList(khoaSV.getDsKhoa());
+            listKhoa.Clear();
+            listKhoa.AddRange(khoaSV.getDsKhoa());
+            bangKhoa.hienList(listKhoa);
             bangKhoa.Width = panelMain.Width;
             bangKhoa.Height = panelMain.Height;
-            bangKhoa.Anchor =  AnchorStyles.Left ;
-        
-            this.panelMain.Controls.Add(bangKhoa);
+            bangKhoa.Anchor = AnchorStyles.Left;
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
-        private void panelMenu_Paint(object sender, PaintEventArgs e) {
-
-        }
-
-        private void bunifuImageButton2_Click(object sender, EventArgs e) {
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
             //if (PanelNav.Width == SIZE_WITDH_COLLAPSE) {
             //    animationVisiableNav();
             //} else {
@@ -138,8 +161,49 @@ namespace QLSV
             //}
         }
 
-        private void btnLop_Click(object sender, EventArgs e) {
-          
+        private void btnLop_Click(object sender, EventArgs e)
+        {
+            if (lopSV == null) lopSV = new LopSerivice();
+            listLop.Clear();
+            listLop.AddRange(lopSV.getDsLop());
+            bangKhoa.hienList(listLop);
+            bangKhoa.Width = panelMain.Width;
+            bangKhoa.Height = panelMain.Height;
+            bangKhoa.Anchor = AnchorStyles.Left;
+           
+        }
+
+        private void btnMon_Click(object sender, EventArgs e)
+        {
+            if (monSV == null) monSV = new MonSerivices();
+            listMon.Clear();
+            listMon.AddRange(monSV.getDsMon());
+            bangKhoa.hienList(listMon);
+            bangKhoa.Width = panelMain.Width;
+            bangKhoa.Height = panelMain.Height;
+            bangKhoa.Anchor = AnchorStyles.Left;
+        }
+
+        private void btnSinhVien_Click(object sender, EventArgs e)
+        {
+            if (sinhvienSV == null) sinhvienSV = new SinhvienSerivices();
+            listSinhvien.Clear();
+            listSinhvien.AddRange(sinhvienSV.getDsSinhvien());
+            bangKhoa.hienList(listSinhvien);
+            bangKhoa.Width = panelMain.Width;
+            bangKhoa.Height = panelMain.Height;
+            bangKhoa.Anchor = AnchorStyles.Left;
+        }
+
+        private void btnDiem_Click(object sender, EventArgs e)
+        {
+            if (bangdiemSV == null) bangdiemSV = new BangdiemSerivices();
+            listBangdiem.Clear();
+            listBangdiem.AddRange(bangdiemSV.getDsBangdiem());
+            bangKhoa.hienList(listBangdiem);
+            bangKhoa.Width = panelMain.Width;
+            bangKhoa.Height = panelMain.Height;
+            bangKhoa.Anchor = AnchorStyles.Left;
         }
 
     }

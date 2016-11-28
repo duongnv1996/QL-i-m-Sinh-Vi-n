@@ -6,25 +6,34 @@
 //    Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace QLSV.Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class monhoc
+    public  class monhoc
     {
         public monhoc()
         {
-            this.bangdiems = new HashSet<bangdiem>();
+            
         }
     
         public string mamonhoc { get; set; }
         public string tenmonhoc { get; set; }
-        public Nullable<int> tongsotiet { get; set; }
-        public Nullable<int> sotinchi { get; set; }
-        public Nullable<int> hocky { get; set; }
-    
-        public virtual ICollection<bangdiem> bangdiems { get; set; }
+        public string tongsotiet { get; set; }
+        public string sotinchi { get; set; }
+        public string hocky { get; set; }
+
+        public void monIDataReader(SqlDataReader dr)
+        {
+            mamonhoc = dr["mamonhoc"] is DBNull ? String.Empty : dr["mamonhoc"].ToString();
+            tenmonhoc = dr["tenmonhoc"] is DBNull ? String.Empty : dr["tenmonhoc"].ToString();
+            tongsotiet = dr["tongsotiet"] is DBNull ? String.Empty : dr["tongsotiet"].ToString();
+            sotinchi = dr["sotinchi"] is DBNull ? String.Empty : dr["sotinchi"].ToString();
+            hocky = dr["hocky"] is DBNull ? String.Empty : dr["hocky"].ToString();
+        }
     }
 }

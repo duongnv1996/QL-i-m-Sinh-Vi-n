@@ -6,19 +6,21 @@
 //    Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using System.Data.SqlClient;
+using System.Data.Sql;
 
 namespace QLSV.Data
 {
     using System;
     using System.Collections.Generic;
-    
-    public partial class sinhvien
+
+    public class sinhvien
     {
         public sinhvien()
         {
-            this.bangdiems = new HashSet<bangdiem>();
+
         }
-    
+
         public string masv { get; set; }
         public string hoten { get; set; }
         public string malop { get; set; }
@@ -26,10 +28,17 @@ namespace QLSV.Data
         public string diachi { get; set; }
         public string gioitinh { get; set; }
         public string tenkhoa { get; set; }
-    
-        public virtual account account { get; set; }
-        public virtual ICollection<bangdiem> bangdiems { get; set; }
-        public virtual lop lop { get; set; }
-        public virtual tongket tongket { get; set; }
+
+        public void sinhvienIDateReader(SqlDataReader dr)
+        {
+            masv = dr["masv"] is DBNull ? String.Empty : dr["masv"].ToString();
+            hoten = dr["hoten"] is DBNull ? String.Empty : dr["hoten"].ToString();
+            malop = dr["malop"] is DBNull ? String.Empty : dr["malop"].ToString();
+            ngaysinh = dr["ngaysinh"] is DBNull ? String.Empty : dr["ngaysinh"].ToString();
+            diachi = dr["diachi"] is DBNull ? String.Empty : dr["diachi"].ToString();
+            gioitinh = dr["gioitinh"] is DBNull ? String.Empty : dr["gioitinh"].ToString();
+            tenkhoa = dr["tenkhoa"] is DBNull ? String.Empty : dr["tenkhoa"].ToString();
+        }
+
     }
 }

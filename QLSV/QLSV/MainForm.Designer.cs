@@ -33,12 +33,16 @@
             this.panelToolbar = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.lltxtmk = new LollipopTextBox();
+            this.btn_dangnhap = new LollipopFlatButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ll1 = new LollipopTextBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.animator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
             this.PanelNav = new System.Windows.Forms.Panel();
+            this.btnTongKet = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnSinhVien = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDiem = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -52,9 +56,6 @@
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.animatorLogin = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.animatorNav = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.lltxtmk = new LollipopTextBox();
-            this.btn_dangnhap = new LollipopFlatButton();
-            this.ll1 = new LollipopTextBox();
             this.panelToolbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.panelMenu.SuspendLayout();
@@ -74,9 +75,9 @@
             this.animatorNav.SetDecoration(this.panelToolbar, BunifuAnimatorNS.DecorationType.None);
             this.panelToolbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelToolbar.Location = new System.Drawing.Point(0, 0);
-            this.panelToolbar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelToolbar.Margin = new System.Windows.Forms.Padding(2);
             this.panelToolbar.Name = "panelToolbar";
-            this.panelToolbar.Size = new System.Drawing.Size(1340, 53);
+            this.panelToolbar.Size = new System.Drawing.Size(1005, 43);
             this.panelToolbar.TabIndex = 0;
             // 
             // bunifuImageButton1
@@ -88,10 +89,10 @@
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1295, 12);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(971, 10);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(33, 30);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(25, 24);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 6;
             this.bunifuImageButton1.TabStop = false;
@@ -109,12 +110,53 @@
             this.animator.SetDecoration(this.panelMenu, BunifuAnimatorNS.DecorationType.None);
             this.animatorLogin.SetDecoration(this.panelMenu, BunifuAnimatorNS.DecorationType.None);
             this.animatorNav.SetDecoration(this.panelMenu, BunifuAnimatorNS.DecorationType.None);
-            this.panelMenu.Location = new System.Drawing.Point(82, 84);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMenu.Location = new System.Drawing.Point(62, 68);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(819, 487);
+            this.panelMenu.Size = new System.Drawing.Size(614, 396);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // lltxtmk
+            // 
+            this.lltxtmk.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.animator.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
+            this.animatorNav.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
+            this.animatorLogin.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
+            this.lltxtmk.FocusedColor = "23, 209, 188";
+            this.lltxtmk.FontColor = "61, 85, 109";
+            this.lltxtmk.IsEnabled = true;
+            this.lltxtmk.Location = new System.Drawing.Point(204, 250);
+            this.lltxtmk.Margin = new System.Windows.Forms.Padding(2);
+            this.lltxtmk.MaxLength = 32767;
+            this.lltxtmk.Multiline = false;
+            this.lltxtmk.Name = "lltxtmk";
+            this.lltxtmk.ReadOnly = false;
+            this.lltxtmk.Size = new System.Drawing.Size(204, 24);
+            this.lltxtmk.TabIndex = 15;
+            this.lltxtmk.Text = "Mật khẩu";
+            this.lltxtmk.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.lltxtmk.UseSystemPasswordChar = false;
+            this.lltxtmk.Enter += new System.EventHandler(this.lltxtmk_Enter);
+            this.lltxtmk.Leave += new System.EventHandler(this.lltxtmk_Leave_1);
+            // 
+            // btn_dangnhap
+            // 
+            this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btn_dangnhap.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.btn_dangnhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.animatorNav.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
+            this.animator.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
+            this.animatorLogin.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
+            this.btn_dangnhap.FontColor = "23, 209, 188";
+            this.btn_dangnhap.ImeMode = System.Windows.Forms.ImeMode.Katakana;
+            this.btn_dangnhap.Location = new System.Drawing.Point(267, 318);
+            this.btn_dangnhap.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_dangnhap.Name = "btn_dangnhap";
+            this.btn_dangnhap.Size = new System.Drawing.Size(141, 49);
+            this.btn_dangnhap.TabIndex = 13;
+            this.btn_dangnhap.Text = "Đăng Nhập";
+            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
             // 
             // pictureBox1
             // 
@@ -124,13 +166,36 @@
             this.animatorLogin.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
             this.animator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(311, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(233, 17);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 202);
+            this.pictureBox1.Size = new System.Drawing.Size(148, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            // 
+            // ll1
+            // 
+            this.ll1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.animator.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
+            this.animatorNav.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
+            this.animatorLogin.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
+            this.ll1.FocusedColor = "23, 209, 188";
+            this.ll1.FontColor = "61, 85, 109";
+            this.ll1.IsEnabled = true;
+            this.ll1.Location = new System.Drawing.Point(204, 198);
+            this.ll1.Margin = new System.Windows.Forms.Padding(2);
+            this.ll1.MaxLength = 32767;
+            this.ll1.Multiline = false;
+            this.ll1.Name = "ll1";
+            this.ll1.ReadOnly = false;
+            this.ll1.Size = new System.Drawing.Size(204, 24);
+            this.ll1.TabIndex = 14;
+            this.ll1.Text = "Tên đăng nhập";
+            this.ll1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ll1.UseSystemPasswordChar = false;
+            this.ll1.Enter += new System.EventHandler(this.ll1_Enter);
+            this.ll1.Leave += new System.EventHandler(this.ll1_Leave);
             // 
             // bunifuElipse1
             // 
@@ -173,15 +238,16 @@
             this.animatorLogin.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
             this.animatorNav.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(351, 53);
+            this.panelMain.Location = new System.Drawing.Point(263, 43);
             this.panelMain.Margin = new System.Windows.Forms.Padding(0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(989, 684);
+            this.panelMain.Size = new System.Drawing.Size(742, 556);
             this.panelMain.TabIndex = 0;
             // 
             // PanelNav
             // 
             this.PanelNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
+            this.PanelNav.Controls.Add(this.btnTongKet);
             this.PanelNav.Controls.Add(this.bunifuCustomLabel3);
             this.PanelNav.Controls.Add(this.btnSinhVien);
             this.PanelNav.Controls.Add(this.btnDiem);
@@ -197,13 +263,53 @@
             this.animatorLogin.SetDecoration(this.PanelNav, BunifuAnimatorNS.DecorationType.None);
             this.animatorNav.SetDecoration(this.PanelNav, BunifuAnimatorNS.DecorationType.None);
             this.PanelNav.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelNav.Location = new System.Drawing.Point(0, 53);
-            this.PanelNav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelNav.Location = new System.Drawing.Point(0, 43);
+            this.PanelNav.Margin = new System.Windows.Forms.Padding(2);
             this.PanelNav.Name = "PanelNav";
-            this.PanelNav.Size = new System.Drawing.Size(351, 684);
+            this.PanelNav.Size = new System.Drawing.Size(263, 556);
             this.PanelNav.TabIndex = 0;
             this.PanelNav.Visible = false;
             this.PanelNav.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelNav_Paint);
+            // 
+            // btnTongKet
+            // 
+            this.btnTongKet.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.btnTongKet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTongKet.BorderRadius = 0;
+            this.btnTongKet.ButtonText = "Tổng kết";
+            this.btnTongKet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animatorNav.SetDecoration(this.btnTongKet, BunifuAnimatorNS.DecorationType.None);
+            this.animatorLogin.SetDecoration(this.btnTongKet, BunifuAnimatorNS.DecorationType.None);
+            this.animator.SetDecoration(this.btnTongKet, BunifuAnimatorNS.DecorationType.None);
+            this.btnTongKet.DisabledColor = System.Drawing.Color.Empty;
+            this.btnTongKet.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTongKet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnTongKet.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTongKet.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTongKet.Iconimage")));
+            this.btnTongKet.Iconimage_right = null;
+            this.btnTongKet.Iconimage_right_Selected = null;
+            this.btnTongKet.Iconimage_Selected = null;
+            this.btnTongKet.IconMarginLeft = 0;
+            this.btnTongKet.IconMarginRight = 0;
+            this.btnTongKet.IconRightVisible = true;
+            this.btnTongKet.IconRightZoom = 0D;
+            this.btnTongKet.IconVisible = true;
+            this.btnTongKet.IconZoom = 50D;
+            this.btnTongKet.IsTab = true;
+            this.btnTongKet.Location = new System.Drawing.Point(0, 472);
+            this.btnTongKet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTongKet.Name = "btnTongKet";
+            this.btnTongKet.Normalcolor = System.Drawing.Color.Empty;
+            this.btnTongKet.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.btnTongKet.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnTongKet.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.btnTongKet.selected = false;
+            this.btnTongKet.Size = new System.Drawing.Size(305, 48);
+            this.btnTongKet.TabIndex = 13;
+            this.btnTongKet.Text = "Tổng kết";
+            this.btnTongKet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTongKet.Textcolor = System.Drawing.Color.WhiteSmoke;
+            this.btnTongKet.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuCustomLabel3
             // 
@@ -214,10 +320,10 @@
             this.bunifuCustomLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(145, 196);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(109, 159);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 4);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(0, 21);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(0, 19);
             this.bunifuCustomLabel3.TabIndex = 12;
             // 
             // btnSinhVien
@@ -245,20 +351,21 @@
             this.btnSinhVien.IconVisible = true;
             this.btnSinhVien.IconZoom = 50D;
             this.btnSinhVien.IsTab = true;
-            this.btnSinhVien.Location = new System.Drawing.Point(0, 512);
-            this.btnSinhVien.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSinhVien.Location = new System.Drawing.Point(0, 360);
+            this.btnSinhVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnSinhVien.Name = "btnSinhVien";
             this.btnSinhVien.Normalcolor = System.Drawing.Color.Empty;
             this.btnSinhVien.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.btnSinhVien.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnSinhVien.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
+            this.btnSinhVien.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.btnSinhVien.selected = false;
-            this.btnSinhVien.Size = new System.Drawing.Size(407, 59);
+            this.btnSinhVien.Size = new System.Drawing.Size(305, 48);
             this.btnSinhVien.TabIndex = 9;
             this.btnSinhVien.Text = "Sinh viên";
             this.btnSinhVien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSinhVien.Textcolor = System.Drawing.Color.WhiteSmoke;
             this.btnSinhVien.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSinhVien.Click += new System.EventHandler(this.btnSinhVien_Click);
             // 
             // btnDiem
             // 
@@ -285,20 +392,21 @@
             this.btnDiem.IconVisible = true;
             this.btnDiem.IconZoom = 50D;
             this.btnDiem.IsTab = true;
-            this.btnDiem.Location = new System.Drawing.Point(0, 446);
-            this.btnDiem.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDiem.Location = new System.Drawing.Point(0, 416);
+            this.btnDiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnDiem.Name = "btnDiem";
             this.btnDiem.Normalcolor = System.Drawing.Color.Empty;
             this.btnDiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.btnDiem.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDiem.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
+            this.btnDiem.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.btnDiem.selected = false;
-            this.btnDiem.Size = new System.Drawing.Size(407, 59);
+            this.btnDiem.Size = new System.Drawing.Size(305, 48);
             this.btnDiem.TabIndex = 8;
             this.btnDiem.Text = "Điểm";
             this.btnDiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDiem.Textcolor = System.Drawing.Color.WhiteSmoke;
             this.btnDiem.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiem.Click += new System.EventHandler(this.btnDiem_Click);
             // 
             // btnMon
             // 
@@ -325,20 +433,21 @@
             this.btnMon.IconVisible = true;
             this.btnMon.IconZoom = 50D;
             this.btnMon.IsTab = true;
-            this.btnMon.Location = new System.Drawing.Point(0, 379);
-            this.btnMon.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMon.Location = new System.Drawing.Point(0, 308);
+            this.btnMon.Margin = new System.Windows.Forms.Padding(4);
             this.btnMon.Name = "btnMon";
             this.btnMon.Normalcolor = System.Drawing.Color.Empty;
             this.btnMon.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.btnMon.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnMon.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
+            this.btnMon.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.btnMon.selected = false;
-            this.btnMon.Size = new System.Drawing.Size(407, 59);
+            this.btnMon.Size = new System.Drawing.Size(305, 48);
             this.btnMon.TabIndex = 7;
             this.btnMon.Text = "Môn";
             this.btnMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMon.Textcolor = System.Drawing.Color.WhiteSmoke;
             this.btnMon.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMon.Click += new System.EventHandler(this.btnMon_Click);
             // 
             // btnLop
             // 
@@ -365,15 +474,15 @@
             this.btnLop.IconVisible = true;
             this.btnLop.IconZoom = 50D;
             this.btnLop.IsTab = true;
-            this.btnLop.Location = new System.Drawing.Point(0, 309);
-            this.btnLop.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLop.Location = new System.Drawing.Point(0, 251);
+            this.btnLop.Margin = new System.Windows.Forms.Padding(4);
             this.btnLop.Name = "btnLop";
             this.btnLop.Normalcolor = System.Drawing.Color.Empty;
             this.btnLop.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.btnLop.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLop.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
+            this.btnLop.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.btnLop.selected = false;
-            this.btnLop.Size = new System.Drawing.Size(407, 59);
+            this.btnLop.Size = new System.Drawing.Size(305, 48);
             this.btnLop.TabIndex = 6;
             this.btnLop.Text = "Lớp";
             this.btnLop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -408,15 +517,15 @@
             this.btnKhoa.IconZoom = 50D;
             this.btnKhoa.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.btnKhoa.IsTab = true;
-            this.btnKhoa.Location = new System.Drawing.Point(0, 242);
-            this.btnKhoa.Margin = new System.Windows.Forms.Padding(5);
+            this.btnKhoa.Location = new System.Drawing.Point(0, 197);
+            this.btnKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnKhoa.Name = "btnKhoa";
             this.btnKhoa.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
             this.btnKhoa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.btnKhoa.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnKhoa.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnKhoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnKhoa.selected = false;
-            this.btnKhoa.Size = new System.Drawing.Size(411, 64);
+            this.btnKhoa.Size = new System.Drawing.Size(308, 52);
             this.btnKhoa.TabIndex = 5;
             this.btnKhoa.Text = "Khoa";
             this.btnKhoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -432,10 +541,10 @@
             this.animator.SetDecoration(this.lbLop, BunifuAnimatorNS.DecorationType.None);
             this.lbLop.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLop.ForeColor = System.Drawing.Color.White;
-            this.lbLop.Location = new System.Drawing.Point(131, 128);
-            this.lbLop.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
+            this.lbLop.Location = new System.Drawing.Point(98, 104);
+            this.lbLop.Margin = new System.Windows.Forms.Padding(2, 0, 2, 4);
             this.lbLop.Name = "lbLop";
-            this.lbLop.Size = new System.Drawing.Size(93, 21);
+            this.lbLop.Size = new System.Drawing.Size(77, 19);
             this.lbLop.TabIndex = 4;
             this.lbLop.Text = "Giáo Viên";
             // 
@@ -447,10 +556,10 @@
             this.animator.SetDecoration(this.lbNgaySinh, BunifuAnimatorNS.DecorationType.None);
             this.lbNgaySinh.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNgaySinh.ForeColor = System.Drawing.Color.White;
-            this.lbNgaySinh.Location = new System.Drawing.Point(131, 154);
-            this.lbNgaySinh.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
+            this.lbNgaySinh.Location = new System.Drawing.Point(98, 125);
+            this.lbNgaySinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 4);
             this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(53, 21);
+            this.lbNgaySinh.Size = new System.Drawing.Size(40, 19);
             this.lbNgaySinh.TabIndex = 3;
             this.lbNgaySinh.Text = "CNTT";
             // 
@@ -463,10 +572,10 @@
             this.lbTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbTen.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTen.ForeColor = System.Drawing.Color.White;
-            this.lbTen.Location = new System.Drawing.Point(131, 98);
-            this.lbTen.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
+            this.lbTen.Location = new System.Drawing.Point(98, 80);
+            this.lbTen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 4);
             this.lbTen.Name = "lbTen";
-            this.lbTen.Size = new System.Drawing.Size(173, 21);
+            this.lbTen.Size = new System.Drawing.Size(145, 19);
             this.lbTen.TabIndex = 2;
             this.lbTen.Text = "Nguyen Van Duong";
             // 
@@ -476,10 +585,10 @@
             this.animatorLogin.SetDecoration(this.avt, BunifuAnimatorNS.DecorationType.None);
             this.animator.SetDecoration(this.avt, BunifuAnimatorNS.DecorationType.None);
             this.avt.Image = ((System.Drawing.Image)(resources.GetObject("avt.Image")));
-            this.avt.Location = new System.Drawing.Point(9, 85);
-            this.avt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.avt.Location = new System.Drawing.Point(7, 69);
+            this.avt.Margin = new System.Windows.Forms.Padding(2);
             this.avt.Name = "avt";
-            this.avt.Size = new System.Drawing.Size(107, 98);
+            this.avt.Size = new System.Drawing.Size(80, 80);
             this.avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.avt.TabIndex = 1;
             this.avt.TabStop = false;
@@ -496,10 +605,10 @@
             this.animatorNav.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(297, 7);
-            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(223, 6);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(32, 30);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(24, 24);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bunifuImageButton2.TabIndex = 0;
             this.bunifuImageButton2.TabStop = false;
@@ -548,76 +657,12 @@
             animation3.TransparencyCoeff = 0F;
             this.animatorNav.DefaultAnimation = animation3;
             // 
-            // lltxtmk
-            // 
-            this.lltxtmk.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.animator.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
-            this.lltxtmk.FocusedColor = "23, 209, 188";
-            this.lltxtmk.FontColor = "61, 85, 109";
-            this.lltxtmk.IsEnabled = true;
-            this.lltxtmk.Location = new System.Drawing.Point(272, 308);
-            this.lltxtmk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lltxtmk.MaxLength = 32767;
-            this.lltxtmk.Multiline = false;
-            this.lltxtmk.Name = "lltxtmk";
-            this.lltxtmk.ReadOnly = false;
-            this.lltxtmk.Size = new System.Drawing.Size(272, 24);
-            this.lltxtmk.TabIndex = 15;
-            this.lltxtmk.Text = "Mật khẩu";
-            this.lltxtmk.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.lltxtmk.UseSystemPasswordChar = false;
-            this.lltxtmk.Enter += new System.EventHandler(this.lltxtmk_Enter);
-            this.lltxtmk.Leave += new System.EventHandler(this.lltxtmk_Leave_1);
-            // 
-            // btn_dangnhap
-            // 
-            this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_dangnhap.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.btn_dangnhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.animatorNav.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
-            this.btn_dangnhap.FontColor = "23, 209, 188";
-            this.btn_dangnhap.ImeMode = System.Windows.Forms.ImeMode.Katakana;
-            this.btn_dangnhap.Location = new System.Drawing.Point(356, 391);
-            this.btn_dangnhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(188, 60);
-            this.btn_dangnhap.TabIndex = 13;
-            this.btn_dangnhap.Text = "Đăng Nhập";
-            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
-            // 
-            // ll1
-            // 
-            this.ll1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.animator.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
-            this.ll1.FocusedColor = "23, 209, 188";
-            this.ll1.FontColor = "61, 85, 109";
-            this.ll1.IsEnabled = true;
-            this.ll1.Location = new System.Drawing.Point(272, 244);
-            this.ll1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ll1.MaxLength = 32767;
-            this.ll1.Multiline = false;
-            this.ll1.Name = "ll1";
-            this.ll1.ReadOnly = false;
-            this.ll1.Size = new System.Drawing.Size(272, 24);
-            this.ll1.TabIndex = 14;
-            this.ll1.Text = "Tên đăng nhập";
-            this.ll1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ll1.UseSystemPasswordChar = false;
-            this.ll1.Enter += new System.EventHandler(this.ll1_Enter);
-            this.ll1.Leave += new System.EventHandler(this.ll1_Leave);
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1340, 737);
+            this.ClientSize = new System.Drawing.Size(1005, 599);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.PanelNav);
             this.Controls.Add(this.panelToolbar);
@@ -625,7 +670,7 @@
             this.animator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.animatorNav.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
@@ -670,5 +715,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnMon;
         private Bunifu.Framework.UI.BunifuFlatButton btnLop;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
+        private Bunifu.Framework.UI.BunifuFlatButton btnTongKet;
     }
 }

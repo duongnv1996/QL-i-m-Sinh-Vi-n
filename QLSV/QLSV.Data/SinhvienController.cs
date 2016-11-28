@@ -8,29 +8,26 @@ using System.Data.Sql;
 
 namespace QLSV.Data
 {
-    public class KhoaController : SQLDataProvider
+    public class SinhvienController : SQLDataProvider
     {
-        public List<khoa> getListKhoa()
+        public List<sinhvien> getListSinhvien()
         {
-            List<khoa> list = new List<khoa>();
-            String query = "Select * from khoa";
+            List<sinhvien> list = new List<sinhvien>();
+            String query = "Select * from sinhvien";
             try
             {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    khoa k = new khoa();
-                    k.khoaIDataReader(reader);
-                    list.Add(k);
+                    sinhvien s = new sinhvien();
+                    s.sinhvienIDateReader(reader);
+                    list.Add(s);
                 }
                 reader.Close();
-
-
             }
             catch (Exception e)
             {
-                System.Console.WriteLine(e.Message);
             }
             return list;
         }

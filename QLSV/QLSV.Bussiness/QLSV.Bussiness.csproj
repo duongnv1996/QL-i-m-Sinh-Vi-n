@@ -47,9 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BangdiemSerivices.cs" />
     <Compile Include="KhoaSerivice.cs" />
+    <Compile Include="LopSerivice.cs" />
+    <Compile Include="MonSerivices.cs" />
     <Compile Include="MyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinhvienSerivices.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

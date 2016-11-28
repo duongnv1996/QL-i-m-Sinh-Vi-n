@@ -7,12 +7,12 @@ using QLSV.Data;
 
 namespace QLSV.Bussiness
 {
-    public class KhoaSerivice
+    public class LopSerivice
     {
-        public List<khoa> getDsKhoa()
+        public List<lop> getDsLop()
         {
-            KhoaController khoaController = new KhoaController();
-            return khoaController.getListKhoa();
+            LopController lopConTroller = new LopController();
+            return lopConTroller.getListLop();
         }
     }
 }
