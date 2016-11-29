@@ -89,7 +89,7 @@ namespace QLSV
             String maKhoa = listKhoa[cbbKhoa.SelectedIndex].makhoa;
             lop lop = new lop();
             lop.tenlop = tenLop;
-            lop.tenkhoa = maKhoa;
+            lop.makhoa = maKhoa;
             lop.malop = maLop;
             return lop;
         }
@@ -103,14 +103,15 @@ namespace QLSV
             //BindingSource bs = new BindingSource();
             //bs.DataSource = listKhoa;
             cbbKhoa.DataSource = listKhoa;
-            cbbKhoa.DisplayMember = "tenkhoa";
-            cbbKhoa.ValueMember = "tenkhoa";
+            cbbKhoa.DisplayMember = "makhoa";
+            cbbKhoa.ValueMember = "makhoa";
             if (mLop != null) {
                 txtMaLop.Text = mLop.malop;
                 txtTenLop.Text = mLop.tenlop;
                 int i = 0;
+               
                 foreach ( khoa k in listKhoa){
-                    if (k.tenkhoa == mLop.tenkhoa) {
+                    if (k.makhoa == mLop.makhoa) {
                         cbbKhoa.SelectedIndex = i;
                         break;
                     }
@@ -120,6 +121,7 @@ namespace QLSV
               
 
             }
+         
         }
 
         private void btnUpdate_Click(object sender, EventArgs e) {
@@ -142,6 +144,14 @@ namespace QLSV
             } else {
                 MessageBox.Show("Khong the xoa lop");
             }
+        }
+
+        private void txtMaLop_Enter(object sender, EventArgs e) {
+            
+        }
+
+        private void txtTenLop_Enter(object sender, EventArgs e) {
+          
         }
     }
 }

@@ -24,7 +24,11 @@ namespace QLSV
         const int SIZE_AVT_MEDIUM = 80;
         const int SIZE_WITDH_COLLAPSE = 54;
         const int SIZE_WITDH_EXPANDE = 300;
-
+        const int CODE_MON = 0;
+        const int CODE_LOP = 1;
+        const int CODE_DIEM = 2;
+        const int CODE_SV = 3;
+        int currentTab = -1;
         KhoaSerivice khoaSV;
         LopSerivice lopSV;
         MonSerivices monSV;
@@ -143,6 +147,7 @@ namespace QLSV
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            
             updateListKhoa();
         }
 
@@ -171,6 +176,7 @@ namespace QLSV
 
         private void btnLop_Click(object sender, EventArgs e)
         {
+            currentTab = CODE_LOP;
             updateListLop();
            
         }
@@ -179,6 +185,7 @@ namespace QLSV
 
         private void btnMon_Click(object sender, EventArgs e)
         {
+            currentTab = CODE_MON;
             UpdateListMon();
         }
 
@@ -190,7 +197,19 @@ namespace QLSV
             //bangKhoa.Width = panelMain.Width;
             //bangKhoa.Height = panelMain.Height;
             //bangKhoa.Anchor = AnchorStyles.Left;
+            List<String> s = new List<string>();
 
+            foreach (lop l in listLop) {
+                s.Add(l.malop);
+                s.Add(l.makhoa);
+                s.Add(l.tenlop);
+
+            }
+            //txtSearchNomal.AutoCompleteMode = AutoCompleteMode.Append;
+            txtSearchNomal.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            var autoComplete = new AutoCompleteStringCollection();
+            autoComplete.AddRange(s.ToArray());
+            txtSearchNomal.AutoCompleteCustomSource = autoComplete;
             bindDataSource<lop>(listLop);
 
         }
@@ -202,7 +221,7 @@ namespace QLSV
             //bangKhoa.Width = panelMain.Width;
             //bangKhoa.Height = panelMain.Height;
             //bangKhoa.Anchor = AnchorStyles.Left;
-
+          
             bindDataSource<lop>(listLop);
 
         }
@@ -215,6 +234,7 @@ namespace QLSV
 
         private void btnSinhVien_Click(object sender, EventArgs e)
         {
+            currentTab = CODE_SV;
             UpdateListSinhVien();
         }
 
@@ -227,6 +247,7 @@ namespace QLSV
 
         private void btnDiem_Click(object sender, EventArgs e)
         {
+            currentTab = CODE_DIEM;
             UpdateListDiem();
         }
 
@@ -265,6 +286,10 @@ namespace QLSV
 
         private void txtSearch_Enter(object sender, EventArgs e) {
             txtSearch.Text = "";
+        }
+
+        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e) {
+            searchListLop(txtSearchNomal.Text);
         }
 
      

@@ -31,6 +31,8 @@
             this.panelTool = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lollipopLabel3 = new LollipopLabel();
+            this.lollipopLabel2 = new LollipopLabel();
             this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDelete = new LollipopFlatButton();
             this.btnUpdate = new LollipopFlatButton();
@@ -85,6 +87,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.lollipopLabel3);
+            this.panel2.Controls.Add(this.lollipopLabel2);
             this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
@@ -98,6 +102,30 @@
             this.panel2.Size = new System.Drawing.Size(408, 361);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // lollipopLabel3
+            // 
+            this.lollipopLabel3.AutoSize = true;
+            this.lollipopLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.lollipopLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lollipopLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.lollipopLabel3.Location = new System.Drawing.Point(34, 121);
+            this.lollipopLabel3.Name = "lollipopLabel3";
+            this.lollipopLabel3.Size = new System.Drawing.Size(64, 20);
+            this.lollipopLabel3.TabIndex = 7;
+            this.lollipopLabel3.Text = "Tên lớp";
+            // 
+            // lollipopLabel2
+            // 
+            this.lollipopLabel2.AutoSize = true;
+            this.lollipopLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.lollipopLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lollipopLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.lollipopLabel2.Location = new System.Drawing.Point(34, 56);
+            this.lollipopLabel2.Name = "lollipopLabel2";
+            this.lollipopLabel2.Size = new System.Drawing.Size(59, 20);
+            this.lollipopLabel2.TabIndex = 6;
+            this.lollipopLabel2.Text = "Mã lớp";
             // 
             // btnAdd
             // 
@@ -123,6 +151,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(252, 56);
             this.btnAdd.TabIndex = 5;
+            this.btnAdd.TabStop = false;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
@@ -175,30 +204,29 @@
             this.txtTenLop.FocusedColor = "#508ef5";
             this.txtTenLop.FontColor = "#999999";
             this.txtTenLop.IsEnabled = true;
-            this.txtTenLop.Location = new System.Drawing.Point(38, 121);
+            this.txtTenLop.Location = new System.Drawing.Point(131, 121);
             this.txtTenLop.MaxLength = 32767;
             this.txtTenLop.Multiline = false;
             this.txtTenLop.Name = "txtTenLop";
             this.txtTenLop.ReadOnly = false;
-            this.txtTenLop.Size = new System.Drawing.Size(332, 24);
+            this.txtTenLop.Size = new System.Drawing.Size(239, 24);
             this.txtTenLop.TabIndex = 1;
-            this.txtTenLop.Text = "Tên lớp";
             this.txtTenLop.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtTenLop.UseSystemPasswordChar = false;
+            this.txtTenLop.Enter += new System.EventHandler(this.txtTenLop_Enter);
             // 
             // txtMaLop
             // 
             this.txtMaLop.FocusedColor = "#508ef5";
             this.txtMaLop.FontColor = "#999999";
             this.txtMaLop.IsEnabled = true;
-            this.txtMaLop.Location = new System.Drawing.Point(38, 52);
+            this.txtMaLop.Location = new System.Drawing.Point(131, 52);
             this.txtMaLop.MaxLength = 32767;
             this.txtMaLop.Multiline = false;
             this.txtMaLop.Name = "txtMaLop";
             this.txtMaLop.ReadOnly = false;
-            this.txtMaLop.Size = new System.Drawing.Size(332, 24);
+            this.txtMaLop.Size = new System.Drawing.Size(239, 24);
             this.txtMaLop.TabIndex = 0;
-            this.txtMaLop.Text = "Mã lớp";
             this.txtMaLop.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtMaLop.UseSystemPasswordChar = false;
             // 
@@ -251,6 +279,8 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnAdd;
         private System.Windows.Forms.BindingSource khoaSeriviceBindingSource;
         private System.Windows.Forms.BindingSource sinhvienSerivicesBindingSource;
+        private LollipopLabel lollipopLabel3;
+        private LollipopLabel lollipopLabel2;
 
     }
 }

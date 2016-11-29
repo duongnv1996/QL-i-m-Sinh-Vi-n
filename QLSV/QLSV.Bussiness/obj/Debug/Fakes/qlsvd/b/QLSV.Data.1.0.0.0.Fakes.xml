@@ -98,7 +98,7 @@
             <summary>Sets the shim of LopController.insertLop(lop lop)</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.ShimLopController.searchListLopString">
-            <summary>Sets the shim of LopController.searchListLop(String where)</summary>
+            <summary>Sets the shim of LopController.searchListLop(String search)</summary>
         </member>
         <member name="T:QLSV.Data.Fakes.ShimLopController.AllInstances">
             <summary>Define shims for all instances members</summary>
@@ -116,7 +116,7 @@
             <summary>Sets the shim of LopController.insertLop(lop lop)</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.ShimLopController.AllInstances.searchListLopString">
-            <summary>Sets the shim of LopController.searchListLop(String where)</summary>
+            <summary>Sets the shim of LopController.searchListLop(String search)</summary>
         </member>
         <member name="T:QLSV.Data.Fakes.ShimMonController">
             <summary>Shim type of QLSV.Data.MonController</summary>
@@ -883,17 +883,17 @@
         <member name="P:QLSV.Data.Fakes.Shimlop.lopIDataReaderSqlDataReader">
             <summary>Sets the shim of lop.lopIDataReader(SqlDataReader dr)</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.makhoaGet">
+            <summary>Sets the shim of lop.get_makhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.makhoaSetString">
+            <summary>Sets the shim of lop.set_makhoa(String value)</summary>
+        </member>
         <member name="P:QLSV.Data.Fakes.Shimlop.malopGet">
             <summary>Sets the shim of lop.get_malop()</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.Shimlop.malopSetString">
             <summary>Sets the shim of lop.set_malop(String value)</summary>
-        </member>
-        <member name="P:QLSV.Data.Fakes.Shimlop.tenkhoaGet">
-            <summary>Sets the shim of lop.get_tenkhoa()</summary>
-        </member>
-        <member name="P:QLSV.Data.Fakes.Shimlop.tenkhoaSetString">
-            <summary>Sets the shim of lop.set_tenkhoa(String value)</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.Shimlop.tenlopGet">
             <summary>Sets the shim of lop.get_tenlop()</summary>
@@ -907,17 +907,17 @@
         <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.lopIDataReaderSqlDataReader">
             <summary>Sets the shim of lop.lopIDataReader(SqlDataReader dr)</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.makhoaGet">
+            <summary>Sets the shim of lop.get_makhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.makhoaSetString">
+            <summary>Sets the shim of lop.set_makhoa(String value)</summary>
+        </member>
         <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.malopGet">
             <summary>Sets the shim of lop.get_malop()</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.malopSetString">
             <summary>Sets the shim of lop.set_malop(String value)</summary>
-        </member>
-        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.tenkhoaGet">
-            <summary>Sets the shim of lop.get_tenkhoa()</summary>
-        </member>
-        <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.tenkhoaSetString">
-            <summary>Sets the shim of lop.set_tenkhoa(String value)</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.Shimlop.AllInstances.tenlopGet">
             <summary>Sets the shim of lop.get_tenlop()</summary>

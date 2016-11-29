@@ -60,10 +60,11 @@
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.animatorLogin = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.animatorNav = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.txtSearch = new LollipopTextBox();
+            this.txtSearchNomal = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.lltxtmk = new LollipopTextBox();
             this.btn_dangnhap = new LollipopFlatButton();
             this.ll1 = new LollipopTextBox();
+            this.txtSearch = new LollipopTextBox();
             this.panelToolbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.panelMenu.SuspendLayout();
@@ -198,6 +199,7 @@
             // panelBang
             // 
             this.panelBang.BackColor = System.Drawing.Color.White;
+            this.panelBang.Controls.Add(this.txtSearchNomal);
             this.panelBang.Controls.Add(this.panel2);
             this.panelBang.Controls.Add(this.panel3);
             this.panelBang.Controls.Add(this.txtSearch);
@@ -704,29 +706,19 @@
             animation3.TransparencyCoeff = 0F;
             this.animatorNav.DefaultAnimation = animation3;
             // 
-            // txtSearch
+            // txtSearchNomal
             // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.BackColor = System.Drawing.Color.White;
-            this.animator.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
-            this.txtSearch.FocusedColor = "23, 209, 188";
-            this.txtSearch.FontColor = "#999999";
-            this.txtSearch.IsEnabled = true;
-            this.txtSearch.Location = new System.Drawing.Point(55, 88);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtSearch.MaxLength = 32767;
-            this.txtSearch.Multiline = false;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.ReadOnly = false;
-            this.txtSearch.Size = new System.Drawing.Size(869, 24);
-            this.txtSearch.TabIndex = 2;
-            this.txtSearch.Text = "Tìm kiếm";
-            this.txtSearch.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSearch.UseSystemPasswordChar = false;
-            this.txtSearch.TextChanged += new System.EventHandler(this.lollipopTextBox1_TextChanged);
-            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
+            this.txtSearchNomal.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtSearchNomal.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtSearchNomal.BorderColor = System.Drawing.Color.SeaGreen;
+            this.animatorNav.SetDecoration(this.txtSearchNomal, BunifuAnimatorNS.DecorationType.None);
+            this.animator.SetDecoration(this.txtSearchNomal, BunifuAnimatorNS.DecorationType.None);
+            this.animatorLogin.SetDecoration(this.txtSearchNomal, BunifuAnimatorNS.DecorationType.None);
+            this.txtSearchNomal.Location = new System.Drawing.Point(165, 174);
+            this.txtSearchNomal.Name = "txtSearchNomal";
+            this.txtSearchNomal.Size = new System.Drawing.Size(314, 22);
+            this.txtSearchNomal.TabIndex = 6;
+            this.txtSearchNomal.TextChanged += new System.EventHandler(this.bunifuCustomTextbox1_TextChanged);
             // 
             // lltxtmk
             // 
@@ -792,6 +784,30 @@
             this.ll1.Enter += new System.EventHandler(this.ll1_Enter);
             this.ll1.Leave += new System.EventHandler(this.ll1_Leave);
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.BackColor = System.Drawing.Color.White;
+            this.animator.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
+            this.animatorNav.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
+            this.animatorLogin.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
+            this.txtSearch.FocusedColor = "23, 209, 188";
+            this.txtSearch.FontColor = "#999999";
+            this.txtSearch.IsEnabled = true;
+            this.txtSearch.Location = new System.Drawing.Point(55, 88);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSearch.MaxLength = 32767;
+            this.txtSearch.Multiline = false;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.ReadOnly = false;
+            this.txtSearch.Size = new System.Drawing.Size(869, 24);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.Text = "Tìm kiếm";
+            this.txtSearch.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSearch.UseSystemPasswordChar = false;
+            this.txtSearch.TextChanged += new System.EventHandler(this.lollipopTextBox1_TextChanged);
+            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -816,6 +832,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMain.ResumeLayout(false);
             this.panelBang.ResumeLayout(false);
+            this.panelBang.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -862,5 +879,6 @@
         private System.Windows.Forms.Panel panel3;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridview;
         private LollipopTextBox txtSearch;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtSearchNomal;
     }
 }

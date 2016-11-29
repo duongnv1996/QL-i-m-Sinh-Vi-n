@@ -15,7 +15,7 @@ namespace QLSV.Data
             List<lop> list = new List<lop>();
               String query;
               
-                  query = "Select *,tenkhoa from lop,khoa where lop.makhoa = khoa.makhoa";
+                  query = "Select * from lop ";
             
             try
             {
@@ -36,11 +36,11 @@ namespace QLSV.Data
             return list;
         }
 
-        public List<lop> searchListLop(String where) {
+        public List<lop> searchListLop(String search) {
             List<lop> list = new List<lop>();
             String query;
 
-            query = "Select *,tenkhoa from lop,khoa where lop.makhoa = khoa.makhoa and lop.makhoa = '"+where+"'";
+            query = "Select * from lop where makhoa = '" + search + "' or lop.malop = '" + search + "' or lop.tenlop = '" + search + "'";
 
             try {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
@@ -59,7 +59,7 @@ namespace QLSV.Data
 
 
         public bool insertLop(lop lop) {
-            String query = "Insert into lop values  ('" + lop.malop + "' , '" + lop.tenlop + "' , '" + lop.tenkhoa + "');";
+            String query = "Insert into lop values  ('" + lop.malop + "' , '" + lop.tenlop + "' , '" + lop.makhoa + "');";
             try {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 cmd.ExecuteNonQuery();
@@ -83,7 +83,7 @@ namespace QLSV.Data
         }
         public bool UpdateLop(lop l) {
 
-            String query = "update lop set tenlop ='"+ l.tenlop +"' , makhoa ='"+l.tenkhoa+"' where malop = '"+l.malop+"'";
+            String query = "update lop set tenlop ='"+ l.tenlop +"' , makhoa ='"+l.makhoa+"' where malop = '"+l.malop+"'";
             try {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 cmd.ExecuteNonQuery();

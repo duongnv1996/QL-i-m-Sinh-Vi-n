@@ -22,14 +22,14 @@ namespace QLSV.Data
     
         public string malop { get; set; }
         public string tenlop { get; set; }
-        public string tenkhoa { get; set; }
+        public string makhoa { get; set; }
 
         public void lopIDataReader(SqlDataReader dr)
         {
 
             malop = dr["malop"] is DBNull ? String.Empty : dr["malop"].ToString();
             tenlop = dr["tenlop"] is DBNull ? String.Empty : dr["tenlop"].ToString();
-            tenkhoa = dr["tenkhoa"] is DBNull ? String.Empty : dr["tenkhoa"].ToString();
+            makhoa = dr["makhoa"] is DBNull ? String.Empty : dr["makhoa"].ToString();
 
         }
        
