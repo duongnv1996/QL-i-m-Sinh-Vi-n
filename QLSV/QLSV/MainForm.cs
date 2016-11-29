@@ -12,8 +12,14 @@ using QLSV.Data;
 
 namespace QLSV
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form,Response<bool>
     {
+           void Response<bool>.onResponse(bool response){
+               if (response) {
+                   updateListLop();
+               }
+
+        }
         const int SIZE_AVT_MINI = 40;
         const int SIZE_AVT_MEDIUM = 80;
         const int SIZE_WITDH_COLLAPSE = 54;
@@ -125,7 +131,8 @@ namespace QLSV
             animationVisiableNav();
             hideLogin();
             panelMain.Visible = true;
-            this.panelMain.Controls.Add(bangKhoa);
+           // this.panelMain.Controls.Add(bangKhoa);
+            panelBang.Visible = true;
         
         }
 
@@ -136,14 +143,15 @@ namespace QLSV
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            updateListKhoa();
+        }
+
+        private void updateListKhoa() {
             if (khoaSV == null) khoaSV = new KhoaSerivice();
 
             listKhoa.Clear();
             listKhoa.AddRange(khoaSV.getDsKhoa());
-            bangKhoa.hienList(listKhoa);
-            bangKhoa.Width = panelMain.Width;
-            bangKhoa.Height = panelMain.Height;
-            bangKhoa.Anchor = AnchorStyles.Left;
+            bindDataSource<khoa>(listKhoa);
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
@@ -153,58 +161,116 @@ namespace QLSV
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            //if (PanelNav.Width == SIZE_WITDH_COLLAPSE) {
-            //    animationVisiableNav();
-            //} else {
-            //    collapseNav();
+            if (PanelNav.Width == SIZE_WITDH_COLLAPSE) {
+                animationVisiableNav();
+            } else {
+                collapseNav();
 
-            //}
+            }
         }
 
         private void btnLop_Click(object sender, EventArgs e)
         {
-            if (lopSV == null) lopSV = new LopSerivice();
-            listLop.Clear();
-            listLop.AddRange(lopSV.getDsLop());
-            bangKhoa.hienList(listLop);
-            bangKhoa.Width = panelMain.Width;
-            bangKhoa.Height = panelMain.Height;
-            bangKhoa.Anchor = AnchorStyles.Left;
+            updateListLop();
            
         }
 
+     
+
         private void btnMon_Click(object sender, EventArgs e)
         {
+            UpdateListMon();
+        }
+
+        private void updateListLop() {
+            if (lopSV == null) lopSV = new LopSerivice();
+            listLop.Clear();
+            listLop.AddRange(lopSV.getDsLop());
+            //bangKhoa.hienList(listLop);
+            //bangKhoa.Width = panelMain.Width;
+            //bangKhoa.Height = panelMain.Height;
+            //bangKhoa.Anchor = AnchorStyles.Left;
+
+            bindDataSource<lop>(listLop);
+
+        }
+        private void searchListLop(String search) {
+            if (lopSV == null) lopSV = new LopSerivice();
+            listLop.Clear();
+            listLop.AddRange(lopSV.getDsLop(search));
+            //bangKhoa.hienList(listLop);
+            //bangKhoa.Width = panelMain.Width;
+            //bangKhoa.Height = panelMain.Height;
+            //bangKhoa.Anchor = AnchorStyles.Left;
+
+            bindDataSource<lop>(listLop);
+
+        }
+        private void UpdateListMon() {
             if (monSV == null) monSV = new MonSerivices();
             listMon.Clear();
             listMon.AddRange(monSV.getDsMon());
-            bangKhoa.hienList(listMon);
-            bangKhoa.Width = panelMain.Width;
-            bangKhoa.Height = panelMain.Height;
-            bangKhoa.Anchor = AnchorStyles.Left;
+            bindDataSource<monhoc>(listMon);
         }
 
         private void btnSinhVien_Click(object sender, EventArgs e)
         {
+            UpdateListSinhVien();
+        }
+
+        private void UpdateListSinhVien() {
             if (sinhvienSV == null) sinhvienSV = new SinhvienSerivices();
             listSinhvien.Clear();
             listSinhvien.AddRange(sinhvienSV.getDsSinhvien());
-            bangKhoa.hienList(listSinhvien);
-            bangKhoa.Width = panelMain.Width;
-            bangKhoa.Height = panelMain.Height;
-            bangKhoa.Anchor = AnchorStyles.Left;
+            bindDataSource<sinhvien>(listSinhvien);
         }
 
         private void btnDiem_Click(object sender, EventArgs e)
         {
+            UpdateListDiem();
+        }
+
+        private void UpdateListDiem() {
             if (bangdiemSV == null) bangdiemSV = new BangdiemSerivices();
             listBangdiem.Clear();
             listBangdiem.AddRange(bangdiemSV.getDsBangdiem());
-            bangKhoa.hienList(listBangdiem);
-            bangKhoa.Width = panelMain.Width;
-            bangKhoa.Height = panelMain.Height;
-            bangKhoa.Anchor = AnchorStyles.Left;
+            bindDataSource<bangdiem>(listBangdiem);
         }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e) {
+
+        }
+        public void bindDataSource<T>(List<T> l) {
+            BindingList<T> bindList = new BindingList<T>(l);
+            gridview.DataSource = new BindingSource(bindList, null);
+            gridview.ReadOnly = true;
+
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e) {
+            new DialogLop(this, DialogLop.CODE_ADD,null).Show();
+        }
+
+        private void gridview_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+            //String maLop = gridview[e.ColumnIndex, e.RowIndex].Value.ToString();
+            //lop ls = new lop();
+            //ls.malop = maLop;
+            lop currentObject = (lop)gridview.CurrentRow.DataBoundItem;
+            new DialogLop(this, DialogLop.CODE_UPDATE, currentObject).Show();
+        }
+
+        private void lollipopTextBox1_TextChanged(object sender, EventArgs e) {
+            searchListLop(txtSearch.Text);
+        }
+
+        private void txtSearch_Enter(object sender, EventArgs e) {
+            txtSearch.Text = "";
+        }
+
+     
+
+
+     
 
     }
 }

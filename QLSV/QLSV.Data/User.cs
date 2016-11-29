@@ -53,9 +53,9 @@ namespace QLSV.Data
             set { lop = value; }
         }
 
-        private bool quyen;
+        private int quyen;
 
-        public bool Quyen {
+        public int Quyen {
             get { return quyen; }
             set { quyen = value; }
         }
@@ -68,7 +68,11 @@ namespace QLSV.Data
             DiaChi = dr["diachi"] is DBNull ? String.Empty : dr["diachi"].ToString();
             TenDangNhap = dr["masv"] is DBNull ? String.Empty : dr["masv"].ToString();
             NgaySinh = dr["ngaysinh"] is DBNull ? String.Empty : dr["ngaysinh"].ToString();
-            Quyen = Boolean.Parse(dr["quyen"].ToString());
+            if (dr["quyen"] is DBNull) {
+                Quyen = 0;
+            } else {
+               Quyen =   Int32.Parse(dr["quyen"].ToString());
+            }
         }
         
 

@@ -141,5 +141,10 @@ namespace QLSV
         {
 
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e) {
+            new DialogLop().Show();
+
+        }
     }
 }

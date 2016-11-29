@@ -27,7 +27,6 @@ namespace QLSV.Data
         public Nullable<float> diemtlky7 { get; set; }
         public Nullable<float> diemtlky8 { get; set; }
         public Nullable<float> diemtlky9 { get; set; }
-    
         public virtual sinhvien sinhvien { get; set; }
     }
 }

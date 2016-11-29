@@ -30,10 +30,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bang));
             this.gridview = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.lollipopTextBox1 = new LollipopTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridview)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +47,7 @@
             this.gridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.gridview.BackgroundColor = System.Drawing.Color.White;
+            this.gridview.BackgroundColor = System.Drawing.Color.Black;
             this.gridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -60,45 +64,63 @@
             this.gridview.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridview.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
             this.gridview.HeaderForeColor = System.Drawing.Color.White;
-            this.gridview.Location = new System.Drawing.Point(41, 162);
-            this.gridview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridview.Location = new System.Drawing.Point(3, 2);
+            this.gridview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridview.Name = "gridview";
             this.gridview.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gridview.RowTemplate.Height = 24;
-            this.gridview.Size = new System.Drawing.Size(750, 333);
+            this.gridview.Size = new System.Drawing.Size(1000, 410);
             this.gridview.TabIndex = 0;
             this.gridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridview_CellContentClick_2);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.bunifuImageButton1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.lollipopTextBox1);
-            this.panel1.Controls.Add(this.gridview);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(840, 523);
+            this.panel1.Size = new System.Drawing.Size(1120, 644);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel2.Controls.Add(this.bunifuImageButton1);
+            this.panel2.Location = new System.Drawing.Point(508, 43);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(312, 246);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.gridview);
+            this.panel3.Location = new System.Drawing.Point(55, 204);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1000, 405);
+            this.panel3.TabIndex = 5;
+            // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(41, 100);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(43, 76);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(53, 58);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(268, 71);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 3;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // lollipopTextBox1
             // 
@@ -107,32 +129,33 @@
             this.lollipopTextBox1.FocusedColor = "23, 209, 188";
             this.lollipopTextBox1.FontColor = "#999999";
             this.lollipopTextBox1.IsEnabled = true;
-            this.lollipopTextBox1.Location = new System.Drawing.Point(41, 55);
-            this.lollipopTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lollipopTextBox1.Location = new System.Drawing.Point(55, 68);
+            this.lollipopTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lollipopTextBox1.MaxLength = 32767;
             this.lollipopTextBox1.Multiline = false;
             this.lollipopTextBox1.Name = "lollipopTextBox1";
             this.lollipopTextBox1.ReadOnly = false;
-            this.lollipopTextBox1.Size = new System.Drawing.Size(750, 24);
+            this.lollipopTextBox1.Size = new System.Drawing.Size(1000, 24);
             this.lollipopTextBox1.TabIndex = 2;
             this.lollipopTextBox1.Text = "Tìm kiếm";
             this.lollipopTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.lollipopTextBox1.UseSystemPasswordChar = false;
-            this.lollipopTextBox1.Visible = false;
             this.lollipopTextBox1.TextChanged += new System.EventHandler(this.lollipopTextBox1_TextChanged);
             // 
             // bang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "bang";
-            this.Size = new System.Drawing.Size(840, 523);
+            this.Size = new System.Drawing.Size(1120, 644);
             this.Load += new System.EventHandler(this.bang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridview)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
@@ -144,6 +167,8 @@
         private System.Windows.Forms.Panel panel1;
         private LollipopTextBox lollipopTextBox1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
 
 
 

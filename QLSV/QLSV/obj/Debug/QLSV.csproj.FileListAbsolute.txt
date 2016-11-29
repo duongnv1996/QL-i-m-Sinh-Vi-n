@@ -57,7 +57,6 @@ C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.exe.config
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.exe
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.pdb
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.pdb
-C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\Bunifu_UI_v1.51.dll
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.Bussiness.dll
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.Data.dll
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\QLSV.Bussiness.pdb
@@ -89,3 +88,5 @@ E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.lltexthint.resourc
 E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.MainForm.resources
 E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.Properties.Resources.resources
 E:\Documents\tl\3.1\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.DialogLop.resources

@@ -51,8 +51,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.51">
-      <HintPath>C:\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu_UI_1.5\Bunifu_UI_v1.51.dll</HintPath>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu_UI_1.5\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="QLSV, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
@@ -118,6 +118,12 @@
     <Compile Include="Controls\lltexthint.Designer.cs">
       <DependentUpon>lltexthint.cs</DependentUpon>
     </Compile>
+    <Compile Include="DialogLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogLop.Designer.cs">
+      <DependentUpon>DialogLop.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response.cs" />
     <Compile Include="UIManagers\DrawHelper.cs" />
     <Compile Include="UIManagers\FontManager.cs" />
     <Compile Include="Util.cs" />
@@ -137,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\lltexthint.resx">
       <DependentUpon>lltexthint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogLop.resx">
+      <DependentUpon>DialogLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -151,6 +161,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\QLSV.Bussiness.BangdiemSerivices.datasource" />
+    <None Include="Properties\DataSources\QLSV.Bussiness.KhoaSerivice.datasource" />
+    <None Include="Properties\DataSources\QLSV.Bussiness.LopSerivice.datasource" />
+    <None Include="Properties\DataSources\QLSV.Bussiness.MonSerivices.datasource" />
+    <None Include="Properties\DataSources\QLSV.Bussiness.MyService.datasource" />
+    <None Include="Properties\DataSources\QLSV.Bussiness.SinhvienSerivices.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
