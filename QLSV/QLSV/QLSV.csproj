@@ -51,8 +51,17 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu_UI_1.5\Bunifu_UI_v1.52.dll</HintPath>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="QLSV, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
@@ -70,12 +79,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Bang.Designer.cs">
-      <DependentUpon>Bang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\LollipopButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -118,11 +121,11 @@
     <Compile Include="Controls\lltexthint.Designer.cs">
       <DependentUpon>lltexthint.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogLop.cs">
+    <Compile Include="DialogController.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DialogLop.Designer.cs">
-      <DependentUpon>DialogLop.cs</DependentUpon>
+    <Compile Include="DialogController.Designer.cs">
+      <DependentUpon>DialogController.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -136,23 +139,20 @@
     <Compile Include="UIManagers\DrawHelper.cs" />
     <Compile Include="UIManagers\FontManager.cs" />
     <Compile Include="Util.cs" />
-    <EmbeddedResource Include="Bang.resx">
-      <DependentUpon>Bang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\LollipopFolderInPut.resx">
       <DependentUpon>LollipopFolderInPut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\lltexthint.resx">
       <DependentUpon>lltexthint.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogLop.resx">
-      <DependentUpon>DialogLop.cs</DependentUpon>
+    <EmbeddedResource Include="DialogController.resx">
+      <DependentUpon>DialogController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -161,6 +161,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\QLSV.Bussiness.BangdiemSerivices.datasource" />
     <None Include="Properties\DataSources\QLSV.Bussiness.KhoaSerivice.datasource" />
     <None Include="Properties\DataSources\QLSV.Bussiness.LopSerivice.datasource" />
@@ -203,16 +204,7 @@
     <None Include="resources\man.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="resources\cancel %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="resources\close.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="resources\man1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="resources\Image1.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QLSV.Bussiness\QLSV.Bussiness.csproj">
@@ -223,6 +215,18 @@
       <Project>{35ba2c6d-3662-41e4-b2be-1ccfc7a7365b}</Project>
       <Name>QLSV.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\man.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\man1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Delete_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

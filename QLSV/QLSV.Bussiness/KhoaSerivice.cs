@@ -14,5 +14,9 @@ namespace QLSV.Bussiness
             KhoaController khoaController = new KhoaController();
             return khoaController.getListKhoa();
         }
+        public List<khoa> searchKhoa(String text) {
+            KhoaController khoaController = new KhoaController();
+            return khoaController.searchKhoa(text);
+        }
     }
 }

@@ -31,5 +31,22 @@ namespace QLSV.Data
             }
             return list;
         }
+
+        public List<sinhvien> searchSinhVien(String search) {
+            List<sinhvien> list = new List<sinhvien>();
+            String query = "Select * from sinhvien where masv='"+search+"' or hoten ='"+search+"' or malop='"+search+"' or tenkhoa='"+search+"' or diachi='" +search+"' or ngaysinh='"+search+"' or gioitinh='"+search+"'";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read()) {
+                    sinhvien s = new sinhvien();
+                    s.sinhvienIDateReader(reader);
+                    list.Add(s);
+                }
+                reader.Close();
+            } catch (Exception e) {
+            }
+            return list;
+        }
     }
 }

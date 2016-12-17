@@ -9,10 +9,15 @@ namespace QLSV.Bussiness
 {
     public class SinhvienSerivices
     {
+     static   SinhvienController sinhvienController = new SinhvienController();
         public List<sinhvien> getDsSinhvien()
         {
-            SinhvienController sinhvienController = new SinhvienController();
+           
             return sinhvienController.getListSinhvien();
+        }
+        public List<sinhvien> searchSinhvien(String search) {
+          
+            return sinhvienController.searchSinhVien(search);
         }
     }
 }

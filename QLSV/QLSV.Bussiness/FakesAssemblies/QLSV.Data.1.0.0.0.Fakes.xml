@@ -28,11 +28,17 @@
         <member name="P:QLSV.Data.Fakes.ShimBangDiemController.getListBangdiem">
             <summary>Sets the shim of BangDiemController.getListBangdiem()</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.ShimBangDiemController.searchDiemString">
+            <summary>Sets the shim of BangDiemController.searchDiem(String search)</summary>
+        </member>
         <member name="T:QLSV.Data.Fakes.ShimBangDiemController.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.ShimBangDiemController.AllInstances.getListBangdiem">
             <summary>Sets the shim of BangDiemController.getListBangdiem()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimBangDiemController.AllInstances.searchDiemString">
+            <summary>Sets the shim of BangDiemController.searchDiem(String search)</summary>
         </member>
         <member name="T:QLSV.Data.Fakes.ShimKhoaController">
             <summary>Shim type of QLSV.Data.KhoaController</summary>
@@ -58,11 +64,17 @@
         <member name="P:QLSV.Data.Fakes.ShimKhoaController.getListKhoa">
             <summary>Sets the shim of KhoaController.getListKhoa()</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.ShimKhoaController.searchKhoaString">
+            <summary>Sets the shim of KhoaController.searchKhoa(String text)</summary>
+        </member>
         <member name="T:QLSV.Data.Fakes.ShimKhoaController.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.ShimKhoaController.AllInstances.getListKhoa">
             <summary>Sets the shim of KhoaController.getListKhoa()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimKhoaController.AllInstances.searchKhoaString">
+            <summary>Sets the shim of KhoaController.searchKhoa(String text)</summary>
         </member>
         <member name="T:QLSV.Data.Fakes.ShimLopController">
             <summary>Shim type of QLSV.Data.LopController</summary>
@@ -142,11 +154,17 @@
         <member name="P:QLSV.Data.Fakes.ShimMonController.getListMon">
             <summary>Sets the shim of MonController.getListMon()</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.ShimMonController.searchMonString">
+            <summary>Sets the shim of MonController.searchMon(String search)</summary>
+        </member>
         <member name="T:QLSV.Data.Fakes.ShimMonController.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.ShimMonController.AllInstances.getListMon">
             <summary>Sets the shim of MonController.getListMon()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimMonController.AllInstances.searchMonString">
+            <summary>Sets the shim of MonController.searchMon(String search)</summary>
         </member>
         <member name="T:QLSV.Data.Fakes.ShimSQLDataProvider">
             <summary>Shim type of QLSV.Data.SQLDataProvider</summary>
@@ -373,11 +391,17 @@
         <member name="P:QLSV.Data.Fakes.ShimSinhvienController.getListSinhvien">
             <summary>Sets the shim of SinhvienController.getListSinhvien()</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhvienController.searchSinhVienString">
+            <summary>Sets the shim of SinhvienController.searchSinhVien(String search)</summary>
+        </member>
         <member name="T:QLSV.Data.Fakes.ShimSinhvienController.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.ShimSinhvienController.AllInstances.getListSinhvien">
             <summary>Sets the shim of SinhvienController.getListSinhvien()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimSinhvienController.AllInstances.searchSinhVienString">
+            <summary>Sets the shim of SinhvienController.searchSinhVien(String search)</summary>
         </member>
         <member name="T:QLSV.Data.Fakes.ShimUser">
             <summary>Shim type of QLSV.Data.User</summary>

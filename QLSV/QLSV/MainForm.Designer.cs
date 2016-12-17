@@ -25,860 +25,819 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-            this.panelToolbar = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.animator = new BunifuAnimatorNS.BunifuTransition(this.components);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelMain = new System.Windows.Forms.Panel();
-            this.panelBang = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.gridview = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.PanelNav = new System.Windows.Forms.Panel();
-            this.btnTongKet = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btnSinhVien = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDiem = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnMon = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLop = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnKhoa = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.lbLop = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lbNgaySinh = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lbTen = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.avt = new System.Windows.Forms.PictureBox();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.animatorLogin = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.animatorNav = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.txtSearchNomal = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.lltxtmk = new LollipopTextBox();
-            this.btn_dangnhap = new LollipopFlatButton();
-            this.ll1 = new LollipopTextBox();
-            this.txtSearch = new LollipopTextBox();
-            this.panelToolbar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabControl = new MetroFramework.Controls.MetroTabControl();
+            this.tabKhoa = new System.Windows.Forms.TabPage();
+            this.gridKhoa = new MetroFramework.Controls.MetroGrid();
+            this.tabLop = new System.Windows.Forms.TabPage();
+            this.gridLop = new MetroFramework.Controls.MetroGrid();
+            this.tabSinhVien = new System.Windows.Forms.TabPage();
+            this.gridSv = new MetroFramework.Controls.MetroGrid();
+            this.tabMonHoc = new System.Windows.Forms.TabPage();
+            this.gidMonHoc = new MetroFramework.Controls.MetroGrid();
+            this.tabDiem = new System.Windows.Forms.TabPage();
+            this.gridDiem = new MetroFramework.Controls.MetroGrid();
+            this.tabTongKet = new System.Windows.Forms.TabPage();
+            this.gridTongKet = new MetroFramework.Controls.MetroGrid();
+            this.panelDangNhap = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lollipopButton2 = new LollipopButton();
+            this.btnSearch = new LollipopButton();
+            this.lblLop = new LollipopLabel();
+            this.lblTen = new LollipopLabel();
+            this.lblKhoa = new LollipopLabel();
+            this.lblMasv = new LollipopLabel();
+            this.btnDangNhap = new LollipopFlatButton();
+            this.txtMatKhau = new LollipopTextBox();
+            this.lollipopLabel2 = new LollipopLabel();
+            this.txtTenDangNhap = new LollipopTextBox();
+            this.lollipopLabel1 = new LollipopLabel();
             this.panelMain.SuspendLayout();
-            this.panelBang.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridview)).BeginInit();
-            this.PanelNav.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            this.tabControl.SuspendLayout();
+            this.tabKhoa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridKhoa)).BeginInit();
+            this.tabLop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLop)).BeginInit();
+            this.tabSinhVien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSv)).BeginInit();
+            this.tabMonHoc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gidMonHoc)).BeginInit();
+            this.tabDiem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDiem)).BeginInit();
+            this.tabTongKet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridTongKet)).BeginInit();
+            this.panelDangNhap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelToolbar
-            // 
-            this.panelToolbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(209)))), ((int)(((byte)(188)))));
-            this.panelToolbar.Controls.Add(this.bunifuImageButton1);
-            this.animator.SetDecoration(this.panelToolbar, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.panelToolbar, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.panelToolbar, BunifuAnimatorNS.DecorationType.None);
-            this.panelToolbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelToolbar.Location = new System.Drawing.Point(0, 0);
-            this.panelToolbar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelToolbar.Name = "panelToolbar";
-            this.panelToolbar.Size = new System.Drawing.Size(1340, 53);
-            this.panelToolbar.TabIndex = 0;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.animator.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1295, 12);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(33, 30);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 6;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 20;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panelMenu.BackColor = System.Drawing.Color.White;
-            this.panelMenu.Controls.Add(this.lltxtmk);
-            this.panelMenu.Controls.Add(this.btn_dangnhap);
-            this.panelMenu.Controls.Add(this.pictureBox1);
-            this.panelMenu.Controls.Add(this.ll1);
-            this.animator.SetDecoration(this.panelMenu, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.panelMenu, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.panelMenu, BunifuAnimatorNS.DecorationType.None);
-            this.panelMenu.Location = new System.Drawing.Point(83, 84);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(819, 487);
-            this.panelMenu.TabIndex = 1;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.animatorNav.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(311, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 202);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 0;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panelToolbar;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // animator
-            // 
-            this.animator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
-            this.animator.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 1;
-            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 2F;
-            animation1.TransparencyCoeff = 0F;
-            this.animator.DefaultAnimation = animation1;
             // 
             // panelMain
             // 
+            this.panelMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMain.BackColor = System.Drawing.Color.White;
-            this.panelMain.Controls.Add(this.panelBang);
-            this.panelMain.Controls.Add(this.panelMenu);
-            this.animator.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(351, 53);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(0);
+            this.panelMain.Controls.Add(this.btnClear);
+            this.panelMain.Controls.Add(this.lollipopButton2);
+            this.panelMain.Controls.Add(this.btnSearch);
+            this.panelMain.Controls.Add(this.txtSearch);
+            this.panelMain.Controls.Add(this.label1);
+            this.panelMain.Controls.Add(this.tabControl);
+            this.panelMain.Controls.Add(this.pictureBox1);
+            this.panelMain.Controls.Add(this.lblLop);
+            this.panelMain.Controls.Add(this.lblTen);
+            this.panelMain.Controls.Add(this.lblKhoa);
+            this.panelMain.Controls.Add(this.lblMasv);
+            this.panelMain.Location = new System.Drawing.Point(0, 30);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(989, 684);
-            this.panelMain.TabIndex = 0;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
-            // 
-            // panelBang
-            // 
-            this.panelBang.BackColor = System.Drawing.Color.White;
-            this.panelBang.Controls.Add(this.txtSearchNomal);
-            this.panelBang.Controls.Add(this.panel2);
-            this.panelBang.Controls.Add(this.panel3);
-            this.panelBang.Controls.Add(this.txtSearch);
-            this.animator.SetDecoration(this.panelBang, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.panelBang, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.panelBang, BunifuAnimatorNS.DecorationType.None);
-            this.panelBang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBang.Location = new System.Drawing.Point(0, 0);
-            this.panelBang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelBang.Name = "panelBang";
-            this.panelBang.Size = new System.Drawing.Size(989, 684);
-            this.panelBang.TabIndex = 3;
-            this.panelBang.Visible = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.YellowGreen;
-            this.panel2.Controls.Add(this.bunifuImageButton3);
-            this.animator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Location = new System.Drawing.Point(550, 88);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(181, 120);
-            this.panel2.TabIndex = 4;
-            // 
-            // bunifuImageButton3
-            // 
-            this.bunifuImageButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.SeaGreen;
-            this.animator.SetDecoration(this.bunifuImageButton3, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.bunifuImageButton3, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.bunifuImageButton3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(43, 13);
-            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(137, 71);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 3;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.gridview);
-            this.animator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.panel3.Location = new System.Drawing.Point(55, 224);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(869, 405);
-            this.panel3.TabIndex = 5;
-            // 
-            // gridview
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.gridview.BackgroundColor = System.Drawing.Color.White;
-            this.gridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.animatorNav.SetDecoration(this.gridview, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.gridview, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.gridview, BunifuAnimatorNS.DecorationType.None);
-            this.gridview.DoubleBuffered = true;
-            this.gridview.EnableHeadersVisualStyles = false;
-            this.gridview.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gridview.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.gridview.HeaderForeColor = System.Drawing.Color.White;
-            this.gridview.Location = new System.Drawing.Point(3, 2);
-            this.gridview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridview.Name = "gridview";
-            this.gridview.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridview.RowTemplate.Height = 24;
-            this.gridview.Size = new System.Drawing.Size(869, 410);
-            this.gridview.TabIndex = 0;
-            this.gridview.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridview_CellDoubleClick);
-            // 
-            // PanelNav
-            // 
-            this.PanelNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.PanelNav.Controls.Add(this.btnTongKet);
-            this.PanelNav.Controls.Add(this.bunifuCustomLabel3);
-            this.PanelNav.Controls.Add(this.btnSinhVien);
-            this.PanelNav.Controls.Add(this.btnDiem);
-            this.PanelNav.Controls.Add(this.btnMon);
-            this.PanelNav.Controls.Add(this.btnLop);
-            this.PanelNav.Controls.Add(this.btnKhoa);
-            this.PanelNav.Controls.Add(this.lbLop);
-            this.PanelNav.Controls.Add(this.lbNgaySinh);
-            this.PanelNav.Controls.Add(this.lbTen);
-            this.PanelNav.Controls.Add(this.avt);
-            this.PanelNav.Controls.Add(this.bunifuImageButton2);
-            this.animator.SetDecoration(this.PanelNav, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.PanelNav, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.PanelNav, BunifuAnimatorNS.DecorationType.None);
-            this.PanelNav.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelNav.Location = new System.Drawing.Point(0, 53);
-            this.PanelNav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PanelNav.Name = "PanelNav";
-            this.PanelNav.Size = new System.Drawing.Size(351, 684);
-            this.PanelNav.TabIndex = 0;
-            this.PanelNav.Visible = false;
-            this.PanelNav.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelNav_Paint);
-            // 
-            // btnTongKet
-            // 
-            this.btnTongKet.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnTongKet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTongKet.BorderRadius = 0;
-            this.btnTongKet.ButtonText = "Tổng kết";
-            this.btnTongKet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.animatorNav.SetDecoration(this.btnTongKet, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.btnTongKet, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.btnTongKet, BunifuAnimatorNS.DecorationType.None);
-            this.btnTongKet.DisabledColor = System.Drawing.Color.Empty;
-            this.btnTongKet.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTongKet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTongKet.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTongKet.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTongKet.Iconimage")));
-            this.btnTongKet.Iconimage_right = null;
-            this.btnTongKet.Iconimage_right_Selected = null;
-            this.btnTongKet.Iconimage_Selected = null;
-            this.btnTongKet.IconMarginLeft = 0;
-            this.btnTongKet.IconMarginRight = 0;
-            this.btnTongKet.IconRightVisible = true;
-            this.btnTongKet.IconRightZoom = 0D;
-            this.btnTongKet.IconVisible = true;
-            this.btnTongKet.IconZoom = 50D;
-            this.btnTongKet.IsTab = true;
-            this.btnTongKet.Location = new System.Drawing.Point(0, 581);
-            this.btnTongKet.Margin = new System.Windows.Forms.Padding(5);
-            this.btnTongKet.Name = "btnTongKet";
-            this.btnTongKet.Normalcolor = System.Drawing.Color.Empty;
-            this.btnTongKet.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnTongKet.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnTongKet.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
-            this.btnTongKet.selected = false;
-            this.btnTongKet.Size = new System.Drawing.Size(407, 59);
-            this.btnTongKet.TabIndex = 13;
-            this.btnTongKet.Text = "Tổng kết";
-            this.btnTongKet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTongKet.Textcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnTongKet.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.animatorNav.SetDecoration(this.bunifuCustomLabel3, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.bunifuCustomLabel3, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.bunifuCustomLabel3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(145, 196);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(0, 21);
-            this.bunifuCustomLabel3.TabIndex = 12;
-            // 
-            // btnSinhVien
-            // 
-            this.btnSinhVien.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnSinhVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSinhVien.BorderRadius = 0;
-            this.btnSinhVien.ButtonText = "Sinh viên";
-            this.btnSinhVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.animatorNav.SetDecoration(this.btnSinhVien, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.btnSinhVien, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.btnSinhVien, BunifuAnimatorNS.DecorationType.None);
-            this.btnSinhVien.DisabledColor = System.Drawing.Color.Empty;
-            this.btnSinhVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSinhVien.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSinhVien.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSinhVien.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSinhVien.Iconimage")));
-            this.btnSinhVien.Iconimage_right = null;
-            this.btnSinhVien.Iconimage_right_Selected = null;
-            this.btnSinhVien.Iconimage_Selected = null;
-            this.btnSinhVien.IconMarginLeft = 0;
-            this.btnSinhVien.IconMarginRight = 0;
-            this.btnSinhVien.IconRightVisible = true;
-            this.btnSinhVien.IconRightZoom = 0D;
-            this.btnSinhVien.IconVisible = true;
-            this.btnSinhVien.IconZoom = 50D;
-            this.btnSinhVien.IsTab = true;
-            this.btnSinhVien.Location = new System.Drawing.Point(0, 443);
-            this.btnSinhVien.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSinhVien.Name = "btnSinhVien";
-            this.btnSinhVien.Normalcolor = System.Drawing.Color.Empty;
-            this.btnSinhVien.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnSinhVien.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnSinhVien.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
-            this.btnSinhVien.selected = false;
-            this.btnSinhVien.Size = new System.Drawing.Size(407, 59);
-            this.btnSinhVien.TabIndex = 9;
-            this.btnSinhVien.Text = "Sinh viên";
-            this.btnSinhVien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSinhVien.Textcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnSinhVien.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSinhVien.Click += new System.EventHandler(this.btnSinhVien_Click);
-            // 
-            // btnDiem
-            // 
-            this.btnDiem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDiem.BorderRadius = 0;
-            this.btnDiem.ButtonText = "Điểm";
-            this.btnDiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.animatorNav.SetDecoration(this.btnDiem, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.btnDiem, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.btnDiem, BunifuAnimatorNS.DecorationType.None);
-            this.btnDiem.DisabledColor = System.Drawing.Color.Empty;
-            this.btnDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDiem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDiem.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnDiem.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDiem.Iconimage")));
-            this.btnDiem.Iconimage_right = null;
-            this.btnDiem.Iconimage_right_Selected = null;
-            this.btnDiem.Iconimage_Selected = null;
-            this.btnDiem.IconMarginLeft = 0;
-            this.btnDiem.IconMarginRight = 0;
-            this.btnDiem.IconRightVisible = true;
-            this.btnDiem.IconRightZoom = 0D;
-            this.btnDiem.IconVisible = true;
-            this.btnDiem.IconZoom = 50D;
-            this.btnDiem.IsTab = true;
-            this.btnDiem.Location = new System.Drawing.Point(0, 512);
-            this.btnDiem.Margin = new System.Windows.Forms.Padding(5);
-            this.btnDiem.Name = "btnDiem";
-            this.btnDiem.Normalcolor = System.Drawing.Color.Empty;
-            this.btnDiem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnDiem.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDiem.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
-            this.btnDiem.selected = false;
-            this.btnDiem.Size = new System.Drawing.Size(407, 59);
-            this.btnDiem.TabIndex = 8;
-            this.btnDiem.Text = "Điểm";
-            this.btnDiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDiem.Textcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnDiem.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiem.Click += new System.EventHandler(this.btnDiem_Click);
-            // 
-            // btnMon
-            // 
-            this.btnMon.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnMon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMon.BorderRadius = 0;
-            this.btnMon.ButtonText = "Môn";
-            this.btnMon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.animatorNav.SetDecoration(this.btnMon, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.btnMon, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.btnMon, BunifuAnimatorNS.DecorationType.None);
-            this.btnMon.DisabledColor = System.Drawing.Color.Empty;
-            this.btnMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnMon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnMon.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnMon.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMon.Iconimage")));
-            this.btnMon.Iconimage_right = null;
-            this.btnMon.Iconimage_right_Selected = null;
-            this.btnMon.Iconimage_Selected = null;
-            this.btnMon.IconMarginLeft = 0;
-            this.btnMon.IconMarginRight = 0;
-            this.btnMon.IconRightVisible = true;
-            this.btnMon.IconRightZoom = 0D;
-            this.btnMon.IconVisible = true;
-            this.btnMon.IconZoom = 50D;
-            this.btnMon.IsTab = true;
-            this.btnMon.Location = new System.Drawing.Point(0, 379);
-            this.btnMon.Margin = new System.Windows.Forms.Padding(5);
-            this.btnMon.Name = "btnMon";
-            this.btnMon.Normalcolor = System.Drawing.Color.Empty;
-            this.btnMon.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnMon.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnMon.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
-            this.btnMon.selected = false;
-            this.btnMon.Size = new System.Drawing.Size(407, 59);
-            this.btnMon.TabIndex = 7;
-            this.btnMon.Text = "Môn";
-            this.btnMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnMon.Textcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnMon.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMon.Click += new System.EventHandler(this.btnMon_Click);
-            // 
-            // btnLop
-            // 
-            this.btnLop.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnLop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLop.BorderRadius = 0;
-            this.btnLop.ButtonText = "Lớp";
-            this.btnLop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.animatorNav.SetDecoration(this.btnLop, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.btnLop, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.btnLop, BunifuAnimatorNS.DecorationType.None);
-            this.btnLop.DisabledColor = System.Drawing.Color.Empty;
-            this.btnLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLop.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLop.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLop.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLop.Iconimage")));
-            this.btnLop.Iconimage_right = null;
-            this.btnLop.Iconimage_right_Selected = null;
-            this.btnLop.Iconimage_Selected = null;
-            this.btnLop.IconMarginLeft = 0;
-            this.btnLop.IconMarginRight = 0;
-            this.btnLop.IconRightVisible = true;
-            this.btnLop.IconRightZoom = 0D;
-            this.btnLop.IconVisible = true;
-            this.btnLop.IconZoom = 50D;
-            this.btnLop.IsTab = true;
-            this.btnLop.Location = new System.Drawing.Point(0, 309);
-            this.btnLop.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLop.Name = "btnLop";
-            this.btnLop.Normalcolor = System.Drawing.Color.Empty;
-            this.btnLop.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnLop.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLop.Padding = new System.Windows.Forms.Padding(133, 0, 0, 0);
-            this.btnLop.selected = false;
-            this.btnLop.Size = new System.Drawing.Size(407, 59);
-            this.btnLop.TabIndex = 6;
-            this.btnLop.Text = "Lớp";
-            this.btnLop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLop.Textcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnLop.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLop.Click += new System.EventHandler(this.btnLop_Click);
-            // 
-            // btnKhoa
-            // 
-            this.btnKhoa.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnKhoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.btnKhoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKhoa.BorderRadius = 0;
-            this.btnKhoa.ButtonText = "Khoa";
-            this.btnKhoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.animatorNav.SetDecoration(this.btnKhoa, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.btnKhoa, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.btnKhoa, BunifuAnimatorNS.DecorationType.None);
-            this.btnKhoa.DisabledColor = System.Drawing.Color.Empty;
-            this.btnKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnKhoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnKhoa.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnKhoa.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnKhoa.Iconimage")));
-            this.btnKhoa.Iconimage_right = null;
-            this.btnKhoa.Iconimage_right_Selected = null;
-            this.btnKhoa.Iconimage_Selected = null;
-            this.btnKhoa.IconMarginLeft = 0;
-            this.btnKhoa.IconMarginRight = 0;
-            this.btnKhoa.IconRightVisible = false;
-            this.btnKhoa.IconRightZoom = 10D;
-            this.btnKhoa.IconVisible = true;
-            this.btnKhoa.IconZoom = 50D;
-            this.btnKhoa.ImeMode = System.Windows.Forms.ImeMode.Katakana;
-            this.btnKhoa.IsTab = true;
-            this.btnKhoa.Location = new System.Drawing.Point(0, 242);
-            this.btnKhoa.Margin = new System.Windows.Forms.Padding(5);
-            this.btnKhoa.Name = "btnKhoa";
-            this.btnKhoa.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.btnKhoa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnKhoa.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnKhoa.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnKhoa.selected = false;
-            this.btnKhoa.Size = new System.Drawing.Size(411, 64);
-            this.btnKhoa.TabIndex = 5;
-            this.btnKhoa.Text = "Khoa";
-            this.btnKhoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnKhoa.Textcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnKhoa.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhoa.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // lbLop
-            // 
-            this.lbLop.AutoSize = true;
-            this.animatorNav.SetDecoration(this.lbLop, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.lbLop, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.lbLop, BunifuAnimatorNS.DecorationType.None);
-            this.lbLop.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLop.ForeColor = System.Drawing.Color.White;
-            this.lbLop.Location = new System.Drawing.Point(131, 128);
-            this.lbLop.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
-            this.lbLop.Name = "lbLop";
-            this.lbLop.Size = new System.Drawing.Size(93, 21);
-            this.lbLop.TabIndex = 4;
-            this.lbLop.Text = "Giáo Viên";
-            // 
-            // lbNgaySinh
-            // 
-            this.lbNgaySinh.AutoSize = true;
-            this.animatorNav.SetDecoration(this.lbNgaySinh, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.lbNgaySinh, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.lbNgaySinh, BunifuAnimatorNS.DecorationType.None);
-            this.lbNgaySinh.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgaySinh.ForeColor = System.Drawing.Color.White;
-            this.lbNgaySinh.Location = new System.Drawing.Point(131, 154);
-            this.lbNgaySinh.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
-            this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(53, 21);
-            this.lbNgaySinh.TabIndex = 3;
-            this.lbNgaySinh.Text = "CNTT";
-            // 
-            // lbTen
-            // 
-            this.lbTen.AutoSize = true;
-            this.animatorNav.SetDecoration(this.lbTen, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.lbTen, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.lbTen, BunifuAnimatorNS.DecorationType.None);
-            this.lbTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbTen.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTen.ForeColor = System.Drawing.Color.White;
-            this.lbTen.Location = new System.Drawing.Point(131, 98);
-            this.lbTen.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
-            this.lbTen.Name = "lbTen";
-            this.lbTen.Size = new System.Drawing.Size(173, 21);
-            this.lbTen.TabIndex = 2;
-            this.lbTen.Text = "Nguyen Van Duong";
-            // 
-            // avt
-            // 
-            this.animatorNav.SetDecoration(this.avt, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.avt, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.avt, BunifuAnimatorNS.DecorationType.None);
-            this.avt.Image = ((System.Drawing.Image)(resources.GetObject("avt.Image")));
-            this.avt.Location = new System.Drawing.Point(9, 85);
-            this.avt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.avt.Name = "avt";
-            this.avt.Size = new System.Drawing.Size(107, 98);
-            this.avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.avt.TabIndex = 1;
-            this.avt.TabStop = false;
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.bunifuImageButton2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.animator.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(297, 7);
-            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(32, 30);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton2.TabIndex = 0;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
-            // animatorLogin
-            // 
-            this.animatorLogin.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
-            this.animatorLogin.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
-            animation2.TransparencyCoeff = 0F;
-            this.animatorLogin.DefaultAnimation = animation2;
-            // 
-            // animatorNav
-            // 
-            this.animatorNav.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind;
-            this.animatorNav.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.animatorNav.DefaultAnimation = animation3;
-            // 
-            // txtSearchNomal
-            // 
-            this.txtSearchNomal.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.txtSearchNomal.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtSearchNomal.BorderColor = System.Drawing.Color.SeaGreen;
-            this.animatorNav.SetDecoration(this.txtSearchNomal, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.txtSearchNomal, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.txtSearchNomal, BunifuAnimatorNS.DecorationType.None);
-            this.txtSearchNomal.Location = new System.Drawing.Point(165, 174);
-            this.txtSearchNomal.Name = "txtSearchNomal";
-            this.txtSearchNomal.Size = new System.Drawing.Size(314, 22);
-            this.txtSearchNomal.TabIndex = 6;
-            this.txtSearchNomal.TextChanged += new System.EventHandler(this.bunifuCustomTextbox1_TextChanged);
-            // 
-            // lltxtmk
-            // 
-            this.lltxtmk.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.animator.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.lltxtmk, BunifuAnimatorNS.DecorationType.None);
-            this.lltxtmk.FocusedColor = "23, 209, 188";
-            this.lltxtmk.FontColor = "61, 85, 109";
-            this.lltxtmk.IsEnabled = true;
-            this.lltxtmk.Location = new System.Drawing.Point(272, 308);
-            this.lltxtmk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lltxtmk.MaxLength = 32767;
-            this.lltxtmk.Multiline = false;
-            this.lltxtmk.Name = "lltxtmk";
-            this.lltxtmk.ReadOnly = false;
-            this.lltxtmk.Size = new System.Drawing.Size(272, 24);
-            this.lltxtmk.TabIndex = 15;
-            this.lltxtmk.Text = "Mật khẩu";
-            this.lltxtmk.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.lltxtmk.UseSystemPasswordChar = false;
-            this.lltxtmk.Enter += new System.EventHandler(this.lltxtmk_Enter);
-            this.lltxtmk.Leave += new System.EventHandler(this.lltxtmk_Leave_1);
-            // 
-            // btn_dangnhap
-            // 
-            this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_dangnhap.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.btn_dangnhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.animatorNav.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.btn_dangnhap, BunifuAnimatorNS.DecorationType.None);
-            this.btn_dangnhap.FontColor = "23, 209, 188";
-            this.btn_dangnhap.ImeMode = System.Windows.Forms.ImeMode.Katakana;
-            this.btn_dangnhap.Location = new System.Drawing.Point(356, 391);
-            this.btn_dangnhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(188, 60);
-            this.btn_dangnhap.TabIndex = 13;
-            this.btn_dangnhap.Text = "Đăng Nhập";
-            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
-            // 
-            // ll1
-            // 
-            this.ll1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.animator.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.ll1, BunifuAnimatorNS.DecorationType.None);
-            this.ll1.FocusedColor = "23, 209, 188";
-            this.ll1.FontColor = "61, 85, 109";
-            this.ll1.IsEnabled = true;
-            this.ll1.Location = new System.Drawing.Point(272, 244);
-            this.ll1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ll1.MaxLength = 32767;
-            this.ll1.Multiline = false;
-            this.ll1.Name = "ll1";
-            this.ll1.ReadOnly = false;
-            this.ll1.Size = new System.Drawing.Size(272, 24);
-            this.ll1.TabIndex = 14;
-            this.ll1.Text = "Tên đăng nhập";
-            this.ll1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ll1.UseSystemPasswordChar = false;
-            this.ll1.Enter += new System.EventHandler(this.ll1_Enter);
-            this.ll1.Leave += new System.EventHandler(this.ll1_Leave);
+            this.panelMain.Size = new System.Drawing.Size(1138, 779);
+            this.panelMain.TabIndex = 7;
+            this.panelMain.Visible = false;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint_1);
             // 
             // txtSearch
             // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.BackColor = System.Drawing.Color.White;
-            this.animator.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
-            this.animatorLogin.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
-            this.txtSearch.FocusedColor = "23, 209, 188";
-            this.txtSearch.FontColor = "#999999";
-            this.txtSearch.IsEnabled = true;
-            this.txtSearch.Location = new System.Drawing.Point(55, 88);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            // 
+            // 
+            // 
+            this.txtSearch.CustomButton.Image = null;
+            this.txtSearch.CustomButton.Location = new System.Drawing.Point(260, 1);
+            this.txtSearch.CustomButton.Name = "";
+            this.txtSearch.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtSearch.CustomButton.TabIndex = 1;
+            this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtSearch.CustomButton.UseSelectable = true;
+            this.txtSearch.CustomButton.Visible = false;
+            this.txtSearch.Lines = new string[] {
+        "Tìm mọi thứ"};
+            this.txtSearch.Location = new System.Drawing.Point(807, 248);
             this.txtSearch.MaxLength = 32767;
-            this.txtSearch.Multiline = false;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.ReadOnly = false;
-            this.txtSearch.Size = new System.Drawing.Size(869, 24);
-            this.txtSearch.TabIndex = 2;
-            this.txtSearch.Text = "Tìm kiếm";
-            this.txtSearch.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSearch.UseSystemPasswordChar = false;
-            this.txtSearch.TextChanged += new System.EventHandler(this.lollipopTextBox1_TextChanged);
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.SelectionLength = 0;
+            this.txtSearch.SelectionStart = 0;
+            this.txtSearch.ShortcutsEnabled = true;
+            this.txtSearch.Size = new System.Drawing.Size(282, 23);
+            this.txtSearch.TabIndex = 7;
+            this.txtSearch.Text = "Tìm mọi thứ";
+            this.txtSearch.UseSelectable = true;
+            this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch.Click += new System.EventHandler(this.metroTextBox1_Click_1);
             this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.label1.Location = new System.Drawing.Point(15, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(363, 60);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Quản Lý Sinh Viên";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // tabControl
+            // 
+            this.tabControl.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.tabControl.Controls.Add(this.tabKhoa);
+            this.tabControl.Controls.Add(this.tabLop);
+            this.tabControl.Controls.Add(this.tabSinhVien);
+            this.tabControl.Controls.Add(this.tabMonHoc);
+            this.tabControl.Controls.Add(this.tabDiem);
+            this.tabControl.Controls.Add(this.tabTongKet);
+            this.tabControl.FontSize = MetroFramework.MetroTabControlSize.Tall;
+            this.tabControl.ItemSize = new System.Drawing.Size(175, 43);
+            this.tabControl.Location = new System.Drawing.Point(3, 326);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 2;
+            this.tabControl.Size = new System.Drawing.Size(1135, 450);
+            this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl.TabIndex = 5;
+            this.tabControl.UseCustomForeColor = true;
+            this.tabControl.UseSelectable = true;
+            this.tabControl.UseStyleColors = true;
+            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
+            this.tabControl.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl_Selected);
+            // 
+            // tabKhoa
+            // 
+            this.tabKhoa.BackColor = System.Drawing.Color.White;
+            this.tabKhoa.Controls.Add(this.gridKhoa);
+            this.tabKhoa.Location = new System.Drawing.Point(4, 47);
+            this.tabKhoa.Name = "tabKhoa";
+            this.tabKhoa.Size = new System.Drawing.Size(1127, 399);
+            this.tabKhoa.TabIndex = 0;
+            this.tabKhoa.Text = "Khoa";
+            this.tabKhoa.Click += new System.EventHandler(this.tabKhoa_Click);
+            // 
+            // gridKhoa
+            // 
+            this.gridKhoa.AllowUserToAddRows = false;
+            this.gridKhoa.AllowUserToDeleteRows = false;
+            this.gridKhoa.AllowUserToResizeRows = false;
+            this.gridKhoa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridKhoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridKhoa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridKhoa.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridKhoa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridKhoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridKhoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridKhoa.DefaultCellStyle = dataGridViewCellStyle2;
+            this.gridKhoa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridKhoa.EnableHeadersVisualStyles = false;
+            this.gridKhoa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridKhoa.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridKhoa.Location = new System.Drawing.Point(0, 0);
+            this.gridKhoa.Name = "gridKhoa";
+            this.gridKhoa.ReadOnly = true;
+            this.gridKhoa.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridKhoa.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.gridKhoa.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridKhoa.RowTemplate.Height = 24;
+            this.gridKhoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridKhoa.Size = new System.Drawing.Size(1127, 399);
+            this.gridKhoa.TabIndex = 0;
+            this.gridKhoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridKhoa_CellContentClick);
+            // 
+            // tabLop
+            // 
+            this.tabLop.BackColor = System.Drawing.Color.White;
+            this.tabLop.Controls.Add(this.gridLop);
+            this.tabLop.Location = new System.Drawing.Point(4, 47);
+            this.tabLop.Name = "tabLop";
+            this.tabLop.Size = new System.Drawing.Size(1127, 399);
+            this.tabLop.TabIndex = 1;
+            this.tabLop.Text = "Lớp";
+            this.tabLop.Click += new System.EventHandler(this.tabLop_Click);
+            // 
+            // gridLop
+            // 
+            this.gridLop.AllowUserToAddRows = false;
+            this.gridLop.AllowUserToDeleteRows = false;
+            this.gridLop.AllowUserToResizeRows = false;
+            this.gridLop.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridLop.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridLop.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridLop.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridLop.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.gridLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridLop.DefaultCellStyle = dataGridViewCellStyle5;
+            this.gridLop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridLop.EnableHeadersVisualStyles = false;
+            this.gridLop.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridLop.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridLop.Location = new System.Drawing.Point(0, 0);
+            this.gridLop.Name = "gridLop";
+            this.gridLop.ReadOnly = true;
+            this.gridLop.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridLop.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.gridLop.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridLop.RowTemplate.Height = 24;
+            this.gridLop.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridLop.Size = new System.Drawing.Size(1127, 399);
+            this.gridLop.TabIndex = 1;
+            this.gridLop.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridLop_CellContentClick);
+            // 
+            // tabSinhVien
+            // 
+            this.tabSinhVien.BackColor = System.Drawing.Color.White;
+            this.tabSinhVien.Controls.Add(this.gridSv);
+            this.tabSinhVien.Location = new System.Drawing.Point(4, 47);
+            this.tabSinhVien.Name = "tabSinhVien";
+            this.tabSinhVien.Size = new System.Drawing.Size(1127, 399);
+            this.tabSinhVien.TabIndex = 2;
+            this.tabSinhVien.Text = "Sinh Viên";
+            this.tabSinhVien.Click += new System.EventHandler(this.tabSinhVien_Click);
+            // 
+            // gridSv
+            // 
+            this.gridSv.AllowUserToAddRows = false;
+            this.gridSv.AllowUserToDeleteRows = false;
+            this.gridSv.AllowUserToResizeRows = false;
+            this.gridSv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridSv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridSv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridSv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridSv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridSv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.gridSv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridSv.DefaultCellStyle = dataGridViewCellStyle8;
+            this.gridSv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridSv.EnableHeadersVisualStyles = false;
+            this.gridSv.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridSv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridSv.Location = new System.Drawing.Point(0, 0);
+            this.gridSv.Name = "gridSv";
+            this.gridSv.ReadOnly = true;
+            this.gridSv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridSv.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.gridSv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridSv.RowTemplate.Height = 24;
+            this.gridSv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridSv.Size = new System.Drawing.Size(1127, 399);
+            this.gridSv.TabIndex = 1;
+            this.gridSv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSv_CellContentClick);
+            // 
+            // tabMonHoc
+            // 
+            this.tabMonHoc.BackColor = System.Drawing.Color.White;
+            this.tabMonHoc.Controls.Add(this.gidMonHoc);
+            this.tabMonHoc.Location = new System.Drawing.Point(4, 47);
+            this.tabMonHoc.Name = "tabMonHoc";
+            this.tabMonHoc.Size = new System.Drawing.Size(1127, 399);
+            this.tabMonHoc.TabIndex = 3;
+            this.tabMonHoc.Text = "Môn Học";
+            this.tabMonHoc.Click += new System.EventHandler(this.tabMonHoc_Click);
+            // 
+            // gidMonHoc
+            // 
+            this.gidMonHoc.AllowUserToAddRows = false;
+            this.gidMonHoc.AllowUserToDeleteRows = false;
+            this.gidMonHoc.AllowUserToResizeRows = false;
+            this.gidMonHoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gidMonHoc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gidMonHoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gidMonHoc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gidMonHoc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gidMonHoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.gidMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gidMonHoc.DefaultCellStyle = dataGridViewCellStyle11;
+            this.gidMonHoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gidMonHoc.EnableHeadersVisualStyles = false;
+            this.gidMonHoc.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gidMonHoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gidMonHoc.Location = new System.Drawing.Point(0, 0);
+            this.gidMonHoc.Name = "gidMonHoc";
+            this.gidMonHoc.ReadOnly = true;
+            this.gidMonHoc.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gidMonHoc.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.gidMonHoc.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gidMonHoc.RowTemplate.Height = 24;
+            this.gidMonHoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gidMonHoc.Size = new System.Drawing.Size(1127, 399);
+            this.gidMonHoc.TabIndex = 1;
+            this.gidMonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gidMonHoc_CellContentClick);
+            // 
+            // tabDiem
+            // 
+            this.tabDiem.BackColor = System.Drawing.Color.White;
+            this.tabDiem.Controls.Add(this.gridDiem);
+            this.tabDiem.Location = new System.Drawing.Point(4, 47);
+            this.tabDiem.Name = "tabDiem";
+            this.tabDiem.Size = new System.Drawing.Size(1127, 399);
+            this.tabDiem.TabIndex = 4;
+            this.tabDiem.Text = "Điểm";
+            this.tabDiem.Click += new System.EventHandler(this.tabDiem_Click);
+            // 
+            // gridDiem
+            // 
+            this.gridDiem.AllowUserToAddRows = false;
+            this.gridDiem.AllowUserToDeleteRows = false;
+            this.gridDiem.AllowUserToResizeRows = false;
+            this.gridDiem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridDiem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridDiem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridDiem.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridDiem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridDiem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.gridDiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridDiem.DefaultCellStyle = dataGridViewCellStyle14;
+            this.gridDiem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridDiem.EnableHeadersVisualStyles = false;
+            this.gridDiem.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridDiem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridDiem.Location = new System.Drawing.Point(0, 0);
+            this.gridDiem.Name = "gridDiem";
+            this.gridDiem.ReadOnly = true;
+            this.gridDiem.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridDiem.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.gridDiem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridDiem.RowTemplate.Height = 24;
+            this.gridDiem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridDiem.Size = new System.Drawing.Size(1127, 399);
+            this.gridDiem.TabIndex = 1;
+            this.gridDiem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDiem_CellContentClick);
+            // 
+            // tabTongKet
+            // 
+            this.tabTongKet.BackColor = System.Drawing.Color.White;
+            this.tabTongKet.Controls.Add(this.gridTongKet);
+            this.tabTongKet.Location = new System.Drawing.Point(4, 47);
+            this.tabTongKet.Name = "tabTongKet";
+            this.tabTongKet.Size = new System.Drawing.Size(1127, 399);
+            this.tabTongKet.TabIndex = 5;
+            this.tabTongKet.Text = "Tổng Kết";
+            this.tabTongKet.Click += new System.EventHandler(this.tabTongKet_Click);
+            // 
+            // gridTongKet
+            // 
+            this.gridTongKet.AllowUserToAddRows = false;
+            this.gridTongKet.AllowUserToDeleteRows = false;
+            this.gridTongKet.AllowUserToResizeRows = false;
+            this.gridTongKet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridTongKet.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridTongKet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridTongKet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridTongKet.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTongKet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.gridTongKet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridTongKet.DefaultCellStyle = dataGridViewCellStyle17;
+            this.gridTongKet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridTongKet.EnableHeadersVisualStyles = false;
+            this.gridTongKet.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridTongKet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridTongKet.Location = new System.Drawing.Point(0, 0);
+            this.gridTongKet.Name = "gridTongKet";
+            this.gridTongKet.ReadOnly = true;
+            this.gridTongKet.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTongKet.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.gridTongKet.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridTongKet.RowTemplate.Height = 24;
+            this.gridTongKet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridTongKet.Size = new System.Drawing.Size(1127, 399);
+            this.gridTongKet.TabIndex = 1;
+            this.gridTongKet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridTongKet_CellContentClick);
+            // 
+            // panelDangNhap
+            // 
+            this.panelDangNhap.Controls.Add(this.btnDangNhap);
+            this.panelDangNhap.Controls.Add(this.txtMatKhau);
+            this.panelDangNhap.Controls.Add(this.lollipopLabel2);
+            this.panelDangNhap.Controls.Add(this.txtTenDangNhap);
+            this.panelDangNhap.Controls.Add(this.lollipopLabel1);
+            this.panelDangNhap.Controls.Add(this.pictureBox2);
+            this.panelDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDangNhap.Location = new System.Drawing.Point(0, 30);
+            this.panelDangNhap.Name = "panelDangNhap";
+            this.panelDangNhap.Size = new System.Drawing.Size(1138, 779);
+            this.panelDangNhap.TabIndex = 0;
+            this.panelDangNhap.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDangNhap_Paint);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
+            this.btnClear.Location = new System.Drawing.Point(1088, 248);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(25, 23);
+            this.btnClear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClear.TabIndex = 10;
+            this.btnClear.TabStop = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(999, 69);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 102);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(506, 162);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // lollipopButton2
+            // 
+            this.lollipopButton2.BackColor = System.Drawing.Color.Transparent;
+            this.lollipopButton2.BGColor = "#90DFAA";
+            this.lollipopButton2.FontColor = "#ffffff";
+            this.lollipopButton2.Location = new System.Drawing.Point(807, 277);
+            this.lollipopButton2.Name = "lollipopButton2";
+            this.lollipopButton2.Size = new System.Drawing.Size(143, 36);
+            this.lollipopButton2.TabIndex = 9;
+            this.lollipopButton2.Text = "Thêm mới";
+            this.lollipopButton2.Click += new System.EventHandler(this.lollipopButton2_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BGColor = "0, 174, 219";
+            this.btnSearch.FontColor = "#ffffff";
+            this.btnSearch.Location = new System.Drawing.Point(968, 277);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(143, 36);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // lblLop
+            // 
+            this.lblLop.AutoSize = true;
+            this.lblLop.BackColor = System.Drawing.Color.Transparent;
+            this.lblLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblLop.Location = new System.Drawing.Point(875, 128);
+            this.lblLop.Name = "lblLop";
+            this.lblLop.Size = new System.Drawing.Size(47, 20);
+            this.lblLop.TabIndex = 3;
+            this.lblLop.Text = "Khoa";
+            this.lblLop.Click += new System.EventHandler(this.lblLop_Click);
+            // 
+            // lblTen
+            // 
+            this.lblTen.AutoSize = true;
+            this.lblTen.BackColor = System.Drawing.Color.Transparent;
+            this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTen.Location = new System.Drawing.Point(875, 82);
+            this.lblTen.Name = "lblTen";
+            this.lblTen.Size = new System.Drawing.Size(108, 20);
+            this.lblTen.TabIndex = 1;
+            this.lblTen.Text = "Tên sinh viên";
+            this.lblTen.Click += new System.EventHandler(this.lblTen_Click);
+            // 
+            // lblKhoa
+            // 
+            this.lblKhoa.AutoSize = true;
+            this.lblKhoa.BackColor = System.Drawing.Color.Transparent;
+            this.lblKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblKhoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblKhoa.Location = new System.Drawing.Point(875, 151);
+            this.lblKhoa.Name = "lblKhoa";
+            this.lblKhoa.Size = new System.Drawing.Size(111, 20);
+            this.lblKhoa.TabIndex = 4;
+            this.lblKhoa.Text = "lollipopLabel6";
+            this.lblKhoa.Click += new System.EventHandler(this.lblKhoa_Click);
+            // 
+            // lblMasv
+            // 
+            this.lblMasv.AutoSize = true;
+            this.lblMasv.BackColor = System.Drawing.Color.Transparent;
+            this.lblMasv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblMasv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblMasv.Location = new System.Drawing.Point(875, 105);
+            this.lblMasv.Name = "lblMasv";
+            this.lblMasv.Size = new System.Drawing.Size(37, 20);
+            this.lblMasv.TabIndex = 2;
+            this.lblMasv.Text = "Lớp";
+            this.lblMasv.Click += new System.EventHandler(this.lblMasv_Click);
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDangNhap.BackColor = System.Drawing.Color.Transparent;
+            this.btnDangNhap.FontColor = "#508ef5";
+            this.btnDangNhap.Location = new System.Drawing.Point(589, 505);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(129, 56);
+            this.btnDangNhap.TabIndex = 5;
+            this.btnDangNhap.Text = "Đăng Nhập";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMatKhau.FocusedColor = "#508ef5";
+            this.txtMatKhau.FontColor = "#508ef5";
+            this.txtMatKhau.IsEnabled = true;
+            this.txtMatKhau.Location = new System.Drawing.Point(418, 430);
+            this.txtMatKhau.MaxLength = 32767;
+            this.txtMatKhau.Multiline = false;
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.ReadOnly = false;
+            this.txtMatKhau.Size = new System.Drawing.Size(300, 24);
+            this.txtMatKhau.TabIndex = 4;
+            this.txtMatKhau.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtMatKhau.UseSystemPasswordChar = false;
+            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
+            // 
+            // lollipopLabel2
+            // 
+            this.lollipopLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lollipopLabel2.AutoSize = true;
+            this.lollipopLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.lollipopLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lollipopLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.lollipopLabel2.Location = new System.Drawing.Point(414, 404);
+            this.lollipopLabel2.Name = "lollipopLabel2";
+            this.lollipopLabel2.Size = new System.Drawing.Size(77, 20);
+            this.lollipopLabel2.TabIndex = 3;
+            this.lollipopLabel2.Text = "Mật khẩu";
+            this.lollipopLabel2.Click += new System.EventHandler(this.lollipopLabel2_Click);
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenDangNhap.FocusedColor = "#508ef5";
+            this.txtTenDangNhap.FontColor = "#508ef5";
+            this.txtTenDangNhap.IsEnabled = true;
+            this.txtTenDangNhap.Location = new System.Drawing.Point(418, 368);
+            this.txtTenDangNhap.MaxLength = 32767;
+            this.txtTenDangNhap.Multiline = false;
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.ReadOnly = false;
+            this.txtTenDangNhap.Size = new System.Drawing.Size(300, 24);
+            this.txtTenDangNhap.TabIndex = 2;
+            this.txtTenDangNhap.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTenDangNhap.UseSystemPasswordChar = false;
+            this.txtTenDangNhap.TextChanged += new System.EventHandler(this.txtTenDangNhap_TextChanged);
+            // 
+            // lollipopLabel1
+            // 
+            this.lollipopLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lollipopLabel1.AutoSize = true;
+            this.lollipopLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.lollipopLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lollipopLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.lollipopLabel1.Location = new System.Drawing.Point(414, 342);
+            this.lollipopLabel1.Name = "lollipopLabel1";
+            this.lollipopLabel1.Size = new System.Drawing.Size(119, 20);
+            this.lollipopLabel1.TabIndex = 1;
+            this.lollipopLabel1.Text = "Tên đăng nhập";
+            this.lollipopLabel1.Click += new System.EventHandler(this.lollipopLabel1_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1340, 737);
+            this.ClientSize = new System.Drawing.Size(1138, 809);
             this.Controls.Add(this.panelMain);
-            this.Controls.Add(this.PanelNav);
-            this.Controls.Add(this.panelToolbar);
-            this.animatorLogin.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.animator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.animatorNav.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Controls.Add(this.panelDangNhap);
+            this.DisplayHeader = false;
+            this.DoubleBuffered = false;
+            this.IsMdiContainer = true;
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.panelToolbar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.Text = "Quản Lý Điểm Sinh Viên";
+            this.TransparencyKey = System.Drawing.Color.Empty;
+            this.Load += new System.EventHandler(this.MainForm_Load_1);
             this.panelMain.ResumeLayout(false);
-            this.panelBang.ResumeLayout(false);
-            this.panelBang.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridview)).EndInit();
-            this.PanelNav.ResumeLayout(false);
-            this.PanelNav.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            this.panelMain.PerformLayout();
+            this.tabControl.ResumeLayout(false);
+            this.tabKhoa.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridKhoa)).EndInit();
+            this.tabLop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridLop)).EndInit();
+            this.tabSinhVien.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridSv)).EndInit();
+            this.tabMonHoc.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gidMonHoc)).EndInit();
+            this.tabDiem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridDiem)).EndInit();
+            this.tabTongKet.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridTongKet)).EndInit();
+            this.panelDangNhap.ResumeLayout(false);
+            this.panelDangNhap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelToolbar;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.Panel panelMenu;
-        private LollipopTextBox lltxtmk;
-        private LollipopFlatButton btn_dangnhap;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private LollipopTextBox ll1;
-        private BunifuAnimatorNS.BunifuTransition animator;
-        private BunifuAnimatorNS.BunifuTransition animatorLogin;
         private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.Panel PanelNav;
-        private BunifuAnimatorNS.BunifuTransition animatorNav;
-        private System.Windows.Forms.PictureBox avt;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbLop;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbNgaySinh;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbTen;
-        private Bunifu.Framework.UI.BunifuFlatButton btnKhoa;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSinhVien;
-        private Bunifu.Framework.UI.BunifuFlatButton btnDiem;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMon;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLop;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuFlatButton btnTongKet;
-        private System.Windows.Forms.Panel panelBang;
-        private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
-        private System.Windows.Forms.Panel panel3;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid gridview;
-        private LollipopTextBox txtSearch;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtSearchNomal;
+        private MetroFramework.Controls.MetroTabControl tabControl;
+        private System.Windows.Forms.Panel panelDangNhap;
+        private LollipopFlatButton btnDangNhap;
+        private LollipopTextBox txtMatKhau;
+        private LollipopLabel lollipopLabel2;
+        private LollipopTextBox txtTenDangNhap;
+        private LollipopLabel lollipopLabel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private LollipopLabel lblTen;
+        private LollipopLabel lblMasv;
+        private LollipopLabel lblKhoa;
+        private LollipopLabel lblLop;
+        private System.Windows.Forms.TabPage tabKhoa;
+        private MetroFramework.Controls.MetroGrid gridKhoa;
+        private System.Windows.Forms.TabPage tabLop;
+        private MetroFramework.Controls.MetroGrid gridLop;
+        private System.Windows.Forms.TabPage tabSinhVien;
+        private MetroFramework.Controls.MetroGrid gridSv;
+        private System.Windows.Forms.TabPage tabMonHoc;
+        private MetroFramework.Controls.MetroGrid gidMonHoc;
+        private System.Windows.Forms.TabPage tabDiem;
+        private MetroFramework.Controls.MetroGrid gridDiem;
+        private System.Windows.Forms.TabPage tabTongKet;
+        private MetroFramework.Controls.MetroGrid gridTongKet;
+        private System.Windows.Forms.Label label1;
+        private LollipopButton btnSearch;
+        private MetroFramework.Controls.MetroTextBox txtSearch;
+        private LollipopButton lollipopButton2;
+        private System.Windows.Forms.PictureBox btnClear;
+      
     }
 }

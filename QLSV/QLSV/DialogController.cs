@@ -12,63 +12,96 @@ using QLSV.Data;
 
 namespace QLSV
 {
-    public partial class DialogLop : Form
+    public partial class DialogController : Form
     {
         Response<bool> response;
-
+        public const int CODE_ADD = 0;
+        public const int CODE_UPDATE = 1;
+        private lop mLop;
+        private khoa mKhoa;
+        private sinhvien mSinhVien;
+        private monhoc mMonHoc;
+        private bangdiem mDiem;
+        
+        List<khoa> listKhoa;
         public Response<bool> Response {
             get { return response; }
             set { response = value; }
+        }
+
+
+        //Contructer
+
+        public DialogController() {
+            listKhoa = new KhoaSerivice().getDsKhoa();
+            InitializeComponent();
         }
         /*
          * res : callback goi lai truyen tu main
          * code : phan loai chuc nang ( them/sua+xoa) . Xem phan constant 
          * */
-        public DialogLop(Response<bool> res, int code) {
+        public DialogController(Response<bool> res, int code) {
             listKhoa = new KhoaSerivice().getDsKhoa();
             this.response = res;
             InitializeComponent();
             if (code == CODE_UPDATE) {
-
-                btnAdd.Visible = false;
                 btnDelete.Visible = true;
                 btnUpdate.Visible = true;
             }
 
 
         }
-        public DialogLop(Response<bool> res, int code, lop l) {
+        public DialogController(Response<bool> res, int code, lop l) {
             listKhoa = new KhoaSerivice().getDsKhoa();
             this.response = res;
             InitializeComponent();
-            if (code == CODE_UPDATE) {
+            setViewControl(code);
+            mLop = l;
+        }
+        public DialogController(Response<bool> res, int code, khoa l) {
+            listKhoa = new KhoaSerivice().getDsKhoa();
+            this.response = res;
+            InitializeComponent();
+            setViewControl(code);
+            mKhoa = l;
+        }
+        public DialogController(Response<bool> res, int code, sinhvien l) {
+            listKhoa = new KhoaSerivice().getDsKhoa();
+            this.response = res;
+            InitializeComponent();
+            setViewControl(code);
+            mSinhVien = l;
 
-                btnAdd.Visible = false;
+        }
+        public DialogController(Response<bool> res, int code, monhoc l) {
+            listKhoa = new KhoaSerivice().getDsKhoa();
+            this.response = res;
+            InitializeComponent();
+            setViewControl(code);
+            mMonHoc = l;
+
+        }
+        public DialogController(Response<bool> res, int code, bangdiem l) {
+            listKhoa = new KhoaSerivice().getDsKhoa();
+            this.response = res;
+            InitializeComponent();
+            setViewControl(code);
+            mDiem = l;
+
+        }
+     
+        // Hide or Show view controller
+        private void setViewControl(int code) {
+            if (code == CODE_UPDATE) {
                 btnDelete.Visible = true;
                 btnUpdate.Visible = true;
                 txtMaLop.Enabled = false;
                 cbbKhoa.Enabled = false;
             }
-            mLop = l;
-
-
-
-
-
-
         }
-        public const int CODE_ADD = 0;
-        public const int CODE_UPDATE = 1;
-        private lop mLop;
-        List<khoa> listKhoa;
-        public DialogLop() {
-            listKhoa = new KhoaSerivice().getDsKhoa();
-            InitializeComponent();
-        }
+      
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e) {
-            this.Hide();
-        }
+       
 
         private void bunifuThinButton21_Click(object sender, EventArgs e) {
             //new LopSerivice().themLop
@@ -94,11 +127,8 @@ namespace QLSV
             return lop;
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e) {
 
-        }
-
-        private void DialogLop_Load(object sender, EventArgs e) {
+        private void DialogController_Load(object sender, EventArgs e) {
 
             //BindingSource bs = new BindingSource();
             //bs.DataSource = listKhoa;

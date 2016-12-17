@@ -9,10 +9,16 @@ namespace QLSV.Bussiness
 {
     public class MonSerivices
     {
+       static MonController monController = new MonController();
         public List<monhoc> getDsMon()
         {
-            MonController monController = new MonController();
+        
             return monController.getListMon();
+        }
+
+        public List<monhoc> searchMonHoc(String search) {
+           
+            return monController.searchMon(search);
         }
     }
 }

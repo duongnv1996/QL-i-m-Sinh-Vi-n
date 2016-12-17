@@ -9,11 +9,15 @@ namespace QLSV.Bussiness
 {
     public class BangdiemSerivices
     {
+      static  BangDiemController bangdiemController = new BangDiemController();
         public List<bangdiem> getDsBangdiem()
         {
-            BangDiemController bangdiemController = new BangDiemController();
+            
             return bangdiemController.getListBangdiem();
         }
-
+        public List<bangdiem> searchBangdiem(String search) {
+         
+            return bangdiemController.searchDiem(search);
+        }
     }
 }

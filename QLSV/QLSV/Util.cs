@@ -27,5 +27,8 @@ namespace QLSV
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool AnimateWindow(IntPtr handle, int msec, int flags);
+
+
+      
     }
 }

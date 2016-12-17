@@ -32,5 +32,24 @@ namespace QLSV.Data
             }
             return list;
         }
+
+        public List<bangdiem> searchDiem(String search) {
+            List<bangdiem> list = new List<bangdiem>();
+            String query = "Select * from bangdiem where masv='"+search+"' or mamonhoc='"+search+"' or trangthai='"+search+"'";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read()) {
+                    bangdiem b = new bangdiem();
+                    b.bangdiemIDataReader(reader);
+                    list.Add(b);
+                }
+                reader.Close();
+            } catch (Exception e) {
+
+            }
+            return list;
+        }
     }
+
 }

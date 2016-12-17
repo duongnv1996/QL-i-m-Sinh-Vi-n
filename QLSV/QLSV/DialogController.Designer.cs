@@ -1,6 +1,6 @@
 ﻿namespace QLSV
 {
-    partial class DialogLop
+    partial class DialogController
     {
         /// <summary>
         /// Required designer variable.
@@ -26,14 +26,11 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            Bunifu.Framework.UI.BunifuDragControl drag;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogLop));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogController));
             this.panelTool = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lollipopLabel3 = new LollipopLabel();
             this.lollipopLabel2 = new LollipopLabel();
-            this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDelete = new LollipopFlatButton();
             this.btnUpdate = new LollipopFlatButton();
             this.lollipopLabel1 = new LollipopLabel();
@@ -42,10 +39,7 @@
             this.txtMaLop = new LollipopTextBox();
             this.sinhvienSerivicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khoaSeriviceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            drag = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelTool.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienSerivicesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoaSeriviceBindingSource)).BeginInit();
@@ -53,15 +47,11 @@
             // 
             // drag
             // 
-            drag.Fixed = true;
-            drag.Horizontal = true;
-            drag.TargetControl = this.panelTool;
-            drag.Vertical = true;
+         
             // 
             // panelTool
             // 
             this.panelTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(209)))), ((int)(((byte)(188)))));
-            this.panelTool.Controls.Add(this.bunifuImageButton1);
             this.panelTool.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTool.Location = new System.Drawing.Point(0, 0);
             this.panelTool.Name = "panelTool";
@@ -70,26 +60,12 @@
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(353, 11);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(33, 30);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 20;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.lollipopLabel3);
             this.panel2.Controls.Add(this.lollipopLabel2);
-            this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
             this.panel2.Controls.Add(this.lollipopLabel1);
@@ -101,7 +77,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(408, 361);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // lollipopLabel3
             // 
@@ -129,31 +104,6 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.ActiveBorderThickness = 1;
-            this.btnAdd.ActiveCornerRadius = 20;
-            this.btnAdd.ActiveFillColor = System.Drawing.Color.DarkCyan;
-            this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAdd.ActiveLineColor = System.Drawing.Color.Sienna;
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
-            this.btnAdd.ButtonText = "+";
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.IdleBorderThickness = 1;
-            this.btnAdd.IdleCornerRadius = 20;
-            this.btnAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(209)))), ((int)(((byte)(188)))));
-            this.btnAdd.IdleForecolor = System.Drawing.Color.White;
-            this.btnAdd.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAdd.Location = new System.Drawing.Point(74, 260);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(252, 56);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.TabStop = false;
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAdd.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // btnDelete
             // 
@@ -240,8 +190,6 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // DialogLop
             // 
@@ -253,9 +201,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DialogLop";
             this.Text = "DialogLop";
-            this.Load += new System.EventHandler(this.DialogLop_Load);
             this.panelTool.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienSerivicesBindingSource)).EndInit();
@@ -266,17 +212,14 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelTool;
         private LollipopLabel lollipopLabel1;
         private System.Windows.Forms.ComboBox cbbKhoa;
         private LollipopTextBox txtTenLop;
         private LollipopTextBox txtMaLop;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private LollipopFlatButton btnDelete;
         private LollipopFlatButton btnUpdate;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnAdd;
         private System.Windows.Forms.BindingSource khoaSeriviceBindingSource;
         private System.Windows.Forms.BindingSource sinhvienSerivicesBindingSource;
         private LollipopLabel lollipopLabel3;
