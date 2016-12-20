@@ -19,5 +19,16 @@ namespace QLSV.Bussiness
           
             return sinhvienController.searchSinhVien(search);
         }
+
+        public bool add(sinhvien lop) {
+            return sinhvienController.insert(lop);
+        }
+
+        public bool delete(sinhvien lop) {
+            return sinhvienController.delete(lop);
+        }
+        public bool update(sinhvien lop) {
+            return sinhvienController.update(lop);
+        }
     }
 }

@@ -50,6 +50,48 @@ namespace QLSV.Data
             }
             return list;
         }
+
+
+
+
+        public bool insert(bangdiem item) {
+            String query = "Insert into bangdiem values  ('" + item.masv + "' , N'" + item.mamonhoc + "', " + item.diemtp + " ,"
+                + item.diemthilan1 + ", " + item.diemthilan2 + ", " + "0," + " 0 , 0, 0, 0, 0,0 ,"+item.sotietnghi+",0 " + ");";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                cmd.ExecuteNonQuery();
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+        }
+
+        public bool delete(bangdiem l) {
+
+            String query = "delete bangdiem where masv = '" + l.masv + "' and mamonhoc ='"+l.mamonhoc+"'";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                cmd.ExecuteNonQuery();
+               
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+
+        }
+        public bool update(bangdiem l) {
+
+            String query = "update bangdiem set diemthilan1 =" + l.diemthilan1 + "," +
+                "diemthilan2=" + l.diemthilan2 + "," + "sotietnghi=" + l.sotietnghi +", diemtp="+l.diemtp+" where masv ='"+l.masv+"' and mamonhoc ='"+l.mamonhoc+"'";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                cmd.ExecuteNonQuery();
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+
+        }
     }
 
 }

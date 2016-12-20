@@ -19,5 +19,17 @@ namespace QLSV.Bussiness
          
             return bangdiemController.searchDiem(search);
         }
+
+        public bool add(bangdiem lop) {
+            return bangdiemController.insert(lop);
+        }
+
+        public bool delete(bangdiem lop) {
+            return bangdiemController.delete(lop);
+        }
+        public bool update(bangdiem lop) {
+            return bangdiemController.update(lop);
+        }
+
     }
 }

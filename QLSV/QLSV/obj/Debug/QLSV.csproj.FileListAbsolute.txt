@@ -91,3 +91,16 @@ C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\MetroFramework.Design
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\MetroFramework.dll
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.DialogController.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.DialogKhoa.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.DialogSinhVien.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.DialogMonHoc.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.DialogBangDiem.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\RdlCompile.cache
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\RdlCompile.compiled
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.ReportKhoaForm.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.ReportBangDiemForm.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.ReportLopForm.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.ReportMonHocForm.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.ReportSinhVienForm.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.ReportTongKetForm.resources
+C:\Users\MyPC\Desktop\QL-i-m-Sinh-Vi-n\QLSV\QLSV\obj\Debug\QLSV.csproj.ResolveComReference.cache

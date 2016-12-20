@@ -46,13 +46,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelMain = new System.Windows.Forms.Panel();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTitle = new System.Windows.Forms.Label();
             this.tabControl = new MetroFramework.Controls.MetroTabControl();
-            this.tabKhoa = new System.Windows.Forms.TabPage();
+            this.tabKhoa = new MetroFramework.Controls.MetroTabPage();
             this.gridKhoa = new MetroFramework.Controls.MetroGrid();
-            this.tabLop = new System.Windows.Forms.TabPage();
+            this.tabLop = new MetroFramework.Controls.MetroTabPage();
             this.gridLop = new MetroFramework.Controls.MetroGrid();
-            this.tabSinhVien = new System.Windows.Forms.TabPage();
+            this.tabSinhVien = new MetroFramework.Controls.MetroTabPage();
             this.gridSv = new MetroFramework.Controls.MetroGrid();
             this.tabMonHoc = new System.Windows.Forms.TabPage();
             this.gidMonHoc = new MetroFramework.Controls.MetroGrid();
@@ -64,7 +64,8 @@
             this.btnClear = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lollipopButton2 = new LollipopButton();
+            this.btnExport = new LollipopButton();
+            this.btnAdd = new LollipopButton();
             this.btnSearch = new LollipopButton();
             this.lblLop = new LollipopLabel();
             this.lblTen = new LollipopLabel();
@@ -101,11 +102,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.Controls.Add(this.btnExport);
             this.panelMain.Controls.Add(this.btnClear);
-            this.panelMain.Controls.Add(this.lollipopButton2);
+            this.panelMain.Controls.Add(this.btnAdd);
             this.panelMain.Controls.Add(this.btnSearch);
             this.panelMain.Controls.Add(this.txtSearch);
-            this.panelMain.Controls.Add(this.label1);
+            this.panelMain.Controls.Add(this.lbTitle);
             this.panelMain.Controls.Add(this.tabControl);
             this.panelMain.Controls.Add(this.pictureBox1);
             this.panelMain.Controls.Add(this.lblLop);
@@ -137,7 +139,7 @@
             this.txtSearch.CustomButton.Visible = false;
             this.txtSearch.Lines = new string[] {
         "Tìm mọi thứ"};
-            this.txtSearch.Location = new System.Drawing.Point(807, 248);
+            this.txtSearch.Location = new System.Drawing.Point(807, 210);
             this.txtSearch.MaxLength = 32767;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -155,17 +157,16 @@
             this.txtSearch.Click += new System.EventHandler(this.metroTextBox1_Click_1);
             this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
             // 
-            // label1
+            // lbTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.label1.Location = new System.Drawing.Point(15, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 60);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Quản Lý Sinh Viên";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.Font = new System.Drawing.Font("Segoe UI Light", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.lbTitle.Location = new System.Drawing.Point(15, 28);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(363, 60);
+            this.lbTitle.TabIndex = 6;
+            this.lbTitle.Text = "Quản Lý Sinh Viên";
             // 
             // tabControl
             // 
@@ -180,7 +181,7 @@
             this.tabControl.ItemSize = new System.Drawing.Size(175, 43);
             this.tabControl.Location = new System.Drawing.Point(3, 326);
             this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 2;
+            this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(1135, 450);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 5;
@@ -189,17 +190,23 @@
             this.tabControl.UseStyleColors = true;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             this.tabControl.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl_Selected);
+            this.tabControl.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabControl_MouseDoubleClick);
             // 
             // tabKhoa
             // 
             this.tabKhoa.BackColor = System.Drawing.Color.White;
             this.tabKhoa.Controls.Add(this.gridKhoa);
+            this.tabKhoa.HorizontalScrollbarBarColor = true;
+            this.tabKhoa.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabKhoa.HorizontalScrollbarSize = 10;
             this.tabKhoa.Location = new System.Drawing.Point(4, 47);
             this.tabKhoa.Name = "tabKhoa";
             this.tabKhoa.Size = new System.Drawing.Size(1127, 399);
             this.tabKhoa.TabIndex = 0;
             this.tabKhoa.Text = "Khoa";
-            this.tabKhoa.Click += new System.EventHandler(this.tabKhoa_Click);
+            this.tabKhoa.VerticalScrollbarBarColor = false;
+            this.tabKhoa.VerticalScrollbarHighlightOnWheel = false;
+            this.tabKhoa.VerticalScrollbarSize = 10;
             // 
             // gridKhoa
             // 
@@ -250,17 +257,23 @@
             this.gridKhoa.Size = new System.Drawing.Size(1127, 399);
             this.gridKhoa.TabIndex = 0;
             this.gridKhoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridKhoa_CellContentClick);
+            this.gridKhoa.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridKhoa_CellDoubleClick);
             // 
             // tabLop
             // 
             this.tabLop.BackColor = System.Drawing.Color.White;
             this.tabLop.Controls.Add(this.gridLop);
+            this.tabLop.HorizontalScrollbarBarColor = true;
+            this.tabLop.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabLop.HorizontalScrollbarSize = 10;
             this.tabLop.Location = new System.Drawing.Point(4, 47);
             this.tabLop.Name = "tabLop";
             this.tabLop.Size = new System.Drawing.Size(1127, 399);
             this.tabLop.TabIndex = 1;
             this.tabLop.Text = "Lớp";
-            this.tabLop.Click += new System.EventHandler(this.tabLop_Click);
+            this.tabLop.VerticalScrollbarBarColor = true;
+            this.tabLop.VerticalScrollbarHighlightOnWheel = false;
+            this.tabLop.VerticalScrollbarSize = 10;
             // 
             // gridLop
             // 
@@ -311,17 +324,23 @@
             this.gridLop.Size = new System.Drawing.Size(1127, 399);
             this.gridLop.TabIndex = 1;
             this.gridLop.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridLop_CellContentClick);
+            this.gridLop.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridLop_CellDoubleClick);
             // 
             // tabSinhVien
             // 
             this.tabSinhVien.BackColor = System.Drawing.Color.White;
             this.tabSinhVien.Controls.Add(this.gridSv);
+            this.tabSinhVien.HorizontalScrollbarBarColor = true;
+            this.tabSinhVien.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabSinhVien.HorizontalScrollbarSize = 10;
             this.tabSinhVien.Location = new System.Drawing.Point(4, 47);
             this.tabSinhVien.Name = "tabSinhVien";
             this.tabSinhVien.Size = new System.Drawing.Size(1127, 399);
             this.tabSinhVien.TabIndex = 2;
             this.tabSinhVien.Text = "Sinh Viên";
-            this.tabSinhVien.Click += new System.EventHandler(this.tabSinhVien_Click);
+            this.tabSinhVien.VerticalScrollbarBarColor = true;
+            this.tabSinhVien.VerticalScrollbarHighlightOnWheel = false;
+            this.tabSinhVien.VerticalScrollbarSize = 10;
             // 
             // gridSv
             // 
@@ -372,6 +391,7 @@
             this.gridSv.Size = new System.Drawing.Size(1127, 399);
             this.gridSv.TabIndex = 1;
             this.gridSv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSv_CellContentClick);
+            this.gridSv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSv_CellDoubleClick);
             // 
             // tabMonHoc
             // 
@@ -382,7 +402,6 @@
             this.tabMonHoc.Size = new System.Drawing.Size(1127, 399);
             this.tabMonHoc.TabIndex = 3;
             this.tabMonHoc.Text = "Môn Học";
-            this.tabMonHoc.Click += new System.EventHandler(this.tabMonHoc_Click);
             // 
             // gidMonHoc
             // 
@@ -433,6 +452,7 @@
             this.gidMonHoc.Size = new System.Drawing.Size(1127, 399);
             this.gidMonHoc.TabIndex = 1;
             this.gidMonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gidMonHoc_CellContentClick);
+            this.gidMonHoc.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gidMonHoc_CellDoubleClick);
             // 
             // tabDiem
             // 
@@ -443,7 +463,6 @@
             this.tabDiem.Size = new System.Drawing.Size(1127, 399);
             this.tabDiem.TabIndex = 4;
             this.tabDiem.Text = "Điểm";
-            this.tabDiem.Click += new System.EventHandler(this.tabDiem_Click);
             // 
             // gridDiem
             // 
@@ -494,6 +513,7 @@
             this.gridDiem.Size = new System.Drawing.Size(1127, 399);
             this.gridDiem.TabIndex = 1;
             this.gridDiem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDiem_CellContentClick);
+            this.gridDiem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDiem_CellDoubleClick);
             // 
             // tabTongKet
             // 
@@ -504,7 +524,6 @@
             this.tabTongKet.Size = new System.Drawing.Size(1127, 399);
             this.tabTongKet.TabIndex = 5;
             this.tabTongKet.Text = "Tổng Kết";
-            this.tabTongKet.Click += new System.EventHandler(this.tabTongKet_Click);
             // 
             // gridTongKet
             // 
@@ -569,14 +588,13 @@
             this.panelDangNhap.Name = "panelDangNhap";
             this.panelDangNhap.Size = new System.Drawing.Size(1138, 779);
             this.panelDangNhap.TabIndex = 0;
-            this.panelDangNhap.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDangNhap_Paint);
             // 
             // btnClear
             // 
             this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
-            this.btnClear.Location = new System.Drawing.Point(1088, 248);
+            this.btnClear.Location = new System.Drawing.Point(1088, 210);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(25, 23);
+            this.btnClear.Size = new System.Drawing.Size(24, 23);
             this.btnClear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClear.TabIndex = 10;
             this.btnClear.TabStop = false;
@@ -591,7 +609,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -605,30 +622,41 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // lollipopButton2
+            // btnExport
             // 
-            this.lollipopButton2.BackColor = System.Drawing.Color.Transparent;
-            this.lollipopButton2.BGColor = "#90DFAA";
-            this.lollipopButton2.FontColor = "#ffffff";
-            this.lollipopButton2.Location = new System.Drawing.Point(807, 277);
-            this.lollipopButton2.Name = "lollipopButton2";
-            this.lollipopButton2.Size = new System.Drawing.Size(143, 36);
-            this.lollipopButton2.TabIndex = 9;
-            this.lollipopButton2.Text = "Thêm mới";
-            this.lollipopButton2.Click += new System.EventHandler(this.lollipopButton2_Click);
+            this.btnExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExport.BGColor = "#FEE580";
+            this.btnExport.FontColor = "#ffffff";
+            this.btnExport.Location = new System.Drawing.Point(807, 281);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(304, 36);
+            this.btnExport.TabIndex = 11;
+            this.btnExport.Text = "Xuất Danh Sách";
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BGColor = "#90DFAA";
+            this.btnAdd.FontColor = "#ffffff";
+            this.btnAdd.Location = new System.Drawing.Point(807, 239);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(155, 36);
+            this.btnAdd.TabIndex = 9;
+            this.btnAdd.Text = "Thêm mới";
+            this.btnAdd.Click += new System.EventHandler(this.lollipopButton2_Click);
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.BGColor = "0, 174, 219";
             this.btnSearch.FontColor = "#ffffff";
-            this.btnSearch.Location = new System.Drawing.Point(968, 277);
+            this.btnSearch.Location = new System.Drawing.Point(968, 239);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(143, 36);
             this.btnSearch.TabIndex = 8;
-            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.Text = "Tìm Kiếm";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lblLop
@@ -637,12 +665,11 @@
             this.lblLop.BackColor = System.Drawing.Color.Transparent;
             this.lblLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblLop.Location = new System.Drawing.Point(875, 128);
+            this.lblLop.Location = new System.Drawing.Point(803, 115);
             this.lblLop.Name = "lblLop";
             this.lblLop.Size = new System.Drawing.Size(47, 20);
             this.lblLop.TabIndex = 3;
             this.lblLop.Text = "Khoa";
-            this.lblLop.Click += new System.EventHandler(this.lblLop_Click);
             // 
             // lblTen
             // 
@@ -650,12 +677,11 @@
             this.lblTen.BackColor = System.Drawing.Color.Transparent;
             this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTen.Location = new System.Drawing.Point(875, 82);
+            this.lblTen.Location = new System.Drawing.Point(803, 69);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(108, 20);
             this.lblTen.TabIndex = 1;
             this.lblTen.Text = "Tên sinh viên";
-            this.lblTen.Click += new System.EventHandler(this.lblTen_Click);
             // 
             // lblKhoa
             // 
@@ -663,12 +689,11 @@
             this.lblKhoa.BackColor = System.Drawing.Color.Transparent;
             this.lblKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblKhoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblKhoa.Location = new System.Drawing.Point(875, 151);
+            this.lblKhoa.Location = new System.Drawing.Point(803, 138);
             this.lblKhoa.Name = "lblKhoa";
-            this.lblKhoa.Size = new System.Drawing.Size(111, 20);
+            this.lblKhoa.Size = new System.Drawing.Size(40, 20);
             this.lblKhoa.TabIndex = 4;
-            this.lblKhoa.Text = "lollipopLabel6";
-            this.lblKhoa.Click += new System.EventHandler(this.lblKhoa_Click);
+            this.lblKhoa.Text = "msv";
             // 
             // lblMasv
             // 
@@ -676,12 +701,11 @@
             this.lblMasv.BackColor = System.Drawing.Color.Transparent;
             this.lblMasv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblMasv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblMasv.Location = new System.Drawing.Point(875, 105);
+            this.lblMasv.Location = new System.Drawing.Point(803, 92);
             this.lblMasv.Name = "lblMasv";
             this.lblMasv.Size = new System.Drawing.Size(37, 20);
             this.lblMasv.TabIndex = 2;
             this.lblMasv.Text = "Lớp";
-            this.lblMasv.Click += new System.EventHandler(this.lblMasv_Click);
             // 
             // btnDangNhap
             // 
@@ -714,7 +738,6 @@
             this.txtMatKhau.TabIndex = 4;
             this.txtMatKhau.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtMatKhau.UseSystemPasswordChar = false;
-            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
             // 
             // lollipopLabel2
             // 
@@ -730,7 +753,6 @@
             this.lollipopLabel2.Size = new System.Drawing.Size(77, 20);
             this.lollipopLabel2.TabIndex = 3;
             this.lollipopLabel2.Text = "Mật khẩu";
-            this.lollipopLabel2.Click += new System.EventHandler(this.lollipopLabel2_Click);
             // 
             // txtTenDangNhap
             // 
@@ -749,7 +771,6 @@
             this.txtTenDangNhap.TabIndex = 2;
             this.txtTenDangNhap.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtTenDangNhap.UseSystemPasswordChar = false;
-            this.txtTenDangNhap.TextChanged += new System.EventHandler(this.txtTenDangNhap_TextChanged);
             // 
             // lollipopLabel1
             // 
@@ -765,7 +786,6 @@
             this.lollipopLabel1.Size = new System.Drawing.Size(119, 20);
             this.lollipopLabel1.TabIndex = 1;
             this.lollipopLabel1.Text = "Tên đăng nhập";
-            this.lollipopLabel1.Click += new System.EventHandler(this.lollipopLabel1_Click);
             // 
             // MainForm
             // 
@@ -778,6 +798,7 @@
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.Style = MetroFramework.MetroColorStyle.Default;
             this.Text = "Quản Lý Điểm Sinh Viên";
             this.TransparencyKey = System.Drawing.Color.Empty;
             this.Load += new System.EventHandler(this.MainForm_Load_1);
@@ -821,11 +842,11 @@
         private LollipopLabel lblMasv;
         private LollipopLabel lblKhoa;
         private LollipopLabel lblLop;
-        private System.Windows.Forms.TabPage tabKhoa;
+        private MetroFramework.Controls.MetroTabPage tabKhoa;
         private MetroFramework.Controls.MetroGrid gridKhoa;
-        private System.Windows.Forms.TabPage tabLop;
+        private MetroFramework.Controls.MetroTabPage tabLop;
         private MetroFramework.Controls.MetroGrid gridLop;
-        private System.Windows.Forms.TabPage tabSinhVien;
+        private MetroFramework.Controls.MetroTabPage tabSinhVien;
         private MetroFramework.Controls.MetroGrid gridSv;
         private System.Windows.Forms.TabPage tabMonHoc;
         private MetroFramework.Controls.MetroGrid gidMonHoc;
@@ -833,11 +854,12 @@
         private MetroFramework.Controls.MetroGrid gridDiem;
         private System.Windows.Forms.TabPage tabTongKet;
         private MetroFramework.Controls.MetroGrid gridTongKet;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTitle;
         private LollipopButton btnSearch;
         private MetroFramework.Controls.MetroTextBox txtSearch;
-        private LollipopButton lollipopButton2;
+        private LollipopButton btnAdd;
         private System.Windows.Forms.PictureBox btnClear;
+        private LollipopButton btnExport;
       
     }
 }

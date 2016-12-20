@@ -28,6 +28,7 @@ namespace QLSV.Data
             }
             catch (Exception e)
             {
+                Console.WriteLine(e.Message);
             }
             return list;
         }
@@ -47,6 +48,46 @@ namespace QLSV.Data
             } catch (Exception e) {
             }
             return list;
+        }
+
+
+        public bool insert(sinhvien item) {
+            String query = "Insert into sinhvien values  ('" + item.masv + "' , N'" + item.hoten +"', '"+item.malop+ "' ,'"
+                + item.ngaysinh + "', N'" + item.diachi + "', N'" + item.gioitinh +"', "+"''"+ ");";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                cmd.ExecuteNonQuery();
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+        }
+
+        public bool delete(sinhvien l) {
+
+            String query = "delete sinhvien where masv = '" + l.masv + "'";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                cmd.ExecuteNonQuery();
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+
+        }
+        public bool update(sinhvien l) {
+
+            String query = "update sinhvien set hoten =N'" + l.hoten + "',"+
+                "diachi=N'"+l.diachi+"',"+"ngaysinh='"+l.ngaysinh+"',"+"malop='"+l.malop+"',"+"gioitinh=N'"+l.gioitinh+"'"+
+                " where masv='" + l.masv + "'";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                cmd.ExecuteNonQuery();
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+
         }
     }
 }

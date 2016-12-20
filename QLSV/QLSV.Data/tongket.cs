@@ -6,7 +6,8 @@
 //    Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
+using System.Data.SqlClient;
+using System.Data.Sql;
 namespace QLSV.Data
 {
     using System;
@@ -18,15 +19,22 @@ namespace QLSV.Data
         public Nullable<float> diemtkhe10 { get; set; }
         public Nullable<float> diemtkhe4 { get; set; }
         public Nullable<int> sotcdat { get; set; }
-        public Nullable<float> diemtlky1 { get; set; }
-        public Nullable<float> diemtlky2 { get; set; }
-        public Nullable<float> diemtlky3 { get; set; }
-        public Nullable<float> diemtlky4 { get; set; }
-        public Nullable<float> diemtlky5 { get; set; }
-        public Nullable<float> diemtlky6 { get; set; }
-        public Nullable<float> diemtlky7 { get; set; }
-        public Nullable<float> diemtlky8 { get; set; }
-        public Nullable<float> diemtlky9 { get; set; }
-        public virtual sinhvien sinhvien { get; set; }
+
+        public void tongKetIDataReader(SqlDataReader dr) {
+            masv = dr["masv"] is DBNull ? String.Empty : dr["masv"].ToString();
+            diemtkhe10 = dr["diemtkhe10"] is DBNull ? 0 : float.Parse(dr["diemtkhe10"].ToString());
+            diemtkhe4 = dr["diemtkhe4"] is DBNull ? 0: float.Parse(dr["diemtkhe4"].ToString());
+            sotcdat = dr["sotcdat"] is DBNull ? 0 : Int32.Parse(dr["sotcdat"].ToString());
+        }
+        //public Nullable<float> diemtlky1 { get; set; }
+        //public Nullable<float> diemtlky2 { get; set; }
+        //public Nullable<float> diemtlky3 { get; set; }
+        //public Nullable<float> diemtlky4 { get; set; }
+        //public Nullable<float> diemtlky5 { get; set; }
+        //public Nullable<float> diemtlky6 { get; set; }
+        //public Nullable<float> diemtlky7 { get; set; }
+        //public Nullable<float> diemtlky8 { get; set; }
+        //public Nullable<float> diemtlky9 { get; set; }
+        //public virtual sinhvien sinhvien { get; set; }
     }
 }

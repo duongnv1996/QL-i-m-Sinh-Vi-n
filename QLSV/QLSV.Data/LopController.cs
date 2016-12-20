@@ -59,7 +59,7 @@ namespace QLSV.Data
 
 
         public bool insertLop(lop lop) {
-            String query = "Insert into lop values  ('" + lop.malop + "' , '" + lop.tenlop + "' , '" + lop.makhoa + "');";
+            String query = "Insert into lop values  ('" + lop.malop + "' , N'" + lop.tenlop + "' , '" + lop.makhoa + "');";
             try {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 cmd.ExecuteNonQuery();
@@ -83,7 +83,7 @@ namespace QLSV.Data
         }
         public bool UpdateLop(lop l) {
 
-            String query = "update lop set tenlop ='"+ l.tenlop +"' , makhoa ='"+l.makhoa+"' where malop = '"+l.malop+"'";
+            String query = "update lop set tenlop =N'"+ l.tenlop +"' , makhoa ='"+l.makhoa+"' where malop = '"+l.malop+"'";
             try {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 cmd.ExecuteNonQuery();

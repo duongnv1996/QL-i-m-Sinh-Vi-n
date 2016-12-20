@@ -20,5 +20,17 @@ namespace QLSV.Bussiness
            
             return monController.searchMon(search);
         }
+
+        public bool add(monhoc lop) {
+            return monController.insert(lop);
+        }
+
+        public bool delete(monhoc lop) {
+            return monController.delete(lop);
+        }
+        public bool update(monhoc lop) {
+            return monController.update(lop);
+        }
+
     }
 }

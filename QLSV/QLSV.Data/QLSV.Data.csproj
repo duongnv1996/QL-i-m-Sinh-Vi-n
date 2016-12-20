@@ -107,6 +107,7 @@
     <Compile Include="tongket.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="TongKetController.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserController.cs" />
     <Compile Include="Utils.cs" />
