@@ -60,6 +60,10 @@ namespace QLSV.Data
             try {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 cmd.ExecuteNonQuery();
+                List<bangdiem> listDiem = searchDiem(item.masv);
+                foreach (bangdiem i in listDiem) {
+                    update(i);
+                }
                 return true;
             } catch (Exception e) {
                 return false;
@@ -72,7 +76,10 @@ namespace QLSV.Data
             try {
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 cmd.ExecuteNonQuery();
-               
+              List<bangdiem> listDiem=searchDiem(l.masv);
+              foreach (bangdiem item in listDiem) {
+                  update(item);
+              }
                 return true;
             } catch (Exception e) {
                 return false;

@@ -26,7 +26,6 @@
         /// </summary>
         private void InitializeComponent() {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnDelete = new LollipopButton();
             this.btnUpdate = new LollipopButton();
             this.btnAdd = new LollipopButton();
             this.lollipopLabel3 = new LollipopLabel();
@@ -34,6 +33,7 @@
             this.txtTenLop = new LollipopTextBox();
             this.txtMaLop = new LollipopTextBox();
             this.btnExcel = new LollipopButton();
+            this.btnDelete = new LollipopButton();
             this.fileDialog = new System.Windows.Forms.OpenFileDialog();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,18 +54,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(368, 339);
             this.panel2.TabIndex = 1;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.BGColor = "#F44336";
-            this.btnDelete.FontColor = "#ffffff";
-            this.btnDelete.Location = new System.Drawing.Point(3, 295);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(177, 41);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Xóa";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnUpdate
             // 
@@ -155,7 +144,20 @@
             this.btnExcel.Size = new System.Drawing.Size(177, 41);
             this.btnExcel.TabIndex = 11;
             this.btnExcel.Text = "Nhập từ Excel";
+            this.btnExcel.Visible = false;
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BGColor = "#F44336";
+            this.btnDelete.FontColor = "#ffffff";
+            this.btnDelete.Location = new System.Drawing.Point(3, 295);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(177, 41);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // fileDialog
             // 

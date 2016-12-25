@@ -11,11 +11,15 @@ using System.Windows.Forms;
 using QLSV.Bussiness;
 using QLSV.Data;
 using System.Text.RegularExpressions;
+using Microsoft.Office.Interop.Excel;
 namespace QLSV
 {
     public partial class DialogMonHoc : MetroForm
     {
-
+        Microsoft.Office.Interop.Excel.Application xlApp;
+        Microsoft.Office.Interop.Excel.Workbook xlWorkBook;
+        Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet;
+        Microsoft.Office.Interop.Excel.Range range;
         Response<Int32> response;
         public const int CODE_ADD = 0;
         public const int CODE_UPDATE = 1;
@@ -96,13 +100,17 @@ namespace QLSV
         }
 
         private void btnDelete_Click(object sender, EventArgs e) {
-            bool result = new MonSerivices().delete(getDataFromView());
-            if (result) {
-                this.Hide();
-                //refresh list
-                response.onResponse(Constants.CODE_MONHOC);
-            } else {
-                MessageBox.Show("Khong the xoa sinh vien");
+            DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Xóa", MessageBoxButtons.YesNoCancel,
+            MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes) {
+                bool result = new MonSerivices().delete(getDataFromView());
+                if (result) {
+                    this.Hide();
+                    //refresh list
+                    response.onResponse(Constants.CODE_MONHOC);
+                } else {
+                    MessageBox.Show("Khong the xoa sinh vien");
+                }
             }
         }
 
@@ -169,7 +177,54 @@ namespace QLSV
             }
         }
 
+        private void txtHocKy_TextChanged(object sender, EventArgs e) {
 
+        }
+
+        private List<khoa> getListKhoaFromExcel(String path) {
+            List<khoa> listKhoa = new List<khoa>();
+            xlApp = new Microsoft.Office.Interop.Excel.Application();
+            xlWorkBook = xlApp.Workbooks.Open(path, 0, true, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
+            xlWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
+            if (xlWorkSheet != null) {
+                range = xlWorkSheet.UsedRange;
+                int row = range.Rows.Count;
+                int col = range.Columns.Count;
+                for (int r = 2; r <= row; r++) {
+                    khoa itemKhoa = new khoa();
+                    bool badRow = false;
+                    for (int c = 1; c <= col; c++) {
+                        String content = "" + (range[r, c] as Range).Value2;
+                        if (content.Equals("")) {
+                            badRow = true;
+                            break;
+                        }
+                        if (c == 1) {
+                            itemKhoa.makhoa = content;
+                        } else {
+                            itemKhoa.tenkhoa = content;
+                        }
+
+                    }
+                    if (!badRow)
+                        listKhoa.Add(itemKhoa);
+
+                }
+
+
+            }
+
+            return listKhoa;
+
+        }
+        private void fileDialog_FileOk(object sender, CancelEventArgs e) {
+
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e) {
+            fileDialog.Filter = "Excel Worksheets|*.xls;*.xlsx";
+            fileDialog.ShowDialog();
+        }
 
     }
 }

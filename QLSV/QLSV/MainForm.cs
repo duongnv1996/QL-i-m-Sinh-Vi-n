@@ -31,11 +31,11 @@ namespace QLSV
                         break;
                     }
                 case Constants.CODE_DIEM: {
-                    UpdateListDiem();
+                        UpdateListDiem();
                         break;
                     }
                 case Constants.CODE_MONHOC: {
-                    UpdateListMon();
+                        UpdateListMon();
                         break;
                     }
                 case Constants.CODE_TONGKET: {
@@ -136,9 +136,23 @@ namespace QLSV
                 if (itemMon != null) {
                     listDataAutoComplete.Add(itemMon.mamonhoc);
                     listDataAutoComplete.Add(itemMon.tenmonhoc);
-                    //listDataAutoComplete.Add(itemMon.hocky+"");
-                    //listDataAutoComplete.Add(itemMon.sotinchi+"");
-                    //listDataAutoComplete.Add(itemMon.tongsotiet+"");
+
+
+                }
+            }
+            bindAutoCompleteToTextbox(listDataAutoComplete.ToArray());
+            bindDataSource<monhoc>(listMon, gidMonHoc);
+        }
+        private void UpdateListMon(String msv) {
+            if (monSV == null) monSV = new MonSerivices();
+            listMon.Clear();
+            listMon.AddRange(monSV.getDsMon(msv));
+            List<String> listDataAutoComplete = new List<string>();
+            foreach (monhoc itemMon in listMon) {
+                if (itemMon != null) {
+                    listDataAutoComplete.Add(itemMon.mamonhoc);
+                    listDataAutoComplete.Add(itemMon.tenmonhoc);
+
 
                 }
             }
@@ -245,7 +259,7 @@ namespace QLSV
 
         private void btnDangNhap_Click(object sender, EventArgs e) {
             MyService service = new MyService();
-           user = service.dangNhap(txtTenDangNhap.Text, txtMatKhau.Text);
+            user = service.dangNhap(txtTenDangNhap.Text, txtMatKhau.Text);
             if (user != null) {
                 panelDangNhap.Visible = false;
                 panelMain.Visible = true;
@@ -264,6 +278,7 @@ namespace QLSV
                     tabControl.HideTab(tabKhoa);
                     tabControl.HideTab(tabLop);
                     tabControl.HideTab(tabSinhVien);
+                    btnExport.Visible = false;
                 } else {
                     MetroFramework.MetroColorStyle style = MetroFramework.MetroColorStyle.Orange;
                     tabControl.Style = style;
@@ -277,7 +292,7 @@ namespace QLSV
                     lbTitle.ForeColor = System.Drawing.Color.Orange;
                     this.UpdateStyles();
                 }
-              
+
             } else {
                 MessageBox.Show("Sai mat khau hoac tai khoan");
                 return;
@@ -295,15 +310,15 @@ namespace QLSV
             if (user.Quyen == Constants.CODE_QUYEN_SV) {
                 switch (tabControl.SelectedIndex) {
                     case 0: {
-                            UpdateListMon();
+                            UpdateListMon(user.TenDangNhap);
                             break;
                         }
                     case 1: {
-                        searchDiem(user.TenDangNhap);
+                            searchDiem(user.TenDangNhap);
                             break;
                         }
                     case 2: {
-                        searchListTongKet(user.TenDangNhap);
+                            searchListTongKet(user.TenDangNhap);
                             break;
                         }
 
@@ -383,15 +398,15 @@ namespace QLSV
                         break;
                     }
                 case 3: {
-                    new DialogMonHoc(this, DialogController.CODE_ADD, null).Show();
+                        new DialogMonHoc(this, DialogController.CODE_ADD, null).Show();
                         break;
                     }
                 case 4: {
-                    new DialogBangDiem(this, DialogController.CODE_ADD, null).Show();
+                        new DialogBangDiem(this, DialogController.CODE_ADD, null).Show();
                         break;
                     }
                 case 5: {
-                    //    UpdateListDiem();
+                        //    UpdateListDiem();
                         break;
                     }
             }
@@ -413,15 +428,15 @@ namespace QLSV
             if (user.Quyen == Constants.CODE_QUYEN_SV) {
                 switch (tabControl.SelectedIndex) {
                     case 0: {
-                        searchMonHoc(txtSearch.Text);
+                            searchMonHoc(txtSearch.Text);
                             break;
                         }
                     case 1: {
-                        searchDiem(txtSearch.Text);
+                            searchDiem(txtSearch.Text);
                             break;
                         }
                     case 2: {
-                        searchListTongKet(txtSearch.Text);
+                            searchListTongKet(txtSearch.Text);
                             break;
                         }
 
@@ -502,9 +517,6 @@ namespace QLSV
             new DialogMonHoc(this, DialogController.CODE_UPDATE, item).Show();
         }
 
-        private void gridDiem_CellContentClick(object sender, DataGridViewCellEventArgs e) {
-
-        }
 
         private void gridDiem_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
             if (user.Quyen == Constants.CODE_QUYEN_SV) return;
@@ -521,23 +533,23 @@ namespace QLSV
         }
 
         private void tabControl_MouseDoubleClick(object sender, MouseEventArgs e) {
-            
+
         }
 
         private void btnExport_Click(object sender, EventArgs e) {
             if (user.Quyen == Constants.CODE_QUYEN_SV) {
                 switch (tabControl.SelectedIndex) {
                     case 0: {
-                        new ReportMonHocForm().Show();
+                            new ReportMonHocForm().Show();
 
                             break;
                         }
                     case 1: {
-                        new ReportBangDiemForm().Show();
+                            new ReportBangDiemForm().Show();
                             break;
                         }
                     case 2: {
-                        new ReportTongKetForm().Show();
+                            new ReportTongKetForm().Show();
                             break;
                         }
 
@@ -547,32 +559,37 @@ namespace QLSV
             } else {
                 switch (tabControl.SelectedIndex) {
                     case 0: {
-                        new ReportKhoaForm().Show();
+                            new ReportKhoaForm().Show();
                             break;
                         }
                     case 1: {
-                        new ReportLopForm().Show();
+                            new ReportLopForm().Show();
                             break;
                         }
                     case 2: {
-                        new ReportSinhVienForm().Show();
+                            new ReportSinhVienForm().Show();
                             break;
                         }
                     case 3: {
-                        new ReportMonHocForm().Show();
+                            new ReportMonHocForm().Show();
 
                             break;
                         }
                     case 4: {
-                        new ReportBangDiemForm().Show();
+                        
+                            new ReportBangDiemForm().Show();
                             break;
                         }
                     case 5: {
-                        new ReportTongKetForm().Show();
+                            new ReportTongKetForm().Show();
                             break;
                         }
                 }
             }
+        }
+
+        private void panelDangNhap_Paint(object sender, PaintEventArgs e) {
+
         }
 
 

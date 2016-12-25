@@ -15,6 +15,10 @@ namespace QLSV.Bussiness
         
             return monController.getListMon();
         }
+        public List<monhoc> getDsMon(String msv) {
+
+            return monController.getListMon(msv);
+        }
 
         public List<monhoc> searchMonHoc(String search) {
            

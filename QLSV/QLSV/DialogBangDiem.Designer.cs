@@ -40,17 +40,19 @@
             this.btnUpdate = new LollipopButton();
             this.cboMaSv = new MetroFramework.Controls.MetroComboBox();
             this.cboMaMonHoc = new MetroFramework.Controls.MetroComboBox();
+            this.btnExcel = new LollipopButton();
+            this.fileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // lollipopLabel1
             // 
             this.lollipopLabel1.AutoSize = true;
             this.lollipopLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.lollipopLabel1.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.lollipopLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lollipopLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.lollipopLabel1.Location = new System.Drawing.Point(10, 100);
             this.lollipopLabel1.Name = "lollipopLabel1";
-            this.lollipopLabel1.Size = new System.Drawing.Size(107, 23);
+            this.lollipopLabel1.Size = new System.Drawing.Size(103, 20);
             this.lollipopLabel1.TabIndex = 0;
             this.lollipopLabel1.Text = "Mã sinh viên";
             // 
@@ -238,6 +240,24 @@
             this.cboMaMonHoc.TabIndex = 24;
             this.cboMaMonHoc.UseSelectable = true;
             // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcel.BGColor = "#508ef5";
+            this.btnExcel.FontColor = "#ffffff";
+            this.btnExcel.Location = new System.Drawing.Point(14, 379);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(247, 53);
+            this.btnExcel.TabIndex = 25;
+            this.btnExcel.Text = "Nhập từ Excel";
+            this.btnExcel.Visible = false;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
+            // fileDialog
+            // 
+            this.fileDialog.DefaultExt = "xls,xlsl";
+            this.fileDialog.FileName = "openFileDialog1";
+            // 
             // DialogBangDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,6 +278,7 @@
             this.Controls.Add(this.lollipopLabel2);
             this.Controls.Add(this.lollipopLabel1);
             this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnExcel);
             this.Name = "DialogBangDiem";
             this.Text = "Bảng Điểm";
             this.Load += new System.EventHandler(this.DialogBangDiem_Load);
@@ -283,5 +304,7 @@
         private LollipopButton btnUpdate;
         private MetroFramework.Controls.MetroComboBox cboMaSv;
         private MetroFramework.Controls.MetroComboBox cboMaMonHoc;
+        private LollipopButton btnExcel;
+        private System.Windows.Forms.OpenFileDialog fileDialog;
     }
 }

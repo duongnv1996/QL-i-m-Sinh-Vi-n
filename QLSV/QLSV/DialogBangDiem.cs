@@ -11,10 +11,15 @@ using System.Windows.Forms;
 using QLSV.Data;
 using QLSV.Bussiness;
 using System.Text.RegularExpressions;
+using Microsoft.Office.Interop.Excel;
 namespace QLSV
 {
     public partial class DialogBangDiem : MetroForm
     {
+        Microsoft.Office.Interop.Excel.Application xlApp;
+        Microsoft.Office.Interop.Excel.Workbook xlWorkBook;
+        Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet;
+        Microsoft.Office.Interop.Excel.Range range;
         Response<Int32> response;
         public const int CODE_ADD = 0;
         public const int CODE_UPDATE = 1;
@@ -119,14 +124,18 @@ namespace QLSV
 
 
         private void btnDelete_Click(object sender, EventArgs e) {
-            bool result = new BangdiemSerivices().delete(getDataFromView());
-            if (result) {
-                this.Hide();
-                //refresh list
-                response.onResponse(Constants.CODE_DIEM);
-            } else {
-                MessageBox.Show("Khong the xoa diem");
-            }
+             DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Xóa ", MessageBoxButtons.YesNoCancel,
+            MessageBoxIcon.Question);
+             if (dr == DialogResult.Yes) {
+                 bool result = new BangdiemSerivices().delete(getDataFromView());
+                 if (result) {
+                     this.Hide();
+                     //refresh list
+                     response.onResponse(Constants.CODE_DIEM);
+                 } else {
+                     MessageBox.Show("Khong the xoa diem");
+                 }
+             }
         }
 
         private void btnAdd_Click(object sender, EventArgs e) {
@@ -182,6 +191,51 @@ namespace QLSV
                 MessageBox.Show("Vui lòng nhập số!");
                 txtSoTietNghi.Text = "0";
             }
+        }
+
+        private List<bangdiem> getListDiemFromExcel(String path) {
+            List<bangdiem> listKhoa = new List<bangdiem>();
+            xlApp = new Microsoft.Office.Interop.Excel.Application();
+            xlWorkBook = xlApp.Workbooks.Open(path, 0, true, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
+            xlWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
+            if (xlWorkSheet != null) {
+                range = xlWorkSheet.UsedRange;
+                int row = range.Rows.Count;
+                int col = range.Columns.Count;
+                for (int r = 2; r <= row; r++) {
+                    bangdiem item = new bangdiem();
+                    bool badRow = false;
+                    for (int c = 1; c <= col; c++) {
+                        String content = "" + (range[r, c] as Range).Value2;
+                        if (content.Equals("")) {
+                            badRow = true;
+                            break;
+                        }
+                        if (c == 1) {
+                            item.masv = content;
+                        } else {
+                           // item. = content;
+                        }
+
+                    }
+                    if (!badRow)
+                        listKhoa.Add(item);
+
+                }
+
+
+            }
+
+            return listKhoa;
+
+        }
+        private void fileDialog_FileOk(object sender, CancelEventArgs e) {
+
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e) {
+            fileDialog.Filter = "Excel Worksheets|*.xls;*.xlsx";
+            fileDialog.ShowDialog();
         }
     }
 }

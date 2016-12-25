@@ -86,14 +86,19 @@ namespace QLSV
         }
 
         private void btnDelete_Click(object sender, EventArgs e) {
-            bool result = new KhoaSerivice().delete(getDataFromView());
-            if (result) {
-                this.Hide();
-                //refresh list
-                response.onResponse(Constants.CODE_KHOA);
-            } else {
-                MessageBox.Show("Khong the xoa lop");
+            DialogResult dr = MessageBox.Show("Bạn muốn xóa khoa. Vui lòng xóa các lớp của khoa đó trước! Xóa?", "Xóa ", MessageBoxButtons.YesNoCancel,
+            MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes) {
+                bool result = new KhoaSerivice().delete(getDataFromView());
+                if (result) {
+                    this.Hide();
+                    //refresh list
+                    response.onResponse(Constants.CODE_KHOA);
+                } else {
+                    MessageBox.Show("Khong the xoa ");
+                }
             }
+            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e) {
@@ -118,7 +123,12 @@ namespace QLSV
                 MessageBox.Show("Khong the them vao danh sach");
             }
         }
-        private List<khoa> getListKhoaFromExcel(String path){
+      
+        private void btnExcel_Click(object sender, EventArgs e) {
+            fileDialog.Filter = "Excel Worksheets|*.xls;*.xlsx";
+            fileDialog.ShowDialog();
+        }
+        private List<khoa> getListKhoaFromExcel(String path) {
             List<khoa> listKhoa = new List<khoa>();
             xlApp = new Microsoft.Office.Interop.Excel.Application();
             xlWorkBook = xlApp.Workbooks.Open(path, 0, true, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
@@ -127,11 +137,11 @@ namespace QLSV
                 range = xlWorkSheet.UsedRange;
                 int row = range.Rows.Count;
                 int col = range.Columns.Count;
-                for(int r = 2;r<=row;r++){
+                for (int r = 2; r <= row; r++) {
                     khoa itemKhoa = new khoa();
                     bool badRow = false;
-                    for(int c =1;c<=col;c++){
-                        String content =""+(range[r, c] as Range).Value2;
+                    for (int c = 1; c <= col; c++) {
+                        String content = "" + (range[r, c] as Range).Value2;
                         if (content.Equals("")) {
                             badRow = true;
                             break;
@@ -141,10 +151,10 @@ namespace QLSV
                         } else {
                             itemKhoa.tenkhoa = content;
                         }
-                       
+
                     }
-                    if(!badRow)
-                    listKhoa.Add(itemKhoa);
+                    if (!badRow)
+                        listKhoa.Add(itemKhoa);
 
                 }
 
@@ -154,11 +164,6 @@ namespace QLSV
             return listKhoa;
 
         }
-        private void btnExcel_Click(object sender, EventArgs e) {
-            fileDialog.Filter = "Excel Worksheets|*.xls;*.xlsx";
-            fileDialog.ShowDialog();
-        }
-
         private void fileDialog_FileOk(object sender, CancelEventArgs e) {
             List<khoa> listKhoa = getListKhoaFromExcel(fileDialog.FileName);
            KhoaSerivice service =  new KhoaSerivice();
@@ -174,6 +179,10 @@ namespace QLSV
                 }
             }
             response.onResponse(Constants.CODE_KHOA);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e) {
+
         }
     }
 }

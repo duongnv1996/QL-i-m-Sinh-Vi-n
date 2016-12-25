@@ -193,6 +193,9 @@
         <member name="P:QLSV.Data.Fakes.ShimMonController.getListMon">
             <summary>Sets the shim of MonController.getListMon()</summary>
         </member>
+        <member name="P:QLSV.Data.Fakes.ShimMonController.getListMonString">
+            <summary>Sets the shim of MonController.getListMon(String msv)</summary>
+        </member>
         <member name="P:QLSV.Data.Fakes.ShimMonController.insertmonhoc">
             <summary>Sets the shim of MonController.insert(monhoc item)</summary>
         </member>
@@ -210,6 +213,9 @@
         </member>
         <member name="P:QLSV.Data.Fakes.ShimMonController.AllInstances.getListMon">
             <summary>Sets the shim of MonController.getListMon()</summary>
+        </member>
+        <member name="P:QLSV.Data.Fakes.ShimMonController.AllInstances.getListMonString">
+            <summary>Sets the shim of MonController.getListMon(String msv)</summary>
         </member>
         <member name="P:QLSV.Data.Fakes.ShimMonController.AllInstances.insertmonhoc">
             <summary>Sets the shim of MonController.insert(monhoc item)</summary>

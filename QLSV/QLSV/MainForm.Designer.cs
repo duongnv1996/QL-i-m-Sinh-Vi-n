@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -43,8 +44,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnExport = new LollipopButton();
+            this.btnClear = new System.Windows.Forms.PictureBox();
+            this.btnAdd = new LollipopButton();
+            this.btnSearch = new LollipopButton();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.lbTitle = new System.Windows.Forms.Label();
             this.tabControl = new MetroFramework.Controls.MetroTabControl();
@@ -60,23 +64,20 @@
             this.gridDiem = new MetroFramework.Controls.MetroGrid();
             this.tabTongKet = new System.Windows.Forms.TabPage();
             this.gridTongKet = new MetroFramework.Controls.MetroGrid();
-            this.panelDangNhap = new System.Windows.Forms.Panel();
-            this.btnClear = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnExport = new LollipopButton();
-            this.btnAdd = new LollipopButton();
-            this.btnSearch = new LollipopButton();
             this.lblLop = new LollipopLabel();
             this.lblTen = new LollipopLabel();
             this.lblKhoa = new LollipopLabel();
             this.lblMasv = new LollipopLabel();
+            this.panelDangNhap = new System.Windows.Forms.Panel();
             this.btnDangNhap = new LollipopFlatButton();
             this.txtMatKhau = new LollipopTextBox();
             this.lollipopLabel2 = new LollipopLabel();
             this.txtTenDangNhap = new LollipopTextBox();
             this.lollipopLabel1 = new LollipopLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClear)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabKhoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridKhoa)).BeginInit();
@@ -90,9 +91,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridDiem)).BeginInit();
             this.tabTongKet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTongKet)).BeginInit();
-            this.panelDangNhap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelDangNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,6 +120,53 @@
             this.panelMain.TabIndex = 7;
             this.panelMain.Visible = false;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint_1);
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExport.BGColor = "#FEE580";
+            this.btnExport.FontColor = "#ffffff";
+            this.btnExport.Location = new System.Drawing.Point(807, 281);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(304, 36);
+            this.btnExport.TabIndex = 11;
+            this.btnExport.Text = "Xuất Danh Sách";
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
+            this.btnClear.Location = new System.Drawing.Point(1088, 210);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(24, 23);
+            this.btnClear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClear.TabIndex = 10;
+            this.btnClear.TabStop = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BGColor = "#90DFAA";
+            this.btnAdd.FontColor = "#ffffff";
+            this.btnAdd.Location = new System.Drawing.Point(807, 239);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(155, 36);
+            this.btnAdd.TabIndex = 9;
+            this.btnAdd.Text = "Thêm mới";
+            this.btnAdd.Click += new System.EventHandler(this.lollipopButton2_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BGColor = "0, 174, 219";
+            this.btnSearch.FontColor = "#ffffff";
+            this.btnSearch.Location = new System.Drawing.Point(968, 239);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(143, 36);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Tìm Kiếm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -181,13 +228,11 @@
             this.tabControl.ItemSize = new System.Drawing.Size(175, 43);
             this.tabControl.Location = new System.Drawing.Point(3, 326);
             this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
+            this.tabControl.SelectedIndex = 4;
             this.tabControl.Size = new System.Drawing.Size(1135, 450);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 5;
-            this.tabControl.UseCustomForeColor = true;
             this.tabControl.UseSelectable = true;
-            this.tabControl.UseStyleColors = true;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             this.tabControl.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl_Selected);
             this.tabControl.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabControl_MouseDoubleClick);
@@ -512,7 +557,6 @@
             this.gridDiem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridDiem.Size = new System.Drawing.Size(1127, 399);
             this.gridDiem.TabIndex = 1;
-            this.gridDiem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDiem_CellContentClick);
             this.gridDiem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDiem_CellDoubleClick);
             // 
             // tabTongKet
@@ -575,31 +619,6 @@
             this.gridTongKet.TabIndex = 1;
             this.gridTongKet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridTongKet_CellContentClick);
             // 
-            // panelDangNhap
-            // 
-            this.panelDangNhap.Controls.Add(this.btnDangNhap);
-            this.panelDangNhap.Controls.Add(this.txtMatKhau);
-            this.panelDangNhap.Controls.Add(this.lollipopLabel2);
-            this.panelDangNhap.Controls.Add(this.txtTenDangNhap);
-            this.panelDangNhap.Controls.Add(this.lollipopLabel1);
-            this.panelDangNhap.Controls.Add(this.pictureBox2);
-            this.panelDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDangNhap.Location = new System.Drawing.Point(0, 30);
-            this.panelDangNhap.Name = "panelDangNhap";
-            this.panelDangNhap.Size = new System.Drawing.Size(1138, 779);
-            this.panelDangNhap.TabIndex = 0;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
-            this.btnClear.Location = new System.Drawing.Point(1088, 210);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(24, 23);
-            this.btnClear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClear.TabIndex = 10;
-            this.btnClear.TabStop = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -609,55 +628,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(506, 162);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnExport
-            // 
-            this.btnExport.BackColor = System.Drawing.Color.Transparent;
-            this.btnExport.BGColor = "#FEE580";
-            this.btnExport.FontColor = "#ffffff";
-            this.btnExport.Location = new System.Drawing.Point(807, 281);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(304, 36);
-            this.btnExport.TabIndex = 11;
-            this.btnExport.Text = "Xuất Danh Sách";
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.BGColor = "#90DFAA";
-            this.btnAdd.FontColor = "#ffffff";
-            this.btnAdd.Location = new System.Drawing.Point(807, 239);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(155, 36);
-            this.btnAdd.TabIndex = 9;
-            this.btnAdd.Text = "Thêm mới";
-            this.btnAdd.Click += new System.EventHandler(this.lollipopButton2_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BGColor = "0, 174, 219";
-            this.btnSearch.FontColor = "#ffffff";
-            this.btnSearch.Location = new System.Drawing.Point(968, 239);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(143, 36);
-            this.btnSearch.TabIndex = 8;
-            this.btnSearch.Text = "Tìm Kiếm";
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lblLop
             // 
@@ -707,6 +677,21 @@
             this.lblMasv.TabIndex = 2;
             this.lblMasv.Text = "Lớp";
             // 
+            // panelDangNhap
+            // 
+            this.panelDangNhap.Controls.Add(this.btnDangNhap);
+            this.panelDangNhap.Controls.Add(this.txtMatKhau);
+            this.panelDangNhap.Controls.Add(this.lollipopLabel2);
+            this.panelDangNhap.Controls.Add(this.txtTenDangNhap);
+            this.panelDangNhap.Controls.Add(this.lollipopLabel1);
+            this.panelDangNhap.Controls.Add(this.pictureBox2);
+            this.panelDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDangNhap.Location = new System.Drawing.Point(0, 30);
+            this.panelDangNhap.Name = "panelDangNhap";
+            this.panelDangNhap.Size = new System.Drawing.Size(1138, 779);
+            this.panelDangNhap.TabIndex = 0;
+            this.panelDangNhap.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDangNhap_Paint);
+            // 
             // btnDangNhap
             // 
             this.btnDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -737,7 +722,7 @@
             this.txtMatKhau.Size = new System.Drawing.Size(300, 24);
             this.txtMatKhau.TabIndex = 4;
             this.txtMatKhau.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtMatKhau.UseSystemPasswordChar = false;
+            this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // lollipopLabel2
             // 
@@ -787,6 +772,19 @@
             this.lollipopLabel1.TabIndex = 1;
             this.lollipopLabel1.Text = "Tên đăng nhập";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(506, 162);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(1138, 809);
@@ -804,6 +802,7 @@
             this.Load += new System.EventHandler(this.MainForm_Load_1);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClear)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.tabKhoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridKhoa)).EndInit();
@@ -817,10 +816,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridDiem)).EndInit();
             this.tabTongKet.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridTongKet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDangNhap.ResumeLayout(false);
             this.panelDangNhap.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClear)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 

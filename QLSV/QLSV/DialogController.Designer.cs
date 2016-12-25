@@ -27,17 +27,19 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbbKhoa = new System.Windows.Forms.ComboBox();
-            this.sinhvienSerivicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.khoaSeriviceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnDelete = new LollipopButton();
             this.btnUpdate = new LollipopButton();
             this.btnAdd = new LollipopButton();
             this.lollipopLabel3 = new LollipopLabel();
             this.lollipopLabel2 = new LollipopLabel();
             this.lollipopLabel1 = new LollipopLabel();
+            this.cbbKhoa = new System.Windows.Forms.ComboBox();
             this.txtTenLop = new LollipopTextBox();
             this.txtMaLop = new LollipopTextBox();
+            this.btnExcel = new LollipopButton();
+            this.btnDelete = new LollipopButton();
+            this.sinhvienSerivicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khoaSeriviceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fileDialog = new System.Windows.Forms.OpenFileDialog();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienSerivicesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoaSeriviceBindingSource)).BeginInit();
@@ -46,7 +48,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
             this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.lollipopLabel3);
@@ -55,40 +56,14 @@
             this.panel2.Controls.Add(this.cbbKhoa);
             this.panel2.Controls.Add(this.txtTenLop);
             this.panel2.Controls.Add(this.txtMaLop);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.btnExcel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(20, 60);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(368, 339);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // cbbKhoa
-            // 
-            this.cbbKhoa.FormattingEnabled = true;
-            this.cbbKhoa.Location = new System.Drawing.Point(113, 183);
-            this.cbbKhoa.Name = "cbbKhoa";
-            this.cbbKhoa.Size = new System.Drawing.Size(252, 24);
-            this.cbbKhoa.TabIndex = 1;
-            // 
-            // sinhvienSerivicesBindingSource
-            // 
-            this.sinhvienSerivicesBindingSource.DataSource = typeof(QLSV.Bussiness.SinhvienSerivices);
-            // 
-            // khoaSeriviceBindingSource
-            // 
-            this.khoaSeriviceBindingSource.DataSource = typeof(QLSV.Bussiness.KhoaSerivice);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.BGColor = "#F44336";
-            this.btnDelete.FontColor = "#ffffff";
-            this.btnDelete.Location = new System.Drawing.Point(3, 295);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(177, 41);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Xóa";
-            this.btnDelete.Click += new System.EventHandler(this.lollipopButton3_Click);
             // 
             // btnUpdate
             // 
@@ -150,6 +125,14 @@
             this.lollipopLabel1.TabIndex = 2;
             this.lollipopLabel1.Text = "Mã khoa";
             // 
+            // cbbKhoa
+            // 
+            this.cbbKhoa.FormattingEnabled = true;
+            this.cbbKhoa.Location = new System.Drawing.Point(113, 183);
+            this.cbbKhoa.Name = "cbbKhoa";
+            this.cbbKhoa.Size = new System.Drawing.Size(252, 24);
+            this.cbbKhoa.TabIndex = 1;
+            // 
             // txtTenLop
             // 
             this.txtTenLop.FocusedColor = "#508ef5";
@@ -180,6 +163,44 @@
             this.txtMaLop.TabIndex = 0;
             this.txtMaLop.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtMaLop.UseSystemPasswordChar = false;
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcel.BGColor = "#508ef5";
+            this.btnExcel.FontColor = "#ffffff";
+            this.btnExcel.Location = new System.Drawing.Point(3, 295);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(177, 41);
+            this.btnExcel.TabIndex = 12;
+            this.btnExcel.Text = "Nhập từ Excel";
+            this.btnExcel.Visible = false;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BGColor = "#F44336";
+            this.btnDelete.FontColor = "#ffffff";
+            this.btnDelete.Location = new System.Drawing.Point(3, 295);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(177, 41);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.lollipopButton3_Click);
+            // 
+            // sinhvienSerivicesBindingSource
+            // 
+            this.sinhvienSerivicesBindingSource.DataSource = typeof(QLSV.Bussiness.SinhvienSerivices);
+            // 
+            // khoaSeriviceBindingSource
+            // 
+            this.khoaSeriviceBindingSource.DataSource = typeof(QLSV.Bussiness.KhoaSerivice);
+            // 
+            // fileDialog
+            // 
+            this.fileDialog.DefaultExt = "xls,xlsl";
+            this.fileDialog.FileName = "openFileDialog1";
             // 
             // DialogController
             // 
@@ -213,6 +234,8 @@
         private LollipopButton btnDelete;
         private LollipopButton btnUpdate;
         private LollipopButton btnAdd;
+        private LollipopButton btnExcel;
+        private System.Windows.Forms.OpenFileDialog fileDialog;
 
     }
 }

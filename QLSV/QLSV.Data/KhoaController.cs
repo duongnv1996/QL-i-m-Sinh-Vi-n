@@ -76,9 +76,9 @@ namespace QLSV.Data
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 cmd.ExecuteNonQuery();
                 cmd = null;
-                //String queryKhoa = "delete from khoa where khoa.makhoa in ( select khoa.makhoa from khoa where khoa.makhoa='"+l.makhoa+"')";
-                //cmd = new SqlCommand(queryKhoa, getConnection());
-                //cmd.ExecuteNonQuery();
+                String queryKhoa = "delete from khoa where khoa.makhoa in ( select khoa.makhoa from khoa where khoa.makhoa='" + l.makhoa + "')";
+                cmd = new SqlCommand(queryKhoa, getConnection());
+                cmd.ExecuteNonQuery();
                 return true;
             } catch (Exception e) {
                 return false;

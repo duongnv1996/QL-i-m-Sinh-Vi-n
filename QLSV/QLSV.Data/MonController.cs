@@ -33,7 +33,24 @@ namespace QLSV.Data
             }
             return list;
         }
+        public List<monhoc> getListMon(String msv) {
+            List<monhoc> list = new List<monhoc>();
+            String query = "Select monhoc.* from monhoc,bangdiem where bangdiem.mamonhoc = monhoc.mamonhoc  and bangdiem.masv = '"+msv+"'"+
+                "";
+            try {
+                SqlCommand cmd = new SqlCommand(query, getConnection());
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read()) {
+                    monhoc m = new monhoc();
+                    m.monIDataReader(reader);
+                    list.Add(m);
+                }
+                reader.Close();
+            } catch (Exception e) {
 
+            }
+            return list;
+        }
         public List<monhoc> searchMon(String search) {
             List<monhoc> list = new List<monhoc>();
 

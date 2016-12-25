@@ -8,7 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using QLSV.Data;
+using Microsoft.Reporting.WinForms;
 namespace QLSV
 {
     public partial class ReportBangDiemForm : MetroForm
@@ -16,9 +17,13 @@ namespace QLSV
         public ReportBangDiemForm() {
             InitializeComponent();
         }
-
+     
+       DataTable bangDiems;
+       public ReportBangDiemForm(DataTable bangDiems) {
+            InitializeComponent();
+            this.bangDiems = bangDiems;
+        }
         private void ReportBangDiemForm_Load(object sender, EventArgs e) {
-            // TODO: This line of code loads data into the 'SinhVienDataSet2.bangdiem' table. You can move, or remove it, as needed.
             this.bangdiemTableAdapter.Fill(this.SinhVienDataSet2.bangdiem);
 
             this.reportViewer1.RefreshReport();

@@ -41,6 +41,8 @@
             this.lollipopLabel1 = new LollipopLabel();
             this.btnAdd = new LollipopButton();
             this.btnUpdate = new LollipopButton();
+            this.btnExcel = new LollipopButton();
+            this.fileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // comboMaLop
@@ -241,6 +243,23 @@
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcel.BGColor = "#508ef5";
+            this.btnExcel.FontColor = "#ffffff";
+            this.btnExcel.Location = new System.Drawing.Point(11, 406);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(247, 53);
+            this.btnExcel.TabIndex = 20;
+            this.btnExcel.Text = "Nhập từ Excel";
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
+            // fileDialog
+            // 
+            this.fileDialog.DefaultExt = "xls,xlsl";
+            this.fileDialog.FileName = "openFileDialog1";
+            // 
             // DialogSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -262,6 +281,7 @@
             this.Controls.Add(this.lollipopLabel1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnExcel);
             this.MaximizeBox = false;
             this.Name = "DialogSinhVien";
             this.Text = "Sinh Viên";
@@ -289,5 +309,7 @@
         private LollipopTextBox txtDiaChi;
         private LollipopLabel lollipopLabel6;
         private MetroFramework.Controls.MetroDateTime dateTime;
+        private LollipopButton btnExcel;
+        private System.Windows.Forms.OpenFileDialog fileDialog;
     }
 }
